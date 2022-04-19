@@ -1,4 +1,4 @@
-baseURL = "/sk-telecom-github-playground/"
+baseURL = "/"
 # languageCode = "en-us"
 languageCode = "ko-kr"
 title = "SK telecom Open Source"
