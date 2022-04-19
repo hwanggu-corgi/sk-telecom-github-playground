@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "/sk-telecom-github-playground/"
 # languageCode = "en-us"
 languageCode = "ko-kr"
 title = "SK telecom Open Source"
@@ -58,7 +58,7 @@ pygmentsStyle = "tango"
 #[permalinks]
 #blog = "/:section/:year/:month/:day/:slug/"
 
-# Docsy: Configuration for Goldmark markdown parser, which is default from 
+# Docsy: Configuration for Goldmark markdown parser, which is default from
 # Hugo 0.60 onwards. https://github.com/yuin/goldmark/
 [markup]
 [markup.goldmark]
@@ -83,7 +83,7 @@ id = "UA-189808797-2"
 
 [languages.ko]
 title = "SKT Open Source"
-description = "Open Source Software at SK telecom" 
+description = "Open Source Software at SK telecom"
 languageName ="Korean"
 time_format_default = "2006년 1일 2월"
 time_format_blog = "2006년 1일 2월"
@@ -92,7 +92,7 @@ weight = 2
 
 [languages.en]
 title = "SKT Open Source"
-description = "Open Source Software at SK telecom" 
+description = "Open Source Software at SK telecom"
 languageName ="English"
 # Weight used for sorting in the language menu:
 contentDir = "content/en"
