@@ -6,6 +6,8 @@ sktelecom.github.io에 있는 깨진 아이콘들을 보며 이 issue를 올립�
 
 sktelecom.github.io를 clone해서 hyungmogu.github.io로 다시 올린다음 두 개의 repository를 비교하니, gh-pages branch에 webfonts 폴더가 missing 합니다.
 
+
+
 이 폴더를 지우면은 문제를 replicate 할 수 있습니다.
 
 관리자님, 혹시 회사에서 아이콘을 바꾸실 계휙이 있으십니까?
