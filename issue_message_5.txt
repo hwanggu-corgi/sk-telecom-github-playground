@@ -16,7 +16,6 @@ sktelecom.github.io를 clone해서 hyungmogu.github.io로 다시 올린다음 �
 
 [폴더 지운후 state]
 
-
 관리자님, github action에서 latest deployment build하는데 /webfonts folder가 missing한데 혹시 회사에서 아이콘을 바꾸실 계휙이 있으십니까? 만약 없으시면, 다시 build 하면 원레 상태로 되돌릴 수 있습니다.
 
 관리자님, 제 issue를 읽어 주셔서 고맙습니다.
