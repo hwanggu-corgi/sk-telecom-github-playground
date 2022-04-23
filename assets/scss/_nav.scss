@@ -50,11 +50,6 @@ header {
         margin: 0;
         padding: 0;
 
-        .nav-link {
-            display: inline-block;
-            margin-right: -30px;
-        }
-
         .navbar-logo {
             svg {
                 display: inline-block;
@@ -131,8 +126,12 @@ header {
             display: block;
             height: 0.125rem;
             width: 1.562rem;
-            background-color: #000;
+            background-color: $skred;
             transition: all 0.3s linear;
+
+            &:nth-child(2) {
+                transition: none;
+            }
 
             &:not(:last-child) {
                 margin: 0 0 0.437rem 0;
@@ -215,6 +214,16 @@ header.mobile-menu-open .td-navbar {
         color: $white;
         transition: all 0.3s linear;
         font-weight: $font-weight-bold;
+
+        &:hover {
+            color: $skred;
+        }
+    }
+
+    & > ul > li ul > li > a {
+        font-size: 1.125rem;
+        color: $white;
+        transition: all 0.3s linear;
 
         &:hover {
             color: $skred;
