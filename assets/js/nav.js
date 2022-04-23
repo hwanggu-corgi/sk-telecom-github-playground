@@ -43,6 +43,12 @@
       e.preventDefault();
       const $navItem = $(this).closest(".nav-item");
       $($navItem).toggleClass("submenu-open");
+
+      if ($($navItem).hasClass("submenu-open")) {
+        $("ul:first", $navItem).slideDown();
+      } else {
+        $("ul:first", $navItem).slideUp();
+      }
     })
   });
 
