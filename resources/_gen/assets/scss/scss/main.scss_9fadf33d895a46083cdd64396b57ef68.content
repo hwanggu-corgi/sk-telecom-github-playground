@@ -12328,14 +12328,14 @@ header {
       min-height: 4rem;
       padding-right: .5rem;
       padding-left: .75rem; }
-      .td-navbar .td-navbar-nav-scroll {
+      .td-navbar .td-navbar-main {
         max-width: calc(100% + .75rem - 96px - 1.5rem);
         overflow: hidden;
         font-size: .875rem; }
-        .td-navbar .td-navbar-nav-scroll .nav-link {
+        .td-navbar .td-navbar-main .nav-link {
           padding-right: .25rem;
           padding-left: 0; }
-        .td-navbar .td-navbar-nav-scroll .navbar-nav {
+        .td-navbar .td-navbar-main .navbar-nav {
           margin-top: 0 !important;
           overflow-x: auto;
           white-space: nowrap;
