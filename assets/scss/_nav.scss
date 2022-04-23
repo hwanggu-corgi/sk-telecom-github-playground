@@ -37,6 +37,7 @@
     z-index: 32;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     .brand-name {
         display: none;}
@@ -99,7 +100,6 @@
     @include media-breakpoint-down(md) {
         padding-right: .5rem;
         padding-left: .75rem;
-        align-items: flex-end;
 
         .td-navbar-nav-scroll {
             max-width: calc(100% + .75rem - 96px - 1.5rem);
@@ -134,9 +134,26 @@
             height: 0.125rem;
             width: 1.562rem;
             background-color: #000;
+            transition: all 0.3s linear;
 
             &:not(:last-child) {
                 margin: 0 0 0.437rem 0;
+            }
+        }
+
+        &.open span {
+            &:first-child {
+                margin: 0;
+                transform: translate(0, 50%) rotate(45deg);
+            }
+
+            &:nth-child(2) {
+                height: 0;
+                margin: 0;
+            }
+
+            &:last-child {
+                transform: translate(0, -50%) rotate(-45deg);
             }
         }
     }

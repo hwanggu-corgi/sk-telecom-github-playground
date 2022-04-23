@@ -12319,7 +12319,8 @@ readers do not read off random characters that represent icons */
   margin: 0;
   z-index: 32;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center; }
   .td-navbar .brand-name {
     display: none; }
   @media (min-width: 768px) {
@@ -12368,8 +12369,7 @@ readers do not read off random characters that represent icons */
   @media (max-width: 991.98px) {
     .td-navbar {
       padding-right: .5rem;
-      padding-left: .75rem;
-      align-items: flex-end; }
+      padding-left: .75rem; }
       .td-navbar .td-navbar-nav-scroll {
         max-width: calc(100% + .75rem - 96px - 1.5rem);
         height: 2.5rem;
@@ -12394,9 +12394,18 @@ readers do not read off random characters that represent icons */
       display: block;
       height: 0.125rem;
       width: 1.562rem;
-      background-color: #000; }
+      background-color: #000;
+      transition: all 0.3s linear; }
       .td-navbar .navbar-mobile-button span:not(:last-child) {
         margin: 0 0 0.437rem 0; }
+    .td-navbar .navbar-mobile-button.open span:first-child {
+      margin: 0;
+      transform: translate(0, 50%) rotate(45deg); }
+    .td-navbar .navbar-mobile-button.open span:nth-child(2) {
+      height: 0;
+      margin: 0; }
+    .td-navbar .navbar-mobile-button.open span:last-child {
+      transform: translate(0, -50%) rotate(-45deg); }
 
 .td-sidebar-nav {
   padding-right: 0.5rem;
