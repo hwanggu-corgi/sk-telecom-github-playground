@@ -12467,6 +12467,14 @@ header.mobile-menu-open .td-navbar {
     display: flex; }
   .td-navbar-mobile li.has-children > a > span {
     flex-grow: 1; }
+  .td-navbar-mobile li.has-children > a > button {
+    transition: all 0.3s linear;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer; }
+  .td-navbar-mobile li.submenu-open > a > button {
+    transform: rotate(180deg); }
   .td-navbar-mobile li.submenu-open > a {
     margin: 0 0 10px 0; }
   .td-navbar-mobile ul.sub-menu {

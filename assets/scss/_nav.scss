@@ -253,6 +253,18 @@ header.mobile-menu-open .td-navbar {
         flex-grow: 1;
     }
 
+    li.has-children > a > button {
+        transition: all 0.3s linear;
+        background-color: transparent;
+        border: none;
+        color: $white;
+        cursor: pointer;
+    }
+
+    li.submenu-open > a > button {
+        transform: rotate(180deg);
+    }
+
     li.submenu-open > a {
         margin: 0 0 10px 0;
     }

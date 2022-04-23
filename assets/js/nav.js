@@ -5,9 +5,9 @@
 
   // Headers mobile navigation menu that shows on click
   $(function () {
-    var body = $('body');
-    var header = $('header');
-    var mobileMenuBtn = $(header).find('.navbar-mobile-button').first();
+    const body = $('body');
+    const header = $('header');
+    const mobileMenuBtn = $(header).find('.navbar-mobile-button').first();
 
     $(mobileMenuBtn).click(() => {
       mobileMenuBtn.toggleClass("open");
@@ -24,9 +24,9 @@
 
   // Headers mobile navigation menu go back to normal after breakpoint
   $(function () {
-    var body = $('body');
-    var header = $('header');
-    var mobileMenuBtn = $(header).find('.navbar-mobile-button').first();
+    const body = $('body');
+    const header = $('header');
+    const mobileMenuBtn = $(header).find('.navbar-mobile-button').first();
 
     $(window).resize(() => {
       if ($(document).width() > breakpoint) {
@@ -41,7 +41,8 @@
   $(function () {
     $(".nav-submenu-btn").click(function(e) {
       e.preventDefault();
-      $(this).closest(".nav-item").toggleClass("submenu-open");
+      const $navItem = $(this).closest(".nav-item");
+      $($navItem).toggleClass("submenu-open");
     })
   });
 
