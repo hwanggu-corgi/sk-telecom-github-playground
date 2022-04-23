@@ -70,6 +70,7 @@ header {
     .nav-link {
         text-transform: none;
         font-weight: $font-weight-medium;
+        transition: all 0.3s linear;
     }
 
     .td-search-input {
@@ -149,6 +150,26 @@ header.mobile-menu-open .td-navbar {
     background: $skdarkgrey;
     border-bottom: 1px solid #3c3c41;
     // border-bottom: 1px solid $skgrey;
+
+    .navbar-mobile-button {
+        background-color: transparent;
+        margin: 0;
+        border: none;
+        padding: 0.625rem;
+        cursor: pointer;
+
+        span {
+            background-color: $white;
+        }
+    }
+
+    .nav-link {
+        color: $white;
+
+        &:hover {
+            color: $skred;
+        }
+    }
 }
 
 .td-navbar-mobile {
@@ -183,7 +204,7 @@ header.mobile-menu-open .td-navbar {
         font-size: 25px;
         color: $white;
         transition: all 0.3s linear;
-        font-weight: bold;
+        font-weight: $font-weight-bold;
 
         &:hover {
             color: $skred;
