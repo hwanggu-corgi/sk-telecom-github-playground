@@ -12325,7 +12325,21 @@ header {
   transition: all 0.3s linear; }
   @media (max-width: 991.98px) {
     .td-navbar {
-      min-height: 4rem; } }
+      min-height: 4rem;
+      padding-right: .5rem;
+      padding-left: .75rem; }
+      .td-navbar .td-navbar-nav-scroll {
+        max-width: calc(100% + .75rem - 96px - 1.5rem);
+        overflow: hidden;
+        font-size: .875rem; }
+        .td-navbar .td-navbar-nav-scroll .nav-link {
+          padding-right: .25rem;
+          padding-left: 0; }
+        .td-navbar .td-navbar-nav-scroll .navbar-nav {
+          margin-top: 0 !important;
+          overflow-x: auto;
+          white-space: nowrap;
+          -webkit-overflow-scrolling: touch; } }
   .td-navbar .brand-name {
     display: none; }
   .td-navbar .navbar-brand {
@@ -12362,21 +12376,8 @@ header {
   .td-navbar .dropdown {
     min-width: 100px; }
   @media (max-width: 991.98px) {
-    .td-navbar {
-      padding-right: .5rem;
-      padding-left: .75rem; }
-      .td-navbar .td-navbar-nav-scroll {
-        max-width: calc(100% + .75rem - 96px - 1.5rem);
-        overflow: hidden;
-        font-size: .875rem; }
-        .td-navbar .td-navbar-nav-scroll .nav-link {
-          padding-right: .25rem;
-          padding-left: 0; }
-        .td-navbar .td-navbar-nav-scroll .navbar-nav {
-          margin-top: 0 !important;
-          overflow-x: auto;
-          white-space: nowrap;
-          -webkit-overflow-scrolling: touch; } }
+    .td-navbar .nav-item-translations {
+      min-width: 0; } }
   .td-navbar .navbar-mobile-button {
     background-color: transparent;
     margin: 0;
@@ -12403,6 +12404,10 @@ header {
 header.mobile-menu-open .td-navbar {
   background: #262626;
   border-bottom: 1px solid #3c3c41; }
+  header.mobile-menu-open .td-navbar .nav-link {
+    color: #fff; }
+    header.mobile-menu-open .td-navbar .nav-link:hover {
+      color: #ea002c; }
   header.mobile-menu-open .td-navbar .navbar-mobile-button {
     background-color: transparent;
     margin: 0;
@@ -12411,10 +12416,6 @@ header.mobile-menu-open .td-navbar {
     cursor: pointer; }
     header.mobile-menu-open .td-navbar .navbar-mobile-button span {
       background-color: #fff; }
-  header.mobile-menu-open .td-navbar .nav-link {
-    color: #fff; }
-    header.mobile-menu-open .td-navbar .nav-link:hover {
-      color: #ea002c; }
 
 .td-navbar-mobile {
   position: fixed;

@@ -24,6 +24,7 @@ header {
     }
 }
 
+
 .td-navbar {
     border-bottom: 1px solid $skorange;
     min-height: 5rem;
@@ -36,6 +37,26 @@ header {
 
     @include media-breakpoint-down(md) {
         min-height: 4rem;
+        padding-right: .5rem;
+        padding-left: .75rem;
+
+        .td-navbar-nav-scroll {
+            max-width: calc(100% + .75rem - 96px - 1.5rem);
+            overflow: hidden;
+            font-size: .875rem;
+
+            .nav-link {
+                padding-right: .25rem;
+                padding-left: 0;
+            }
+
+            .navbar-nav {
+                margin-top: 0 !important;
+                overflow-x: auto;
+                white-space: nowrap;
+                -webkit-overflow-scrolling: touch;
+            }
+        }
     }
 
     .brand-name {
@@ -85,29 +106,11 @@ header {
         min-width: 100px;
     }
 
-    @include media-breakpoint-down(md) {
-        padding-right: .5rem;
-        padding-left: .75rem;
-
-        .td-navbar-nav-scroll {
-            max-width: calc(100% + .75rem - 96px - 1.5rem);
-            overflow: hidden;
-            font-size: .875rem;
-
-            .nav-link {
-                padding-right: .25rem;
-                padding-left: 0;
-            }
-
-            .navbar-nav {
-                margin-top: 0 !important;
-                overflow-x: auto;
-                white-space: nowrap;
-                -webkit-overflow-scrolling: touch;
-            }
+    .nav-item-translations {
+        @include media-breakpoint-down(md) {
+            min-width: 0;
         }
     }
-
 
     .navbar-mobile-button {
         background-color: transparent;
@@ -151,6 +154,14 @@ header.mobile-menu-open .td-navbar {
     border-bottom: 1px solid #3c3c41;
     // border-bottom: 1px solid $skgrey;
 
+    .nav-link {
+        color: $white;
+
+        &:hover {
+            color: $skred;
+        }
+    }
+
     .navbar-mobile-button {
         background-color: transparent;
         margin: 0;
@@ -160,14 +171,6 @@ header.mobile-menu-open .td-navbar {
 
         span {
             background-color: $white;
-        }
-    }
-
-    .nav-link {
-        color: $white;
-
-        &:hover {
-            color: $skred;
         }
     }
 }
