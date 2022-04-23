@@ -18,8 +18,8 @@
 			</li>
 			{{ end }}
 			{{ if  .Site.Params.versions }}
-      <li class="nav-item dropdown d-none d-xl-block">
-        {{ partial "navbar-version-selector.html" . }}
+			<li class="nav-item dropdown d-none d-xl-block">
+				{{ partial "navbar-version-selector.html" . }}
 			</li>
 			{{ end }}
 			{{ if  (gt (len .Site.Home.Translations) 0) }}
@@ -35,4 +35,20 @@
 		<span></span>
 		<span></span>
 	</button>
+</nav>
+<nav class="navbar-mobile">
+	<ul>
+		{{ $p := . }}
+		{{ range .Site.Menus.main }}
+		<li class="nav-item">
+			{{ $active := or ($p.IsMenuCurrent "main" .) ($p.HasMenuCurrent "main" .) }}
+			{{ with .Page }}
+			{{ $active = or $active ( $.IsDescendant .)  }}
+			{{ end }}
+			{{ $url := urls.Parse .URL }}
+			{{ $baseurl := urls.Parse $.Site.Params.Baseurl }}
+			<a class="nav-link{{if $active }} active{{end}}" href="{{ with .Page }}{{ .RelPermalink }}{{ else }}{{ .URL | relLangURL }}{{ end }}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}><span{{if $active }} class="active"{{end}}>{{ .Name }}</span></a>
+		</li>
+		{{ end }}
+	</ul>
 </nav>

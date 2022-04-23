@@ -12298,6 +12298,12 @@ readers do not read off random characters that represent icons */
     white-space: pre;
     border: 0; }
 
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 32; }
+
 .td-navbar-cover {
   background: #fff; }
   @media (min-width: 768px) {
@@ -12317,17 +12323,11 @@ readers do not read off random characters that represent icons */
   border-bottom: 1px solid #ff7a00;
   min-height: 4rem;
   margin: 0;
-  z-index: 32;
   display: flex;
   justify-content: space-between;
   align-items: center; }
   .td-navbar .brand-name {
     display: none; }
-  @media (min-width: 768px) {
-    .td-navbar {
-      position: fixed;
-      top: 0;
-      width: 100%; } }
   .td-navbar .navbar-brand {
     text-transform: none;
     text-align: middle;
