@@ -245,6 +245,12 @@ header.mobile-menu-open .td-navbar {
         }
     }
 
+    li.has-children > a {
+        &::after {
+
+        }
+    }
+
     li.has-children.open > a {
         margin: 0 0 10px 0;
     }

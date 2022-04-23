@@ -1,16 +1,16 @@
 {{ define "menu-item" }}
 	{{ $p := .page }}
+	{{ $url := urls.Parse .URL }}
+	{{ $baseurl := urls.Parse $.Site.Params.Baseurl }}
+
 	{{ with .entry }}
 		{{ $active := or ($p.IsMenuCurrent "main" .) ($p.HasMenuCurrent "main" .) }}
-		{{ $url := urls.Parse .URL }}
-		{{ $baseurl := urls.Parse $.Site.Params.Baseurl }}
-
 		{{ if .HasChildren }}
 			<li class="nav-item mr-4 d-none d-xl-block has-children">
 				<a class="nav-link{{if $active }} active{{end}}" href="{{ .URL }}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}><span{{if $active }} class="active"{{end}}>{{ .Name }}</span></a>
 				<ul class="dropdown-menu">
 					{{ range .Children }}
-						{{ template "menu-item" (dict "entry" . "page" $p) }}
+						{{ template "menu-item" (dict "nested" . "page" $p) }}
 					{{ end }}
 				</ul>
 			</li>
@@ -20,21 +20,58 @@
 			</li>
 		{{ end }}
 	{{ end }}
+
+	{{ with .nested }}
+		{{ $active := or ($p.IsMenuCurrent "main" .) ($p.HasMenuCurrent "main" .) }}
+		{{ if .HasChildren }}
+			<li class="nav-item">
+				<a class="nav-link{{if $active }} active{{end}}" href="{{ .URL }}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}><span{{if $active }} class="active"{{end}}>{{ .Name }}</span></a>
+				<ul class="dropdown-menu">
+					{{ range .Children }}
+						{{ template "menu-item" (dict "nested" . "page" $p) }}
+					{{ end }}
+				</ul>
+			</li>
+		{{ else }}
+			<li class="nav-item">
+				<a class="nav-link{{if $active }} active{{end}}" href="{{ .URL }}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}><span{{if $active }} class="active"{{end}}>{{ .Name }}</span></a>
+			</li>
+		{{ end }}
+	{{ end }}
 {{ end }}
 
 {{ define "menu-item-mobile" }}
 	{{ $p := .page }}
+	{{ $url := urls.Parse .URL }}
+	{{ $baseurl := urls.Parse $.Site.Params.Baseurl }}
+
 	{{ with .entry }}
 		{{ $active := or ($p.IsMenuCurrent "main" .) ($p.HasMenuCurrent "main" .) }}
-		{{ $url := urls.Parse .URL }}
-		{{ $baseurl := urls.Parse $.Site.Params.Baseurl }}
 
 		{{ if .HasChildren }}
 			<li class="nav-item">
 				<a class="nav-link{{if $active }} active{{end}}" href="{{ with .Page }}{{ .RelPermalink }}{{ else }}{{ .URL | relLangURL }}{{ end }}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}><span{{if $active }} class="active"{{end}}>{{ .Name }}</span></a>
 				<ul class="sub-menu">
 					{{ range .Children }}
-						{{ template "menu-item-mobile" (dict "entry" . "page" $p) }}
+						{{ template "menu-item-mobile" (dict "nested" . "page" $p) }}
+					{{ end }}
+				</ul>
+			</li>
+		{{ else }}
+			<li class="nav-item">
+				<a class="nav-link{{if $active }} active{{end}}" href="{{ with .Page }}{{ .RelPermalink }}{{ else }}{{ .URL | relLangURL }}{{ end }}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}><span{{if $active }} class="active"{{end}}>{{ .Name }}</span></a>
+			</li>
+		{{ end }}
+	{{ end }}
+
+	{{ with .nested }}
+		{{ $active := or ($p.IsMenuCurrent "main" .) ($p.HasMenuCurrent "main" .) }}
+		{{ if .HasChildren }}
+			<li class="nav-item">
+				<a class="nav-link{{if $active }} active{{end}}" href="{{ with .Page }}{{ .RelPermalink }}{{ else }}{{ .URL | relLangURL }}{{ end }}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}><span{{if $active }} class="active"{{end}}>{{ .Name }}</span></a>
+				<ul class="sub-menu sub-menu-nested">
+					{{ range .Children }}
+						{{ template "menu-item-mobile" (dict "nested" . "page" $p) }}
 					{{ end }}
 				</ul>
 			</li>
