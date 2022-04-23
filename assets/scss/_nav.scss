@@ -41,20 +41,11 @@ header {
         padding-left: .75rem;
 
         .td-navbar-main {
-            max-width: calc(100% + .75rem - 96px - 1.5rem);
-            overflow: hidden;
             font-size: .875rem;
 
             .nav-link {
                 padding-right: .25rem;
                 padding-left: 0;
-            }
-
-            .navbar-nav {
-                margin-top: 0 !important;
-                overflow-x: auto;
-                white-space: nowrap;
-                -webkit-overflow-scrolling: touch;
             }
         }
     }
@@ -109,6 +100,13 @@ header {
     .nav-item-translations {
         @include media-breakpoint-down(md) {
             min-width: 0;
+        }
+
+        .dropdown-menu {
+            @include media-breakpoint-down(md) {
+                right: 0;
+                left: initial;
+            }
         }
     }
 

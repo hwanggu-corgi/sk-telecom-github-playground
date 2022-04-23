@@ -12329,17 +12329,10 @@ header {
       padding-right: .5rem;
       padding-left: .75rem; }
       .td-navbar .td-navbar-main {
-        max-width: calc(100% + .75rem - 96px - 1.5rem);
-        overflow: hidden;
         font-size: .875rem; }
         .td-navbar .td-navbar-main .nav-link {
           padding-right: .25rem;
-          padding-left: 0; }
-        .td-navbar .td-navbar-main .navbar-nav {
-          margin-top: 0 !important;
-          overflow-x: auto;
-          white-space: nowrap;
-          -webkit-overflow-scrolling: touch; } }
+          padding-left: 0; } }
   .td-navbar .brand-name {
     display: none; }
   .td-navbar .navbar-brand {
@@ -12378,6 +12371,10 @@ header {
   @media (max-width: 991.98px) {
     .td-navbar .nav-item-translations {
       min-width: 0; } }
+  @media (max-width: 991.98px) {
+    .td-navbar .nav-item-translations .dropdown-menu {
+      right: 0;
+      left: initial; } }
   .td-navbar .navbar-mobile-button {
     background-color: transparent;
     margin: 0;
