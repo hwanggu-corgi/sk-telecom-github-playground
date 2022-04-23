@@ -12405,6 +12405,9 @@ header {
     .td-navbar .navbar-mobile-button.open span:last-child {
       transform: translate(0, -50%) rotate(-45deg); }
 
+.td-navbar-mobile {
+  height: calc(100vh - 81px); }
+
 .td-sidebar-nav {
   padding-right: 0.5rem;
   margin-right: -15px;
