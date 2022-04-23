@@ -1,6 +1,10 @@
 //
 // Top navbar - copied from Docsy theme and additional styling included.
 //
+body.mobile-menu-open {
+    overflow: hidden;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -144,6 +148,8 @@ header {
 
 header.mobile-menu-open .td-navbar {
     background: $skdarkgrey;
+    // border-bottom: 1px solid #3c3c41;
+    border-bottom: 1px solid $skgrey;
 }
 
 .td-navbar-mobile {
@@ -154,9 +160,34 @@ header.mobile-menu-open .td-navbar {
     transition: all 0.3s linear;
     height: calc(100vh - 5rem);
     background: $skdarkgrey;
+    padding: 1.875rem 1.625rem;
 
     @include media-breakpoint-down(md) {
         height: calc(100vh - 4rem);
+    }
+
+    ul {
+        padding: 0;
+        list-style-type: none;
+    }
+
+    a {
+        padding: 0;
+    }
+
+    & > ul > li:not(:last-child) {
+        margin: 0 0 15px 0;
+    }
+
+    & > ul > li > a {
+        font-size: 25px;
+        color: $white;
+        transition: all 0.3s linear;
+        font-weight: bold;
+
+        &:hover {
+            color: $skred;
+        }
     }
 }
 

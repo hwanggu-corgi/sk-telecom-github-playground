@@ -12298,6 +12298,9 @@ readers do not read off random characters that represent icons */
     white-space: pre;
     border: 0; }
 
+body.mobile-menu-open {
+  overflow: hidden; }
+
 header {
   position: fixed;
   top: 0;
@@ -12398,7 +12401,8 @@ header {
       transform: translate(0, -50%) rotate(-45deg); }
 
 header.mobile-menu-open .td-navbar {
-  background: #262626; }
+  background: #262626;
+  border-bottom: 1px solid #7f7f7f; }
 
 .td-navbar-mobile {
   position: fixed;
@@ -12407,10 +12411,26 @@ header.mobile-menu-open .td-navbar {
   opacity: 0;
   transition: all 0.3s linear;
   height: calc(100vh - 5rem);
-  background: #262626; }
+  background: #262626;
+  padding: 1.875rem 1.625rem; }
   @media (max-width: 991.98px) {
     .td-navbar-mobile {
       height: calc(100vh - 4rem); } }
+  .td-navbar-mobile ul {
+    padding: 0;
+    list-style-type: none; }
+  .td-navbar-mobile a {
+    padding: 0; }
+  .td-navbar-mobile > ul > li:not(:last-child) {
+    margin: 0 0 15px 0; }
+  .td-navbar-mobile > ul > li > a {
+    font-size: 25px;
+    color: #fff;
+    transition: all 0.3s linear;
+    font-weight: bold; }
+    .td-navbar-mobile > ul > li > a:hover {
+      color: #ea002c; }
+
 header.mobile-menu-open .td-navbar-mobile {
   visibility: visible;
   opacity: 1; }
