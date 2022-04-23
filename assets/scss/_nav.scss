@@ -62,7 +62,6 @@ header {
                     left: 16px;
                     width: 80px;
                     height: auto;
-                    padding: 6px;
                 }
             }
         }
@@ -148,8 +147,8 @@ header {
 
 header.mobile-menu-open .td-navbar {
     background: $skdarkgrey;
-    // border-bottom: 1px solid #3c3c41;
-    border-bottom: 1px solid $skgrey;
+    border-bottom: 1px solid #3c3c41;
+    // border-bottom: 1px solid $skgrey;
 }
 
 .td-navbar-mobile {
@@ -164,6 +163,7 @@ header.mobile-menu-open .td-navbar {
 
     @include media-breakpoint-down(md) {
         height: calc(100vh - 4rem);
+        padding: 1.875rem 1rem;
     }
 
     ul {

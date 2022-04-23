@@ -12344,8 +12344,7 @@ header {
         .td-navbar .navbar-brand .navbar-logo svg {
           left: 16px;
           width: 80px;
-          height: auto;
-          padding: 6px; } }
+          height: auto; } }
   .td-navbar .nav-link {
     text-transform: none;
     font-weight: 500; }
@@ -12402,7 +12401,7 @@ header {
 
 header.mobile-menu-open .td-navbar {
   background: #262626;
-  border-bottom: 1px solid #7f7f7f; }
+  border-bottom: 1px solid #3c3c41; }
 
 .td-navbar-mobile {
   position: fixed;
@@ -12415,7 +12414,8 @@ header.mobile-menu-open .td-navbar {
   padding: 1.875rem 1.625rem; }
   @media (max-width: 991.98px) {
     .td-navbar-mobile {
-      height: calc(100vh - 4rem); } }
+      height: calc(100vh - 4rem);
+      padding: 1.875rem 1rem; } }
   .td-navbar-mobile ul {
     padding: 0;
     list-style-type: none; }
