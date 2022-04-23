@@ -1,6 +1,7 @@
 (function ($) {
   'use strict';
 
+
   // Headers mobile navigation menu that shows on click
   $(function () {
     var body = $('body');
