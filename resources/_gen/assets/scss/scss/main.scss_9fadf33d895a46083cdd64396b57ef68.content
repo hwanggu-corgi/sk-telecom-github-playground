@@ -12303,8 +12303,6 @@ header {
   top: 0;
   width: 100%;
   z-index: 32; }
-  header.mobile-menu-open {
-    background-color: #27272c; }
 
 .td-navbar-cover {
   background: #fff; }
@@ -12408,10 +12406,13 @@ header {
       transform: translate(0, -50%) rotate(-45deg); }
 
 .td-navbar-mobile {
+  position: fixed;
+  width: 100%;
   visibility: hidden;
   opacity: 0;
-  height: calc(100vh - 81px);
-  transition: all 0.3s linear; }
+  height: calc(100vh - 4rem);
+  transition: all 0.3s linear;
+  background-color: #27272C; }
 
 header.mobile-menu-open .td-navbar-mobile {
   visibility: visible;

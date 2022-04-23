@@ -6,10 +6,6 @@ header {
     top: 0;
     width: 100%;
     z-index: 32;
-
-    &.mobile-menu-open {
-        background-color: #27272c;
-    }
 }
 
 .td-navbar-cover {
@@ -161,10 +157,17 @@ header {
 }
 
 .td-navbar-mobile {
+    position: fixed;
+    width: 100%;
     visibility: hidden;
     opacity: 0;
-    height: calc(100vh - 81px);
+    height: calc(100vh - 4rem);
     transition: all 0.3s linear;
+    background-color:  #27272C;
+
+    @include media-breakpoint-down(md) {
+
+    }
 }
 
 header.mobile-menu-open .td-navbar-mobile {
