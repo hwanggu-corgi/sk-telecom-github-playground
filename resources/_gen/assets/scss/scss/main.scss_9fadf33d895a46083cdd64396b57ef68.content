@@ -12317,7 +12317,9 @@ readers do not read off random characters that represent icons */
   border-bottom: 1px solid #ff7a00;
   min-height: 4rem;
   margin: 0;
-  z-index: 32; }
+  z-index: 32;
+  display: flex;
+  justify-content: space-between; }
   .td-navbar .brand-name {
     display: none; }
   @media (min-width: 768px) {
@@ -12335,15 +12337,11 @@ readers do not read off random characters that represent icons */
       margin-right: -30px; }
     .td-navbar .navbar-brand .navbar-logo svg {
       display: inline-block;
-      position: absolute;
-      top: 0;
-      left: 26px;
-      z-index: 33;
       padding: 10px;
       height: 64px;
       width: 130px;
-      /* 
-                background: white; 
+      /*
+                background: white;
                 border: 2px solid #4279f4;
                 border-top: none;*/ }
       @media (max-width: 991.98px) {
