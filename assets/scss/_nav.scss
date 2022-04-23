@@ -246,12 +246,14 @@ header.mobile-menu-open .td-navbar {
     }
 
     li.has-children > a {
-        &::after {
-
-        }
+        display: flex;
     }
 
-    li.has-children.open > a {
+    li.has-children > a > span {
+        flex-grow: 1;
+    }
+
+    li.submenu-open > a {
         margin: 0 0 10px 0;
     }
 

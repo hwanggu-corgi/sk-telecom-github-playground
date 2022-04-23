@@ -12463,7 +12463,11 @@ header.mobile-menu-open .td-navbar {
     transition: all 0.3s linear; }
     .td-navbar-mobile > ul > li.has-children ul > li > a:hover {
       color: #ea002c; }
-  .td-navbar-mobile li.has-children.open > a {
+  .td-navbar-mobile li.has-children > a {
+    display: flex; }
+  .td-navbar-mobile li.has-children > a > span {
+    flex-grow: 1; }
+  .td-navbar-mobile li.submenu-open > a {
     margin: 0 0 10px 0; }
   .td-navbar-mobile ul.sub-menu {
     display: none; }

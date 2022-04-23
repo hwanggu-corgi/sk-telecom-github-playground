@@ -37,4 +37,13 @@
     });
   });
 
+  // Headers mobile navigation menu opening submenu on click
+  $(function () {
+    $(".nav-submenu-btn").click(function(e) {
+      e.preventDefault();
+      $(this).closest(".nav-item").toggleClass("submenu-open");
+    })
+  });
+
+
 }(jQuery));
