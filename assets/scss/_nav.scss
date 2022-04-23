@@ -86,7 +86,7 @@ header {
         }
     }
 
-    .nav-item.has-children .nav-link {
+    .nav-item.has-children > .nav-link {
         &::after {
             display: inline-block;
             width: 0;
@@ -103,6 +103,10 @@ header {
 
     .nav-item.has-children:hover .dropdown-menu {
         display: block;
+    }
+
+    .dropdown-menu a {
+        width: 100%;
     }
 
     .td-search-input {

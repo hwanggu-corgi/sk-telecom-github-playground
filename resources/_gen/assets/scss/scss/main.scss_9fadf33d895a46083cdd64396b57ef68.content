@@ -12357,7 +12357,7 @@ header {
       .td-navbar .nav-link {
         padding-right: .25rem;
         padding-left: 0; } }
-  .td-navbar .nav-item.has-children .nav-link::after {
+  .td-navbar .nav-item.has-children > .nav-link::after {
     display: inline-block;
     width: 0;
     height: 0;
@@ -12370,6 +12370,8 @@ header {
     border-left: 0.3em solid transparent; }
   .td-navbar .nav-item.has-children:hover .dropdown-menu {
     display: block; }
+  .td-navbar .dropdown-menu a {
+    width: 100%; }
   .td-navbar .td-search-input {
     border: none; }
     .td-navbar .td-search-input::-webkit-input-placeholder {
