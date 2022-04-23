@@ -219,4 +219,8 @@ header.mobile-menu-open .td-navbar {
 header.mobile-menu-open .td-navbar-mobile {
     visibility: visible;
     opacity: 1;
+
+    .nav-link.active {
+        color: $skred;
+    }
 }

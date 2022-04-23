@@ -12447,6 +12447,8 @@ header.mobile-menu-open .td-navbar {
 header.mobile-menu-open .td-navbar-mobile {
   visibility: visible;
   opacity: 1; }
+  header.mobile-menu-open .td-navbar-mobile .nav-link.active {
+    color: #ea002c; }
 
 .td-sidebar-nav {
   padding-right: 0.5rem;
