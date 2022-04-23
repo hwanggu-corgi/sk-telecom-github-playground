@@ -39,15 +39,6 @@ header {
         min-height: 4rem;
         padding-right: .5rem;
         padding-left: .75rem;
-
-        .td-navbar-main {
-            font-size: .875rem;
-
-            .nav-link {
-                padding-right: .25rem;
-                padding-left: 0;
-            }
-        }
     }
 
     .brand-name {
@@ -79,10 +70,23 @@ header {
         }
     }
 
+    .nav-item {
+        & > * {
+            @include media-breakpoint-down(md) {
+                font-size: .875rem;
+            }
+        }
+    }
+
     .nav-link {
         text-transform: none;
         font-weight: $font-weight-medium;
         transition: all 0.3s linear;
+
+        @include media-breakpoint-down(md) {
+            padding-right: .25rem;
+            padding-left: 0;
+        }
     }
 
     .td-search-input {
@@ -98,12 +102,12 @@ header {
     }
 
     .nav-item-translations {
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-down(lg) {
             min-width: 0;
         }
 
         .dropdown-menu {
-            @include media-breakpoint-down(md) {
+            @include media-breakpoint-down(lg) {
                 right: 0;
                 left: initial;
             }
@@ -114,7 +118,7 @@ header {
         background-color: transparent;
         margin: 0;
         border: none;
-        padding: 0.625rem;
+        padding: 0.5rem;
         cursor: pointer;
 
         span {
@@ -150,7 +154,6 @@ header {
 header.mobile-menu-open .td-navbar {
     background: $skdarkgrey;
     border-bottom: 1px solid #3c3c41;
-    // border-bottom: 1px solid $skgrey;
 
     .nav-link {
         color: $white;

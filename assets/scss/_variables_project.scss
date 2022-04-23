@@ -25,6 +25,7 @@ html.smooth-scroll {
 // dark : #444444
 
 $skdarkgrey : #262626;
+$skdarkgrey2 : #3c3c41;
 $skred: #ea002c;
 $skorange: #ff7a00;
 $skpurple: #1d1160;
@@ -75,13 +76,13 @@ $google_font_family: "Open+Sans:300,300i,400,400i,600,600i,700,700i&display=swap
 
   a {
     border-bottom: 1px dotted paleturquoise;
-    
+
     // color: paleturquoise !important;
     color: #fff !important;
     font-weight: 600;
     padding: 0 2px 1px 2px;
     text-decoration: none;
-    
+
     &:hover {
       // border-bottom: 1px dotted #fff;
       // color: #fff !important;
@@ -96,13 +97,13 @@ $google_font_family: "Open+Sans:300,300i,400,400i,600,600i,700,700i&display=swap
 
   a {
     border-bottom: 1px dotted paleturquoise;
-    
+
     // color: paleturquoise !important;
     color: #fff !important;
     font-weight: 600;
     padding: 0 2px 1px 2px;
     text-decoration: none;
-    
+
     &:hover {
       // border-bottom: 1px dotted #fff;
       // color: #fff !important;
