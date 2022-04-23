@@ -71,10 +71,16 @@ header {
     }
 
     .nav-item {
+        position: relative;
+
         & > * {
             @include media-breakpoint-down(md) {
                 font-size: .875rem;
             }
+        }
+
+        &.has-children:hover .dropdown-menu {
+            display: block;
         }
     }
 

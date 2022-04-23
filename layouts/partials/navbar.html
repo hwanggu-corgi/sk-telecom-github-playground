@@ -8,7 +8,7 @@
 		{{ if .HasChildren }}
 			<li class="nav-item mr-4 d-none d-xl-block has-children">
 				<a class="nav-link{{if $active }} active{{end}}" href="{{ .URL }}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}><span{{if $active }} class="active"{{end}}>{{ .Name }}</span></a>
-				<ul class="sub-menu">
+				<ul class="dropdown-menu">
 					{{ range .Children }}
 						{{ template "menu-item" (dict "entry" . "page" $p) }}
 					{{ end }}
@@ -32,6 +32,11 @@
 		{{ if .HasChildren }}
 			<li class="nav-item">
 				<a class="nav-link{{if $active }} active{{end}}" href="{{ with .Page }}{{ .RelPermalink }}{{ else }}{{ .URL | relLangURL }}{{ end }}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}><span{{if $active }} class="active"{{end}}>{{ .Name }}</span></a>
+				<ul class="sub-menu">
+					{{ range .Children }}
+						{{ template "menu-item-mobile" (dict "entry" . "page" $p) }}
+					{{ end }}
+				</ul>
 			</li>
 		{{ else }}
 			<li class="nav-item">

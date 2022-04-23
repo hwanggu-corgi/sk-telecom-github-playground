@@ -12347,9 +12347,13 @@ header {
           left: 16px;
           width: 80px;
           height: auto; } }
-  @media (max-width: 991.98px) {
-    .td-navbar .nav-item > * {
-      font-size: .875rem; } }
+  .td-navbar .nav-item {
+    position: relative; }
+    @media (max-width: 991.98px) {
+      .td-navbar .nav-item > * {
+        font-size: .875rem; } }
+    .td-navbar .nav-item.has-children:hover .dropdown-menu {
+      display: block; }
   .td-navbar .nav-link {
     text-transform: none;
     font-weight: 500;
