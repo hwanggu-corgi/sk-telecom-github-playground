@@ -12381,10 +12381,23 @@ readers do not read off random characters that represent icons */
           padding-left: 0; }
         .td-navbar .td-navbar-nav-scroll .navbar-nav {
           margin-top: 0 !important;
-          padding-bottom: 2rem;
           overflow-x: auto;
           white-space: nowrap;
           -webkit-overflow-scrolling: touch; } }
+  .td-navbar .navbar-mobile-button {
+    background-color: transparent;
+    margin: 0;
+    border: none;
+    padding: 0.625rem;
+    cursor: pointer; }
+    .td-navbar .navbar-mobile-button span {
+      display: block;
+      height: 0.125rem;
+      width: 1.562rem;
+      background-color: #000; }
+      .td-navbar .navbar-mobile-button span:not(:last-child) {
+        margin: 0 0 0.437rem 0; }
+
 .td-sidebar-nav {
   padding-right: 0.5rem;
   margin-right: -15px;
