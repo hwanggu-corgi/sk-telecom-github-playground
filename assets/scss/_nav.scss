@@ -5,7 +5,7 @@ body.mobile-menu-open {
     overflow: hidden;
 }
 
-body.mobile-menu-open > .td-outer {
+body.mobile-menu-open>.td-outer {
     visibility: hidden;
 }
 
@@ -42,16 +42,19 @@ header {
 
     @include media-breakpoint-down(md) {
         min-height: 64px;
-        padding: 8px 15px;}
+        padding: 8px 15px;
+    }
 
     .brand-name {
-        display: none;}
+        display: none;
+    }
 
     .navbar-brand {
         text-transform: none;
         text-align: middle;
         margin: 0;
-        padding: 0;}
+        padding: 0;
+    }
 
     .navbar-logo svg {
         display: inline-block;
@@ -60,21 +63,27 @@ header {
 
         @include media-breakpoint-down(md) {
             width: 80px;
-            height: auto;}}
+            height: auto;
+        }
+    }
 
     .nav-item {
-        position: relative;}
+        position: relative;
+    }
 
-    .nav-item > * {
+    .nav-item>* {
         @include media-breakpoint-down(md) {
-            font-size: 14px;}}
+            font-size: 14px;
+        }
+    }
 
     .nav-link {
         text-transform: none;
         font-weight: $font-weight-medium;
-        transition: $transition;}
+        transition: $transition;
+    }
 
-    .nav-item.has-children > .nav-link {
+    .nav-item.has-children>.nav-link {
         &::after {
             display: inline-block;
             width: 0;
@@ -85,13 +94,17 @@ header {
             border-top: 0.3em solid;
             border-right: 0.3em solid transparent;
             border-bottom: 0;
-            border-left: 0.3em solid transparent;}}
+            border-left: 0.3em solid transparent;
+        }
+    }
 
-    .nav-item.has-children:hover > .dropdown-menu {
-        display: block;}
+    .nav-item.has-children:hover>.dropdown-menu {
+        display: block;
+    }
 
-    .nav-item.submenu-open > .dropdown-menu {
-        display: block;}
+    .nav-item.submenu-open>.dropdown-menu {
+        display: block;
+    }
 
     .dropdown-menu .nav-link {
         width: 100%;
@@ -99,34 +112,44 @@ header {
 
         &:hover {
             color: $black;
-            background: #f8f9fa linear-gradient(180deg, #f9fafb, #f8f9fa) repeat-x;}}
+            background: #f8f9fa linear-gradient(180deg, #f9fafb, #f8f9fa) repeat-x;
+        }
+    }
 
     .dropdown-menu .dropdown-menu {
         left: initial;
         top: 0;
-        transform: translate(calc(100% - 2px), 0);}
+        transform: translate(calc(100% - 2px), 0);
+    }
+
+    .nav-item-translations {
+        @include media-breakpoint-down(lg) {
+            min-width: 0;
+        }
+    }
+
+    .nav-item-translations .dropdown-menu {
+        @include media-breakpoint-down(lg) {
+            right: 0;
+            left: initial;
+        }
+    }
 
     .td-search-input {
         border: none;
 
         @include placeholder {
-            color: $navbar-dark-color;}}
-
-    .nav-item-translations {
-        @include media-breakpoint-down(lg) {
-            min-width: 0;}}
-
-    .nav-item-translations .dropdown-menu {
-        @include media-breakpoint-down(lg) {
-            right: 0;
-            left: initial;}}
+            color: $navbar-dark-color;
+        }
+    }
 
     .navbar-mobile-button {
         background-color: transparent;
         margin: 0;
         border: none;
         padding: 8px;
-        cursor: pointer;}
+        cursor: pointer;
+    }
 
     .navbar-mobile-button span {
         display: block;
@@ -136,22 +159,30 @@ header {
         transition: $transition;
 
         &:nth-child(2) {
-            transition: none;}
+            transition: none;
+        }
 
         &:not(:last-child) {
-            margin: 0 0 7px 0;}}
+            margin: 0 0 7px 0;
+        }
+    }
 
     .navbar-mobile-button.open span {
         &:first-child {
             margin: 0;
-            transform: translate(0, 50%) rotate(45deg);}
+            transform: translate(0, 50%) rotate(45deg);
+        }
 
         &:nth-child(2) {
             height: 0;
-            margin: 0;}
+            margin: 0;
+        }
 
         &:last-child {
-            transform: translate(0, -50%) rotate(-45deg);}}}
+            transform: translate(0, -50%) rotate(-45deg);
+        }
+    }
+}
 
 header.mobile-menu-open .td-navbar {
     background: $skdarkgrey;
@@ -220,11 +251,11 @@ header.mobile-menu-open .td-navbar {
         padding: 0;
     }
 
-    & > ul > li:not(:last-child) {
+    &>ul>li:not(:last-child) {
         margin: 0 0 15px 0;
     }
 
-    & > ul > li > a {
+    &>ul>li>a {
         font-size: 25px;
         color: $white;
         transition: $transition;
@@ -235,7 +266,7 @@ header.mobile-menu-open .td-navbar {
         }
     }
 
-    & > ul > li.has-children ul > li > a {
+    &>ul>li.has-children ul>li>a {
         font-size: 18px;
         color: $white;
         transition: $transition;
@@ -245,15 +276,15 @@ header.mobile-menu-open .td-navbar {
         }
     }
 
-    li.has-children > a {
+    li.has-children>a {
         display: flex;
     }
 
-    li.has-children > a > span {
+    li.has-children>a>span {
         flex-grow: 1;
     }
 
-    li.has-children > a > button {
+    li.has-children>a>button {
         transition: $transition;
         background-color: transparent;
         border: none;
@@ -261,7 +292,7 @@ header.mobile-menu-open .td-navbar {
         cursor: pointer;
     }
 
-    li.submenu-open > a > button {
+    li.submenu-open>a>button {
         transform: rotate(180deg);
     }
 
@@ -270,16 +301,18 @@ header.mobile-menu-open .td-navbar {
         padding: 0 0 0 15px;
     }
 
-    .navbar-submenu > li:first-child {
-        padding: 15px 0;
-    }
+    .navbar-submenu>li {
+        &:first-child {
+            padding: 15px 0;
+        }
 
-    .navbar-submenu > li:not(:last-child) {
-        padding: 0 0 15px 0;
-    }
+        &:not(:last-child) {
+            padding: 0 0 15px 0;
+        }
 
-    .navbar-submenu > li:last-child {
-        padding-bottom: 0;
+        &:last-child {
+            padding-bottom: 0;
+        }
     }
 
     .navbar-submenu .navbar-submenu {
@@ -287,7 +320,7 @@ header.mobile-menu-open .td-navbar {
         padding: 0 0 0 10px;
     }
 
-    .navbar-submenu .navbar-submenu > li > a {
+    .navbar-submenu .navbar-submenu>li>a {
         font-size: 14px;
         color: $skgrey;
         transition: $transition;

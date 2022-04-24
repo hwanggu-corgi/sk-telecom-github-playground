@@ -7,7 +7,9 @@
 		{{ $active := or ($p.IsMenuCurrent "main" .) ($p.HasMenuCurrent "main" .) }}
 		{{ if .HasChildren }}
 			<li class="nav-item mr-4 d-none d-xl-block has-children">
-				<a class="nav-link{{if $active }} active{{end}}" href="{{ .URL }}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}><span{{if $active }} class="active"{{end}}>{{ .Name }}</span></a>
+				<a class="nav-link{{if $active }} active{{end}}" href="{{ .URL }}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }} aria-haspopup="true" aria-expanded="false">
+					<span{{if $active }} class="active"{{end}}>{{ .Name }}</span>
+				</a>
 				<ul class="dropdown-menu">
 					{{ range .Children }}
 						{{ template "menu-item" (dict "nested" . "page" $p) }}
@@ -16,7 +18,9 @@
 			</li>
 		{{ else }}
 			<li class="nav-item mr-4 d-none d-xl-block">
-				<a class="nav-link{{if $active }} active{{end}}" href="{{ .URL }}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}><span{{if $active }} class="active"{{end}}>{{ .Name }}</span></a>
+				<a class="nav-link{{if $active }} active{{end}}" href="{{ .URL }}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}>
+					<span{{if $active }} class="active"{{end}}>{{ .Name }}</span>
+				</a>
 			</li>
 		{{ end }}
 	{{ end }}
@@ -25,7 +29,9 @@
 		{{ $active := or ($p.IsMenuCurrent "main" .) ($p.HasMenuCurrent "main" .) }}
 		{{ if .HasChildren }}
 			<li class="nav-item has-children">
-				<a class="nav-link{{if $active }} active{{end}}" href="{{ .URL }}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}><span{{if $active }} class="active"{{end}}>{{ .Name }}</span></a>
+				<a class="nav-link{{if $active }} active{{end}}" href="{{ .URL }}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }} aria-haspopup="true" aria-expanded="false">
+					<span{{if $active }} class="active"{{end}}>{{ .Name }}</span>
+				</a>
 				<ul class="dropdown-menu">
 					{{ range .Children }}
 						{{ template "menu-item" (dict "nested" . "page" $p) }}
@@ -34,7 +40,9 @@
 			</li>
 		{{ else }}
 			<li class="nav-item">
-				<a class="nav-link{{if $active }} active{{end}}" href="{{ .URL }}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}><span{{if $active }} class="active"{{end}}>{{ .Name }}</span></a>
+				<a class="nav-link{{if $active }} active{{end}}" href="{{ .URL }}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}>
+					<span{{if $active }} class="active"{{end}}>{{ .Name }}</span>
+				</a>
 			</li>
 		{{ end }}
 	{{ end }}
@@ -50,7 +58,7 @@
 
 		{{ if .HasChildren }}
 			<li class="nav-item has-children">
-				<a class="nav-link{{if $active }} active{{end}}" href="{{ with .Page }}{{ .RelPermalink }}{{ else }}{{ .URL | relLangURL }}{{ end }}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}>
+				<a class="nav-link{{if $active }} active{{end}}" href="{{ with .Page }}{{ .RelPermalink }}{{ else }}{{ .URL | relLangURL }}{{ end }}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }} aria-haspopup="true" aria-expanded="false">
 					<span>{{ .Name }}</span>
 					<button class="nav-submenu-btn"><svg width="29px" height="14px" viewBox="0 0 29 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">    <polyline id="Path" stroke="currentColor" fill="transparent" stroke-width="2" points="1 1 14.5 12.5 28 1"></polyline></svg></button>
 				</a>
@@ -62,7 +70,9 @@
 			</li>
 		{{ else }}
 			<li class="nav-item">
-				<a class="nav-link{{if $active }} active{{end}}" href="{{ with .Page }}{{ .RelPermalink }}{{ else }}{{ .URL | relLangURL }}{{ end }}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}><span{{if $active }} class="active"{{end}}>{{ .Name }}</span></a>
+				<a class="nav-link{{if $active }} active{{end}}" href="{{ with .Page }}{{ .RelPermalink }}{{ else }}{{ .URL | relLangURL }}{{ end }}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}>
+					<span{{if $active }} class="active"{{end}}>{{ .Name }}</span>
+				</a>
 			</li>
 		{{ end }}
 	{{ end }}
@@ -82,7 +92,9 @@
 			</li>
 		{{ else }}
 			<li class="nav-item">
-				<a class="nav-link{{if $active }} active{{end}}" href="{{ with .Page }}{{ .RelPermalink }}{{ else }}{{ .URL | relLangURL }}{{ end }}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}><span{{if $active }} class="active"{{end}}>{{ .Name }}</span></a>
+				<a class="nav-link{{if $active }} active{{end}}" href="{{ with .Page }}{{ .RelPermalink }}{{ else }}{{ .URL | relLangURL }}{{ end }}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}>
+					<span{{if $active }} class="active"{{end}}>{{ .Name }}</span>
+				</a>
 			</li>
 		{{ end }}
 	{{ end }}
@@ -92,7 +104,8 @@
 {{ $cover := .HasShortcode "blocks/cover" }}
 <nav class="js-navbar-scroll navbar navbar-expand navbar-dark {{ if $cover}} td-navbar-cover {{ end }} td-navbar">
 	<a class="navbar-brand" href="{{ .Site.Home.RelPermalink }}">
-		<span class="navbar-logo">{{ with resources.Get "icons/logo.svg" }}{{ ( . | minify).Content | safeHTML }} {{ end }}</span><span class="brand-name text-uppercase font-weight-bold">{{ .Site.Title }}</span>
+		<span class="navbar-logo">{{ with resources.Get "icons/logo.svg" }}{{ ( . | minify).Content | safeHTML }} {{ end }}</span>
+		<span class="brand-name text-uppercase font-weight-bold">{{ .Site.Title }}</span>
 	</a>
 	<div class="td-navbar-main ml-auto mr-3" id="main_navbar">
 		<ul class="navbar-nav">

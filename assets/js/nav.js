@@ -7,8 +7,10 @@
   $(function () {
     function goToLastItemInSubmenu(navItem) {
       let currentLiChildren = $(navItem);
+
       while ($(currentLiChildren).length) {
         $(currentLiChildren).addClass("submenu-open");
+        $(currentLiChildren).find("> a").attr("aria-expanded", "true");
         currentLiChildren = $(currentLiChildren).find("> ul > li.has-children").last();
       }
 
@@ -34,14 +36,17 @@
 
         // if it's an item without submenu
         if ($(prevNavItem).length && !$(prevNavItem).hasClass("has-children")) {
-          $(prevNavItem).find("ul").first().removeClass("submenu-open");
+          $(prevNavItem).removeClass("submenu-open");
+          $(prevNavItem).find("a[aria-expanded]").attr("aria-expanded", "false");
         }
 
       // if it's tabbing forward
       } else if (event.key.toUpperCase() === "TAB") {
+
         // if it's an item with submenu
         if ($(navItem).hasClass("has-children")) {
           $(navItem).addClass("submenu-open");
+          $(navItem).find("> a").attr("aria-expanded", "true");
           return;
         }
       }
