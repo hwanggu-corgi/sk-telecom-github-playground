@@ -12318,7 +12318,7 @@ header {
   text-shadow: none; }
 
 .td-navbar {
-  border-bottom: 1px solid #ff7a00;
+  border-bottom: 0.0625rem solid #ff7a00;
   min-height: 5rem;
   margin: 0;
   display: flex;

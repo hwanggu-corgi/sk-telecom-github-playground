@@ -30,7 +30,7 @@ header {
 
 
 .td-navbar {
-    border-bottom: 1px solid $skorange;
+    border-bottom: 0.0625rem solid $skorange;
     min-height: 5rem;
     margin: 0;
     display: flex;
@@ -191,7 +191,7 @@ header {
 
 header.mobile-menu-open .td-navbar {
     background: $skdarkgrey;
-    border-bottom: 1px solid #3c3c41;
+    border-bottom: 1px solid $skdarkgrey2;
 
     .nav-link {
         color: $white;
