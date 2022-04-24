@@ -22,6 +22,7 @@
         $(mobileMenu).find(".navbar-submenu").slideUp();
         $(mobileMenu).find(".nav-submenu-btn").removeClass("open");
         $(mobileMenu).find(".nav-item").removeClass("submenu-open");
+        $(mobileMenu).find(".td-search-input").val("");
       }
     })
   });
@@ -41,6 +42,7 @@
         $(mobileMenu).find(".navbar-submenu").slideUp();
         $(mobileMenu).find(".nav-submenu-btn").removeClass("open");
         $(mobileMenu).find(".nav-item").removeClass("submenu-open");
+        $(mobileMenu).find(".td-search-input").val("");
       }
     });
   });

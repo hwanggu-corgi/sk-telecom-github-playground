@@ -12438,7 +12438,8 @@ header.mobile-menu-open .td-navbar {
   transition: all 0.3s linear;
   height: calc(100vh - 5rem);
   background: #262626;
-  padding: 1.875rem 1.625rem; }
+  padding: 1.875rem 1.625rem;
+  overflow: auto; }
   @media (max-width: 991.98px) {
     .td-navbar-mobile {
       height: calc(100vh - 4rem);
@@ -12453,6 +12454,7 @@ header.mobile-menu-open .td-navbar {
       color: #000; }
   .td-navbar-mobile ul {
     padding: 0;
+    margin: 0;
     list-style-type: none; }
   .td-navbar-mobile a {
     padding: 0; }
@@ -12483,15 +12485,17 @@ header.mobile-menu-open .td-navbar {
     cursor: pointer; }
   .td-navbar-mobile li.submenu-open > a > button {
     transform: rotate(180deg); }
-  .td-navbar-mobile li.submenu-open > a {
-    margin: 0 0 10px 0; }
   .td-navbar-mobile .navbar-submenu {
     display: none;
     padding: 0 0 0 1rem; }
+  .td-navbar-mobile .navbar-submenu > li:first-child {
+    padding: 0.937rem 0; }
   .td-navbar-mobile .navbar-submenu > li:not(:last-child) {
-    margin: 0 0 0.937rem 0; }
-  .td-navbar-mobile .navbar-submenu > li.has-children > a {
-    margin: 0 0 0.937rem 0; }
+    padding: 0 0 0.937rem 0; }
+  .td-navbar-mobile .navbar-submenu > li:last-child {
+    padding-bottom: 0; }
+  .td-navbar-mobile .navbar-submenu .navbar-submenu {
+    padding: 0 0 0 0.618rem; }
   .td-navbar-mobile .navbar-submenu .navbar-submenu > li > a {
     font-size: 0.875rem;
     color: #7f7f7f;
