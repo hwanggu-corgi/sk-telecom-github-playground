@@ -54,7 +54,7 @@
 					<span>{{ .Name }}</span>
 					<button class="nav-submenu-btn"><svg width="29px" height="14px" viewBox="0 0 29 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">    <polyline id="Path" stroke="currentColor" fill="transparent" stroke-width="2" points="1 1 14.5 12.5 28 1"></polyline></svg></button>
 				</a>
-				<ul class="sub-menu">
+				<ul class="navbar-submenu-mobile">
 					{{ range .Children }}
 						{{ template "menu-item-mobile" (dict "nested" . "page" $p) }}
 					{{ end }}
@@ -73,9 +73,8 @@
 			<li class="nav-item has-children">
 				<a class="nav-link{{if $active }} active{{end}}" href="{{ with .Page }}{{ .RelPermalink }}{{ else }}{{ .URL | relLangURL }}{{ end }}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}>
 					<span{{if $active }} class="active"{{end}}>{{ .Name }}</span>
-					<button><svg width="29px" height="14px" viewBox="0 0 29 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">    <polyline id="Path" stroke="currentColor" fill="transparent" stroke-width="2" points="1 1 14.5 12.5 28 1"></polyline></svg></button>
 				</a>
-				<ul class="sub-menu sub-menu-nested">
+				<ul class="navbar-submenu-mobile navbar-submenu-mobile-nested">
 					{{ range .Children }}
 						{{ template "menu-item-mobile" (dict "nested" . "page" $p) }}
 					{{ end }}

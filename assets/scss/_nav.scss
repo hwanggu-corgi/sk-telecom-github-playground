@@ -269,11 +269,12 @@ header.mobile-menu-open .td-navbar {
         margin: 0 0 10px 0;
     }
 
-    ul.sub-menu {
+    .navbar-submenu-mobile {
         display: none;
+        padding: 0 0 0 1rem;
     }
 
-    ul.sub-menu > li:not(:last-child) {
+    .navbar-submenu-mobile > li:not(:last-child) {
         margin: 0 0 10px 0;
     }
 }

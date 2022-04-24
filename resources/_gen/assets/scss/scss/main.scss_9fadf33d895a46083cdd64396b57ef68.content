@@ -12477,9 +12477,10 @@ header.mobile-menu-open .td-navbar {
     transform: rotate(180deg); }
   .td-navbar-mobile li.submenu-open > a {
     margin: 0 0 10px 0; }
-  .td-navbar-mobile ul.sub-menu {
-    display: none; }
-  .td-navbar-mobile ul.sub-menu > li:not(:last-child) {
+  .td-navbar-mobile .navbar-submenu-mobile {
+    display: none;
+    padding: 0 0 0 1rem; }
+  .td-navbar-mobile .navbar-submenu-mobile > li:not(:last-child) {
     margin: 0 0 10px 0; }
 
 header.mobile-menu-open .td-navbar-mobile {
