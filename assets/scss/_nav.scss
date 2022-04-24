@@ -5,6 +5,10 @@ body.mobile-menu-open {
     overflow: hidden;
 }
 
+body.mobile-menu-open > .td-outer {
+    visibility: hidden;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -107,7 +111,6 @@ header {
         display: block;
     }
 
-
     .dropdown-menu .nav-link {
         width: 100%;
         padding: 0.25rem 1.5rem;
@@ -116,6 +119,12 @@ header {
             color: $black;
             background: #f8f9fa linear-gradient(180deg, #f9fafb, #f8f9fa) repeat-x;
         }
+    }
+
+    .dropdown-menu .dropdown-menu {
+        left: initial;
+        top: 0;
+        transform: translate(calc(100% - 2px), 0);
     }
 
     .td-search-input {

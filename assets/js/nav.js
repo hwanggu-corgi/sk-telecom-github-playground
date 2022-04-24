@@ -5,6 +5,16 @@
 
   // Accessibility for desktop main menu items
   $(function () {
+    function goToLastItemInSubmenu(navItem) {
+      let currentLiChildren = $(navItem);
+      while ($(currentLiChildren).length) {
+        $(currentLiChildren).addClass("submenu-open");
+        currentLiChildren = $(currentLiChildren).find("> ul > li.has-children").last();
+      }
+
+      $(navItem).find(".nav-link").last().focus();
+    }
+
     const mainMenuLinks = $('.td-navbar .navbar-nav > li > a');
 
     // on tab, if it hovers over nav-link in main menu
@@ -18,30 +28,22 @@
         // if it's an item with submenu
         if ($(prevNavItem).length && $(prevNavItem).hasClass("has-children")) {
           event.preventDefault();
-
-          let currentLiChildren = $(prevNavItem);
-          while ($(currentLiChildren).length) {
-            $(currentLiChildren).addClass("submenu-open");
-            currentLiChildren = $(currentLiChildren).find("> ul > li.has-children").last();
-          }
-
-          $(prevNavItem).find(".nav-link").last().focus();
+          goToLastItemInSubmenu(prevNavItem);
           return;
         }
 
         // if it's an item without submenu
-        $(prevNavItem).find("ul").first().removeClass("submenu-open");
+        if ($(prevNavItem).length && !$(prevNavItem).hasClass("has-children")) {
+          $(prevNavItem).find("ul").first().removeClass("submenu-open");
+        }
 
       // if it's tabbing forward
       } else if (event.key.toUpperCase() === "TAB") {
-
         // if it's an item with submenu
         if ($(navItem).hasClass("has-children")) {
           $(navItem).addClass("submenu-open");
           return;
         }
-
-        // if it's an item without submenu
       }
     });
   });
@@ -50,16 +52,15 @@
   $(function () {
     function closeSubmenu(currentLi) {
       // if all submenus closed
-      console.log("here 1");
       if (!$(currentLi).parent().hasClass("dropdown-menu")) {
         return;
        }
-      console.log("here 2");
+
       // if current li is not the last in submenu
       if (!$(currentLi).is(":last-child")) {
        return;
       }
-      console.log("here 3");
+
       const nextLi = $(currentLi).parent().closest("li.has-children");
       nextLi.removeClass("submenu-open");
       closeSubmenu(nextLi);

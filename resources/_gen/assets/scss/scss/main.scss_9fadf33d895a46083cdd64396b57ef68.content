@@ -12301,6 +12301,9 @@ readers do not read off random characters that represent icons */
 body.mobile-menu-open {
   overflow: hidden; }
 
+body.mobile-menu-open > .td-outer {
+  visibility: hidden; }
+
 header {
   position: fixed;
   top: 0;
@@ -12378,6 +12381,10 @@ header {
     .td-navbar .dropdown-menu .nav-link:hover {
       color: #000;
       background: #f8f9fa linear-gradient(180deg, #f9fafb, #f8f9fa) repeat-x; }
+  .td-navbar .dropdown-menu .dropdown-menu {
+    left: initial;
+    top: 0;
+    transform: translate(calc(100% - 2px), 0); }
   .td-navbar .td-search-input {
     border: none; }
     .td-navbar .td-search-input::-webkit-input-placeholder {
