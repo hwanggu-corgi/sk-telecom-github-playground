@@ -13,12 +13,14 @@
       if (!event.target.classList.contains("nav-link")) return;
 
       const $navItem = $(this).closest(".nav-item");
-      const $prevNavItem = $($navItem).prev();
+
       // if it's backward motion
       if (event.shiftKey && event.key.toUpperCase() === "TAB") {
+        const $prevNavItem = $($navItem).prev();
         if ($($prevNavItem).length && $($prevNavItem).hasClass("has-children")) {
-          $($prevNavItem).find("li.has-children:last-child > ul").first().addClass("submenu-open");
-          $($prevNavItem).find("li.has-children:last-child .")
+          $($prevNavItem).addClass("submenu-open");
+          $($prevNavItem).find("li.has-children").last().addClass("submenu-open");
+          $($prevNavItem).find(".nav-link").last().focus();
           return;
         }
 
@@ -28,12 +30,8 @@
         if (!$($navItem).hasClass("has-children")) {
           return;
         }
-
-        event.preventDefault();
-        console.log($($navItem).find("ul .nav-link").first());
-        $($navItem).find("ul").first().addClass("submenu-open");
-        $($navItem).find("ul .nav-link").first().focus();
-        console.log("focus triggered");
+        $($navItem).addClass("submenu-open");
+        $($navItem).find(".nav-link").first().focus();
       }
     });
 

@@ -103,7 +103,7 @@ header {
         display: block;
     }
 
-    .dropdown-menu.submenu-open {
+    .nav-item.submenu-open > .dropdown-menu {
         display: block;
     }
 
