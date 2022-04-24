@@ -1,6 +1,6 @@
 (function ($) {
   'use strict';
-  let breakpoint = 1200;
+  const breakpoint = 1200;
 
   // Accessibility for desktop main menu items
   $(function () {
