@@ -13,10 +13,12 @@
       if (!event.target.classList.contains("nav-link")) return;
 
       const $navItem = $(this).closest(".nav-item");
+      const $prevNavItem = $($navItem).prev();
       // if it's backward motion
       if (event.shiftKey && event.key.toUpperCase() === "TAB") {
-        console.log($(event.target).next().focus());
-        if (!$($navItem).hasClass("has-children")) {
+        if ($($prevNavItem).length && $($prevNavItem).hasClass("has-children")) {
+          $($prevNavItem).find("li.has-children:last-child > ul").first().addClass("submenu-open");
+          $($prevNavItem).find("li.has-children:last-child .")
           return;
         }
 
@@ -37,12 +39,15 @@
 
     $(subMenuLinks).bind('keydown', function (event) {
       if (!event.target.classList.contains("nav-link")) return;
-      // if it's forward motion
-      // if it's backward motion
+
+      const $navItem = $(this).closest(".nav-item");
       if (event.shiftKey && event.key.toUpperCase() === "TAB") {
         // if it has submenu, then close the submenu
       } else if (event.key.toUpperCase() === "TAB") {
         // if it has submenu, then open the submenu
+        if ($($navItem).is(':last-child') && !$($navItem).hasClass("has-children")) {
+          $($navItem).closest("ul").removeClass("submenu-open");
+        }
       }
     });
   });
