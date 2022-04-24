@@ -50,15 +50,16 @@
   $(function () {
     function closeSubmenu(currentLi) {
       // if all submenus closed
+      console.log("here 1");
       if (!$(currentLi).parent().hasClass("dropdown-menu")) {
         return;
        }
-
+      console.log("here 2");
       // if current li is not the last in submenu
       if (!$(currentLi).is(":last-child")) {
        return;
       }
-
+      console.log("here 3");
       const nextLi = $(currentLi).parent().closest("li.has-children");
       nextLi.removeClass("submenu-open");
       closeSubmenu(nextLi);
@@ -94,22 +95,19 @@
 
       // if it's tabbing forward
       } else if (event.key.toUpperCase() === "TAB") {
-        // if next item has submenu
-        if ($(nextNavItem).hasClass("has-children")) {
-          $(nextNavItem).addClass("submenu-open");
+        // if current item has submenu
+        console.log("I am in tab");
+        if ($(navItem).hasClass("has-children")) {
+          console.log("I am here has children");
+          $(navItem).addClass("submenu-open");
           return;
         }
 
         // if next item is none
+        console.log($(nextNavItem).length);
         if ($(nextNavItem).length === 0) {
           console.log("I am in here 2");
           closeSubmenu(navItem);
-          return;
-        }
-
-        // if next item doesn't have submenu
-        if (!$(nextNavItem).hasClass("has-children")) {
-          $(navItem).parent("ul").find("li.has-children").removeClass("submenu-open");
           return;
         }
       }
