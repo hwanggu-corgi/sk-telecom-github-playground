@@ -103,6 +103,10 @@ header {
         display: block;
     }
 
+    .dropdown-menu.submenu-open {
+        display: block;
+    }
+
     .dropdown-menu .nav-link {
         width: 100%;
         padding: 0.25rem 1.5rem;

@@ -12370,6 +12370,8 @@ header {
     border-left: 0.3em solid transparent; }
   .td-navbar .nav-item.has-children:hover .dropdown-menu {
     display: block; }
+  .td-navbar .dropdown-menu.submenu-open {
+    display: block; }
   .td-navbar .dropdown-menu .nav-link {
     width: 100%;
     padding: 0.25rem 1.5rem; }
