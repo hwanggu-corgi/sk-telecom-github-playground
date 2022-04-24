@@ -23,5 +23,3 @@ If you have any inquiries/requests for open source at SK Telecom, please [create
 
 
 
-
-
