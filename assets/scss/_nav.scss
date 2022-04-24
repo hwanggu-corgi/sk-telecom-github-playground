@@ -34,11 +34,11 @@ header {
     align-items: center;
     background: $white;
     transition: all 0.3s linear;
+    padding: 0.5rem 1.875rem;
 
     @include media-breakpoint-down(md) {
         min-height: 4rem;
-        padding-right: .5rem;
-        padding-left: .75rem;
+        padding: 0.5rem 1rem;
     }
 
     .brand-name {
@@ -49,29 +49,27 @@ header {
         text-align: middle;
         margin: 0;
         padding: 0;
+    }
 
-        .navbar-logo {
-            svg {
-                display: inline-block;
-                height: 2.75rem;
-                width: 130px;
+    .navbar-logo svg {
+        display: inline-block;
+        height: 2.75rem;
+        width: 130px;
 
-                @include media-breakpoint-down(md) {
-                    left: 16px;
-                    width: 80px;
-                    height: auto;
-                }
-            }
+        @include media-breakpoint-down(md) {
+            left: 16px;
+            width: 80px;
+            height: auto;
         }
     }
 
     .nav-item {
         position: relative;
+    }
 
-        & > * {
-            @include media-breakpoint-down(md) {
-                font-size: .875rem;
-            }
+    .nav-item > * {
+        @include media-breakpoint-down(md) {
+            font-size: .875rem;
         }
     }
 
@@ -105,8 +103,14 @@ header {
         display: block;
     }
 
-    .dropdown-menu a {
+    .dropdown-menu .nav-link {
         width: 100%;
+        padding: 0.25rem 1.5rem;
+
+        &:hover {
+            color: #000;
+            background: #f8f9fa linear-gradient(180deg, #f9fafb, #f8f9fa) repeat-x;
+        }
     }
 
     .td-search-input {
@@ -136,37 +140,37 @@ header {
         border: none;
         padding: 0.5rem;
         cursor: pointer;
+    }
 
-        span {
-            display: block;
-            height: 0.125rem;
-            width: 1.562rem;
-            background-color: $skred;
-            transition: all 0.3s linear;
+    .navbar-mobile-button span {
+        display: block;
+        height: 0.125rem;
+        width: 1.562rem;
+        background-color: $skred;
+        transition: all 0.3s linear;
 
-            &:nth-child(2) {
-                transition: none;
-            }
-
-            &:not(:last-child) {
-                margin: 0 0 0.437rem 0;
-            }
+        &:nth-child(2) {
+            transition: none;
         }
 
-        &.open span {
-            &:first-child {
-                margin: 0;
-                transform: translate(0, 50%) rotate(45deg);
-            }
+        &:not(:last-child) {
+            margin: 0 0 0.437rem 0;
+        }
+    }
 
-            &:nth-child(2) {
-                height: 0;
-                margin: 0;
-            }
+    .navbar-mobile-button.open span {
+        &:first-child {
+            margin: 0;
+            transform: translate(0, 50%) rotate(45deg);
+        }
 
-            &:last-child {
-                transform: translate(0, -50%) rotate(-45deg);
-            }
+        &:nth-child(2) {
+            height: 0;
+            margin: 0;
+        }
+
+        &:last-child {
+            transform: translate(0, -50%) rotate(-45deg);
         }
     }
 }
@@ -313,7 +317,6 @@ header.mobile-menu-open .td-navbar {
             color: $skred;
         }
     }
-
 }
 
 header.mobile-menu-open .td-navbar-mobile {
