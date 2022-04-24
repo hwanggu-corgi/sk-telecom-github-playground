@@ -3,14 +3,12 @@
   var breakpoint = 1200;
 
 
-  // Headers navigation accessibility for desktop
+  // Accessibility for desktop main menu items
   $(function () {
     const mainMenuLinks = $('.td-navbar .navbar-nav > li > a');
-    const subMenuLinks = $('.td-navbar .dropdown-menu > li > a');
+
     // on tab, if it hovers over nav-link in main menu
     $(mainMenuLinks).bind('keydown', function (event) {
-      if (!event.target.classList.contains("nav-link")) return;
-
       const navItem = $(this).closest(".nav-item");
       const prevNavItem = $(navItem).prev();
 
@@ -31,6 +29,7 @@
           return;
         }
 
+        // if it's an item without submenu
         $(prevNavItem).find("ul").first().removeClass("submenu-open");
 
       // if it's tabbing forward
@@ -41,51 +40,66 @@
           $(navItem).addClass("submenu-open");
           return;
         }
+
+        // if it's an item without submenu
       }
     });
+  });
+
+  // Accessibility for desktop submenu items
+  $(function () {
+    const subMenuLinks = $('.td-navbar .dropdown-menu > li > a');
 
     $(subMenuLinks).bind('keydown', function (event) {
-
-      if (!event.target.classList.contains("nav-link")) return;
-
       const navItem = $(this).closest(".nav-item");
       const prevNavItem = $(navItem).prev();
+      const nextNavItem = $(navItem).next();
 
       // if it's tabbing backward
       if (event.shiftKey && event.key.toUpperCase() === "TAB") {
 
-        // if it's first item in submenu
+        // if it's a first item in submenu
         if (!$(prevNavItem).length) {
-          console.log(event.target);
-          console.log($(navItem).closest(".nav-item").text());
-          $(navItem).parent().closest(".nav-item").removeClass("submenu-open")
+          $(navItem).parent().closest(".nav-item").removeClass("submenu-open");
+          return;
+        }
+
+        // if it's an item wiith submenu
+        if ($(prevNavItem).hasClass("has-children")) {
+          $(prevNavItem).addClass("submenu-open");
+          return;
+        }
+
+        // if it's an item without submenu
+        if (!$(prevNavItem).hasClass("has-children")) {
+          $(navItem).parent("ul").find("li.has-children").removeClass("submenu-open");
           return;
         }
 
       // if it's tabbing forward
       } else if (event.key.toUpperCase() === "TAB") {
 
-        // if it's an item with submenu
-        if ($(navItem).hasClass("has-children")) {
-          $(navItem).addClass("submenu-open");
+        // if next item is none (in entirety of submenu)
+        if (!$(nextNavItem).length) {
+
+        }
+
+        // if next item has submenu
+        if ($(nextNavItem).hasClass("has-children")) {
+          $(nextNavItem).addClass("submenu-open");
           return;
         }
 
-         // if it's a last of the last in submenu
-         if ($(navItem).is(':last-child') && !$(navItem).hasClass("has-children")) {
-          $(navItem).closest("ul").removeClass("submenu-open");
-        }
-
-        // if it's a last item in submenu
-        if ($(navItem).is(':last-child') && !$(navItem).hasClass("has-children")) {
-          $(navItem).closest("ul").removeClass("submenu-open");
+        // if next item doesn't have submenu
+        if (!$(nextNavItem).hasClass("has-children")) {
+          $(navItem).parent("ul").find("li.has-children").removeClass("submenu-open");
+          return;
         }
       }
     });
-  });
+  })
 
-
-  // Headers mobile navigation menu that shows on click
+  // Show or hide mobile menu
   $(function () {
     const body = $('body');
     const header = $('header');
@@ -109,7 +123,7 @@
     })
   });
 
-  // Headers mobile navigation menu go back to normal after breakpoint
+  // Remove mobile menu after breakpoint in window.width
   $(function () {
     const body = $('body');
     const header = $('header');
@@ -129,7 +143,7 @@
     });
   });
 
-  // Headers mobile navigation menu opening submenu on click
+  // Open mobile submenu on click
   $(function () {
     $(".nav-submenu-btn").click(function(e) {
       e.preventDefault();
