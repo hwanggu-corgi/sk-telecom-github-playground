@@ -3,6 +3,15 @@
   var breakpoint = 1200;
 
 
+  // Headers navigation accessibility
+  $(function () {
+    // initialize (set tabIndex = -1)
+    // on tab, if it hovers over nav-link, and if it's backward motion
+
+    //
+  });
+
+
   // Headers mobile navigation menu that shows on click
   $(function () {
     const body = $('body');

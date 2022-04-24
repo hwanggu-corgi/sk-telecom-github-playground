@@ -47,6 +47,7 @@ $light: #dee2e6;
 // $navbar-dark-active-color: $navbar-dark-color;
 
 $white: #fff; // background
+$black: #000;
 $navbar-dark-color: #000; // nav font default color
 $navbar-dark-hover-color: $skred; // nav font hover color
 $navbar-dark-active-color: $skred;
@@ -60,6 +61,10 @@ $link-hover-decoration: none !default;
 // Fonts
 
 $google_font_family: "Open+Sans:300,300i,400,400i,600,600i,700,700i&display=swap" !default;
+
+// Transition
+
+$transition: all 0.3s linear;
 
 // Front page styling
 
