@@ -104,7 +104,6 @@
         }
 
         // if next item is none
-        console.log($(nextNavItem).length);
         if ($(nextNavItem).length === 0) {
           console.log("I am in here 2");
           closeSubmenu(navItem);
