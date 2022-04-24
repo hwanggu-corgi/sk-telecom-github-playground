@@ -24,7 +24,7 @@
 	{{ with .nested }}
 		{{ $active := or ($p.IsMenuCurrent "main" .) ($p.HasMenuCurrent "main" .) }}
 		{{ if .HasChildren }}
-			<li class="nav-item">
+			<li class="nav-item has-children">
 				<a class="nav-link{{if $active }} active{{end}}" href="{{ .URL }}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}><span{{if $active }} class="active"{{end}}>{{ .Name }}</span></a>
 				<ul class="dropdown-menu">
 					{{ range .Children }}
@@ -74,7 +74,7 @@
 				<a class="nav-link{{if $active }} active{{end}}" href="{{ with .Page }}{{ .RelPermalink }}{{ else }}{{ .URL | relLangURL }}{{ end }}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}>
 					<span{{if $active }} class="active"{{end}}>{{ .Name }}</span>
 				</a>
-				<ul class="navbar-submenu navbar-submenu-nested">
+				<ul class="navbar-submenu">
 					{{ range .Children }}
 						{{ template "menu-item-mobile" (dict "nested" . "page" $p) }}
 					{{ end }}

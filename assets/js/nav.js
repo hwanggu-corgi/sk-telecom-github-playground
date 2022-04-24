@@ -71,7 +71,7 @@
       const navItem = $(this).closest(".nav-item");
       const prevNavItem = $(navItem).prev();
       const nextNavItem = $(navItem).next();
-      console.log("I am here")
+
       // if it's tabbing backward
       if (event.shiftKey && event.key.toUpperCase() === "TAB") {
 
@@ -96,9 +96,7 @@
       // if it's tabbing forward
       } else if (event.key.toUpperCase() === "TAB") {
         // if current item has submenu
-        console.log("I am in tab");
         if ($(navItem).hasClass("has-children")) {
-          console.log("I am here has children");
           $(navItem).addClass("submenu-open");
           return;
         }
@@ -129,7 +127,7 @@
       } else {
         body.removeClass('mobile-menu-open');
         header.removeClass('mobile-menu-open');
-        $(mobileMenu).find(".navbar-submenu").slideUp();
+        $(mobileMenu).find("> ul > li > .navbar-submenu").slideUp();
         $(mobileMenu).find(".nav-submenu-btn").removeClass("open");
         $(mobileMenu).find(".nav-item").removeClass("submenu-open");
         $(mobileMenu).find(".td-search-input").val("");
@@ -149,7 +147,7 @@
         body.removeClass('mobile-menu-open');
         header.removeClass('mobile-menu-open');
         mobileMenuBtn.removeClass('open');
-        $(mobileMenu).find(".navbar-submenu").slideUp();
+        $(mobileMenu).find("> ul > li > .navbar-submenu").slideUp();
         $(mobileMenu).find(".nav-submenu-btn").removeClass("open");
         $(mobileMenu).find(".nav-item").removeClass("submenu-open");
         $(mobileMenu).find(".td-search-input").val("");

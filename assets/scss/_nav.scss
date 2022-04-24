@@ -99,7 +99,7 @@ header {
         }
     }
 
-    .nav-item.has-children:hover .dropdown-menu {
+    .nav-item.has-children:hover > .dropdown-menu {
         display: block;
     }
 
@@ -310,6 +310,7 @@ header.mobile-menu-open .td-navbar {
     }
 
     .navbar-submenu .navbar-submenu {
+        display: block;
         padding: 0 0 0 0.618rem;
     }
 
