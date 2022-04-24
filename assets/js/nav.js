@@ -19,7 +19,7 @@
       } else {
         body.removeClass('mobile-menu-open');
         header.removeClass('mobile-menu-open');
-        $(mobileMenu).find(".navbar-submenu-mobile").slideUp();
+        $(mobileMenu).find(".navbar-submenu").slideUp();
         $(mobileMenu).find(".nav-submenu-btn").removeClass("open");
         $(mobileMenu).find(".nav-item").removeClass("submenu-open");
       }
@@ -38,7 +38,7 @@
         body.removeClass('mobile-menu-open');
         header.removeClass('mobile-menu-open');
         mobileMenuBtn.removeClass('open');
-        $(mobileMenu).find(".navbar-submenu-mobile").slideUp();
+        $(mobileMenu).find(".navbar-submenu").slideUp();
         $(mobileMenu).find(".nav-submenu-btn").removeClass("open");
         $(mobileMenu).find(".nav-item").removeClass("submenu-open");
       }

@@ -211,6 +211,22 @@ header.mobile-menu-open .td-navbar {
         padding: 1.875rem 1rem;
     }
 
+    .navbar-search {
+        margin: 0 0 1.875rem 0;
+    }
+
+    .navbar-search input {
+        color: $white;
+
+        &::placeholder {
+            color: $white;
+        }
+
+        &:focus {
+            color: #000;
+        }
+    }
+
     ul {
         padding: 0;
         list-style-type: none;
@@ -269,14 +285,29 @@ header.mobile-menu-open .td-navbar {
         margin: 0 0 10px 0;
     }
 
-    .navbar-submenu-mobile {
+    .navbar-submenu {
         display: none;
         padding: 0 0 0 1rem;
     }
 
-    .navbar-submenu-mobile > li:not(:last-child) {
-        margin: 0 0 10px 0;
+    .navbar-submenu > li:not(:last-child) {
+        margin: 0 0 0.937rem 0;
     }
+
+    .navbar-submenu > li.has-children > a {
+        margin: 0 0 0.937rem 0;
+    }
+
+    .navbar-submenu .navbar-submenu > li > a {
+        font-size: 0.875rem;
+        color: $skgrey;
+        transition: all 0.3s linear;
+
+        &:hover {
+            color: $skred;
+        }
+    }
+
 }
 
 header.mobile-menu-open .td-navbar-mobile {
