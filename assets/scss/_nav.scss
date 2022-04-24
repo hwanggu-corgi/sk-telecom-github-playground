@@ -41,9 +41,8 @@ header {
     padding: 8px 30px;
 
     @include media-breakpoint-down(md) {
-        min-height: 4rem;
-        padding: 8px 15px;
-    }
+        min-height: 64px;
+        padding: 8px 15px;}
 
     .brand-name {
         display: none;}
@@ -52,8 +51,7 @@ header {
         text-transform: none;
         text-align: middle;
         margin: 0;
-        padding: 0;
-    }
+        padding: 0;}
 
     .navbar-logo svg {
         display: inline-block;
@@ -62,25 +60,19 @@ header {
 
         @include media-breakpoint-down(md) {
             width: 80px;
-            height: auto;
-        }
-    }
+            height: auto;}}
 
     .nav-item {
-        position: relative;
-    }
+        position: relative;}
 
     .nav-item > * {
         @include media-breakpoint-down(md) {
-            font-size: 14px;
-        }
-    }
+            font-size: 14px;}}
 
     .nav-link {
         text-transform: none;
         font-weight: $font-weight-medium;
-        transition: $transition;
-    }
+        transition: $transition;}
 
     .nav-item.has-children > .nav-link {
         &::after {
@@ -93,99 +85,77 @@ header {
             border-top: 0.3em solid;
             border-right: 0.3em solid transparent;
             border-bottom: 0;
-            border-left: 0.3em solid transparent;
-        }
-    }
+            border-left: 0.3em solid transparent;}}
 
     .nav-item.has-children:hover > .dropdown-menu {
-        display: block;
-    }
+        display: block;}
 
     .nav-item.submenu-open > .dropdown-menu {
-        display: block;
-    }
+        display: block;}
 
     .dropdown-menu .nav-link {
         width: 100%;
-        padding: 0.25rem 1.5rem;
+        padding: 4px 24px;
 
         &:hover {
             color: $black;
-            background: #f8f9fa linear-gradient(180deg, #f9fafb, #f8f9fa) repeat-x;
-        }
-    }
+            background: #f8f9fa linear-gradient(180deg, #f9fafb, #f8f9fa) repeat-x;}}
 
     .dropdown-menu .dropdown-menu {
         left: initial;
         top: 0;
-        transform: translate(calc(100% - 2px), 0);
-    }
+        transform: translate(calc(100% - 2px), 0);}
 
     .td-search-input {
         border: none;
 
         @include placeholder {
-            color: $navbar-dark-color;
-        }
-    }
+            color: $navbar-dark-color;}}
 
     .nav-item-translations {
         @include media-breakpoint-down(lg) {
-            min-width: 0;
-        }
-    }
+            min-width: 0;}}
 
     .nav-item-translations .dropdown-menu {
         @include media-breakpoint-down(lg) {
             right: 0;
-            left: initial;
-        }
-    }
+            left: initial;}}
 
     .navbar-mobile-button {
         background-color: transparent;
         margin: 0;
         border: none;
-        padding: 0.5rem;
-        cursor: pointer;
-    }
+        padding: 8px;
+        cursor: pointer;}
 
     .navbar-mobile-button span {
         display: block;
-        height: 0.125rem;
-        width: 1.562rem;
+        height: 2px;
+        width: 25px;
         background-color: $skred;
         transition: $transition;
 
         &:nth-child(2) {
-            transition: none;
-        }
+            transition: none;}
 
         &:not(:last-child) {
-            margin: 0 0 0.437rem 0;
-        }
-    }
+            margin: 0 0 7px 0;}}
 
     .navbar-mobile-button.open span {
         &:first-child {
             margin: 0;
-            transform: translate(0, 50%) rotate(45deg);
-        }
+            transform: translate(0, 50%) rotate(45deg);}
 
         &:nth-child(2) {
             height: 0;
-            margin: 0;
-        }
+            margin: 0;}
 
         &:last-child {
-            transform: translate(0, -50%) rotate(-45deg);
-        }
-    }
-}
+            transform: translate(0, -50%) rotate(-45deg);}}}
 
 header.mobile-menu-open .td-navbar {
     background: $skdarkgrey;
-    border-bottom: 0.0625rem solid $skdarkgrey2;
+    border-bottom: 1px solid $skdarkgrey2;
 
     .nav-link {
         color: $white;
@@ -199,7 +169,7 @@ header.mobile-menu-open .td-navbar {
         background-color: transparent;
         margin: 0;
         border: none;
-        padding: 0.625rem;
+        padding: 10px;
         cursor: pointer;
 
         span {
@@ -214,18 +184,18 @@ header.mobile-menu-open .td-navbar {
     visibility: hidden;
     opacity: 0;
     transition: $transition;
-    height: calc(100vh - 5rem);
+    height: calc(100vh - 80px);
     background: $skdarkgrey;
-    padding: 1.875rem 1.625rem;
+    padding: 30px 25px;
     overflow: auto;
 
     @include media-breakpoint-down(md) {
-        height: calc(100vh - 4rem);
-        padding: 1.875rem 1rem;
+        height: calc(100vh - 64px);
+        padding: 30px 15px;
     }
 
     .navbar-search {
-        margin: 0 0 1.875rem 0;
+        margin: 0 0 30px 0;
     }
 
     .navbar-search input {
@@ -266,7 +236,7 @@ header.mobile-menu-open .td-navbar {
     }
 
     & > ul > li.has-children ul > li > a {
-        font-size: 1.125rem;
+        font-size: 18px;
         color: $white;
         transition: $transition;
 
@@ -297,15 +267,15 @@ header.mobile-menu-open .td-navbar {
 
     .navbar-submenu {
         display: none;
-        padding: 0 0 0 1rem;
+        padding: 0 0 0 15px;
     }
 
     .navbar-submenu > li:first-child {
-        padding: 0.937rem 0;
+        padding: 15px 0;
     }
 
     .navbar-submenu > li:not(:last-child) {
-        padding: 0 0 0.937rem 0;
+        padding: 0 0 15px 0;
     }
 
     .navbar-submenu > li:last-child {
@@ -314,11 +284,11 @@ header.mobile-menu-open .td-navbar {
 
     .navbar-submenu .navbar-submenu {
         display: block;
-        padding: 0 0 0 0.618rem;
+        padding: 0 0 0 10px;
     }
 
     .navbar-submenu .navbar-submenu > li > a {
-        font-size: 0.875rem;
+        font-size: 14px;
         color: $skgrey;
         transition: $transition;
 
