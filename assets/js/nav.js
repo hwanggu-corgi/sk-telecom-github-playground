@@ -9,22 +9,34 @@
     const subMenuLinks = $('.td-navbar .dropdown-menu > li > a');
     // on tab, if it hovers over nav-link in main menu
     $(mainMenuLinks).bind('keydown', function (event) {
-      // if it's forward motion
-      if (event.shiftKey && event.key.toUpperCase() === "TAB") {
-
-      } else if (event.key.toUpperCase() === "TAB") {
-
-      }
+      if (!event.target.classList.contains("nav-link")) return;
       // if it's backward motion
+      if (event.shiftKey && event.key.toUpperCase() === "TAB") {
+        console.log($(event.target).next().focus());
+      } else if (event.key.toUpperCase() === "TAB") {
+        event.preventDefault();
+        const $navItem = $(event.target).closest(".nav-item");
+        // if it has submenu, then open the submenu
+        if (!$($navItem).hasClass("has-children")) {
+          $(e.target).next().focus();
+          return;
+        }
+        console.log("I am here");
+        console.log($(this).find(".nav-link"));
+        $(this).find(".nav-link").first().focus();
+      }
     });
 
     $(subMenuLinks).bind('keydown', function (event) {
+      if (!event.target.classList.contains("nav-link")) return;
       // if it's forward motion
       // if it's backward motion
       if (event.shiftKey && event.key.toUpperCase() === "TAB") {
-
+        event.preventDefault();
+        // if it has submenu, then close the submenu
       } else if (event.key.toUpperCase() === "TAB") {
-
+        event.preventDefault();
+        // if it has submenu, then open the submenu
       }
     });
   });
@@ -88,6 +100,4 @@
       }
     })
   });
-
-
 }(jQuery));
