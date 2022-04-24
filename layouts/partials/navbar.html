@@ -120,6 +120,7 @@
 	</button>
 </nav>
 <nav class="td-navbar-mobile">
+	<div class="navbar-search">{{ partial "search-input.html" . }}</div>
 	<ul>
 		{{ $p := . }}
 		{{ range .Site.Menus.main }}
