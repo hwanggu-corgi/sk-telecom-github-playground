@@ -58,9 +58,11 @@
 
 		{{ if .HasChildren }}
 			<li class="nav-item has-children">
-				<a class="nav-link{{if $active }} active{{end}}" href="{{ with .Page }}{{ .RelPermalink }}{{ else }}{{ .URL | relLangURL }}{{ end }}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }} aria-haspopup="true" aria-expanded="false">
+				<a class="nav-link{{if $active }} active{{end}}" href="{{ with .Page }}{{ .RelPermalink }}{{ else }}{{ .URL | relLangURL }}{{ end }}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}>
 					<span>{{ .Name }}</span>
-					<button class="nav-submenu-btn"><svg width="29px" height="14px" viewBox="0 0 29 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">    <polyline id="Path" stroke="currentColor" fill="transparent" stroke-width="2" points="1 1 14.5 12.5 28 1"></polyline></svg></button>
+					<button class="nav-submenu-btn" aria-haspopup="true" aria-expanded="false">
+						<svg width="29px" height="14px" viewBox="0 0 29 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">    <polyline id="Path" stroke="currentColor" fill="transparent" stroke-width="2" points="1 1 14.5 12.5 28 1"></polyline></svg>
+					</button>
 				</a>
 				<ul class="navbar-submenu">
 					{{ range .Children }}
@@ -126,7 +128,7 @@
 		</ul>
 	</div>
 	<div class="navbar-nav d-none d-xl-block">{{ partial "search-input.html" . }}</div>
-	<button class="navbar-mobile-button d-xl-none d-block">
+	<button class="navbar-mobile-button d-xl-none d-block" aria-label="Open mobile menu" aria-haspopup="true" aria-expanded="false">
 		<span></span>
 		<span></span>
 		<span></span>

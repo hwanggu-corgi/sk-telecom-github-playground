@@ -19,28 +19,28 @@
 
     const mainMenuLinks = $('.td-navbar .navbar-nav > li > a');
 
-    // on tab, if it hovers over nav-link in main menu
+    // on tab, if hovers over any nav-link in main menu
     $(mainMenuLinks).bind('keydown', function (event) {
       const navItem = $(this).closest(".nav-item");
       const prevNavItem = $(navItem).prev();
 
-      // if it's tabbing backward
+      // if tabbing backward
       if (event.shiftKey && event.key.toUpperCase() === "TAB") {
 
-        // if it's an item with submenu
+        // if prev item has submenu
         if ($(prevNavItem).length && $(prevNavItem).hasClass("has-children")) {
           event.preventDefault();
           goToLastItemInSubmenu(prevNavItem);
           return;
         }
 
-        // if it's an item without submenu
+        // if prev item doesn't have submenu
         if ($(prevNavItem).length && !$(prevNavItem).hasClass("has-children")) {
-          $(prevNavItem).removeClass("submenu-open");
-          $(prevNavItem).find("a[aria-expanded]").attr("aria-expanded", "false");
+          $(navItem).find("li.has-children").removeClass("submenu-open");
+          $(navItem).find("a[aria-expanded]").attr("aria-expanded", "false");
         }
 
-      // if it's tabbing forward
+      // if tabbing forward
       } else if (event.key.toUpperCase() === "TAB") {
 
         // if it's an item with submenu
@@ -68,7 +68,6 @@
 
       const nextLi = $(currentLi).parent().closest("li.has-children");
       $(nextLi).find("a[aria-expanded]").attr("aria-expanded", "false");
-      console.log($(nextLi).find("a[aria-expanded]"));
       nextLi.removeClass("submenu-open");
       closeSubmenu(nextLi);
     }
@@ -80,32 +79,31 @@
       const prevNavItem = $(navItem).prev();
       const nextNavItem = $(navItem).next();
 
-      // if it's tabbing backward
+      // if tabbing backward
       if (event.shiftKey && event.key.toUpperCase() === "TAB") {
 
-        // if it's a first item in submenu
+        // if current is first item in submenu
         if (!$(prevNavItem).length) {
           $(navItem).parent().closest(".nav-item").removeClass("submenu-open");
-          $(navItem).parent().find("a[aria-expanded]").attr("aria-expanded", "false");
+          $(navItem).parent().closest(".nav-item").find("a[aria-expanded]").attr("aria-expanded", "false");
           return;
         }
 
-        // if it's an item wiith submenu
+        // if prev item has submenu
         if ($(prevNavItem).hasClass("has-children")) {
           $(prevNavItem).addClass("submenu-open");
           $(prevNavItem).find("> a").attr("aria-expanded", "true");
-          $(navItem).find("a[aria-expanded]").attr("aria-expanded", "false");
           return;
         }
 
-        // if it's an item without submenu
+        // if prev item doesn't have submenu
         if (!$(prevNavItem).hasClass("has-children")) {
           $(navItem).parent("ul").find("li.has-children").removeClass("submenu-open");
           $(navItem).find("a[aria-expanded]").attr("aria-expanded", "false");
           return;
         }
 
-      // if it's tabbing forward
+      // if tabbing forward
       } else if (event.key.toUpperCase() === "TAB") {
         // if current item has submenu
         if ($(navItem).hasClass("has-children")) {
@@ -167,7 +165,7 @@
     });
   });
 
-  // Open mobile submenu on click
+  // Expand / collapse submenu on clicking chevron
   $(function () {
     $(".nav-submenu-btn").click(function(e) {
       e.preventDefault();
@@ -176,8 +174,10 @@
 
       if ($(navItem).hasClass("submenu-open")) {
         $("ul:first", navItem).slideDown();
+        $(navItem).find("> a > .nav-submenu-btn").attr("aria-expanded", "true");
       } else {
         $("ul:first", navItem).slideUp();
+        $(navItem).find("> a > .nav-submenu-btn").attr("aria-expanded", "false");
       }
     })
   });
