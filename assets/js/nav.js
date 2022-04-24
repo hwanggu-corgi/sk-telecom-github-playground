@@ -12,39 +12,43 @@
       console.log(event.target);
       if (!event.target.classList.contains("nav-link")) return;
 
-      const $navItem = $(this).closest(".nav-item");
+      const navItem = $(this).closest(".nav-item");
+      const prevNavItem = $(navItem).prev();
 
       // if it's backward motion
       if (event.shiftKey && event.key.toUpperCase() === "TAB") {
-        const $prevNavItem = $($navItem).prev();
-        if ($($prevNavItem).length && $($prevNavItem).hasClass("has-children")) {
-          $($prevNavItem).addClass("submenu-open");
-          $($prevNavItem).find("li.has-children").last().addClass("submenu-open");
-          $($prevNavItem).find(".nav-link").last().focus();
+        if ($(prevNavItem).length && $(prevNavItem).hasClass("has-children")) {
+          event.preventDefault();
+
+          let currentLiChildren = $(prevNavItem);
+          while ($(currentLiChildren).length) {
+            $(currentLiChildren).addClass("submenu-open");
+            currentLiChildren = $(currentLiChildren).find("> ul > li.has-children").last();
+          }
+
+          $(prevNavItem).find(".nav-link").last().focus();
           return;
         }
 
-        $($navItem).find("ul").first().removeClass("submenu-open");
+        $(prevNavItem).find("ul").first().removeClass("submenu-open");
       } else if (event.key.toUpperCase() === "TAB") {
         // if it has submenu, then open the submenu
-        if (!$($navItem).hasClass("has-children")) {
-          return;
+        if ($(navItem).hasClass("has-children")) {
+          $(navItem).addClass("submenu-open");
         }
-        $($navItem).addClass("submenu-open");
-        $($navItem).find(".nav-link").first().focus();
       }
     });
 
     $(subMenuLinks).bind('keydown', function (event) {
       if (!event.target.classList.contains("nav-link")) return;
 
-      const $navItem = $(this).closest(".nav-item");
+      const navItem = $(this).closest(".nav-item");
       if (event.shiftKey && event.key.toUpperCase() === "TAB") {
         // if it has submenu, then close the submenu
       } else if (event.key.toUpperCase() === "TAB") {
         // if it has submenu, then open the submenu
-        if ($($navItem).is(':last-child') && !$($navItem).hasClass("has-children")) {
-          $($navItem).closest("ul").removeClass("submenu-open");
+        if ($(navItem).is(':last-child') && !$(navItem).hasClass("has-children")) {
+          $(navItem).closest("ul").removeClass("submenu-open");
         }
       }
     });
