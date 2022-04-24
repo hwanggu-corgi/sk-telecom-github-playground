@@ -79,9 +79,15 @@
       // if it's tabbing forward
       } else if (event.key.toUpperCase() === "TAB") {
 
-        // if next item is none (in entirety of submenu)
+        // if next item is none
         if (!$(nextNavItem).length) {
-
+          let stack = [$(navItem).closest(".dropdown-menu")];
+          while (stack.length) {
+            stack.pop();
+            // if it's closest li is last of submenu, then add to stack
+            $(currentLiChildren).addClass("submenu-open");
+            currentLiChildren = $(currentLiChildren).find("> ul > li.has-children").last();
+          }
         }
 
         // if next item has submenu
