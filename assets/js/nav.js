@@ -48,13 +48,29 @@
 
   // Accessibility for desktop submenu items
   $(function () {
+    function closeSubmenu(currentLi) {
+      // if all submenus closed
+      if (!$(currentLi).parent().hasClass("dropdown-menu")) {
+        return;
+       }
+
+      // if current li is not the last in submenu
+      if (!$(currentLi).is(":last-child")) {
+       return;
+      }
+
+      const nextLi = $(currentLi).parent().closest("li.has-children");
+      nextLi.removeClass("submenu-open");
+      closeSubmenu(nextLi);
+    }
+
     const subMenuLinks = $('.td-navbar .dropdown-menu > li > a');
 
     $(subMenuLinks).bind('keydown', function (event) {
       const navItem = $(this).closest(".nav-item");
       const prevNavItem = $(navItem).prev();
       const nextNavItem = $(navItem).next();
-
+      console.log("I am here")
       // if it's tabbing backward
       if (event.shiftKey && event.key.toUpperCase() === "TAB") {
 
@@ -78,21 +94,16 @@
 
       // if it's tabbing forward
       } else if (event.key.toUpperCase() === "TAB") {
-
-        // if next item is none
-        if (!$(nextNavItem).length) {
-          let stack = [$(navItem).closest(".dropdown-menu")];
-          while (stack.length) {
-            stack.pop();
-            // if it's closest li is last of submenu, then add to stack
-            $(currentLiChildren).addClass("submenu-open");
-            currentLiChildren = $(currentLiChildren).find("> ul > li.has-children").last();
-          }
-        }
-
         // if next item has submenu
         if ($(nextNavItem).hasClass("has-children")) {
           $(nextNavItem).addClass("submenu-open");
+          return;
+        }
+
+        // if next item is none
+        if ($(nextNavItem).length === 0) {
+          console.log("I am in here 2");
+          closeSubmenu(navItem);
           return;
         }
 
