@@ -3,12 +3,30 @@
   var breakpoint = 1200;
 
 
-  // Headers navigation accessibility
+  // Headers navigation accessibility for desktop
   $(function () {
-    // initialize (set tabIndex = -1)
-    // on tab, if it hovers over nav-link, and if it's backward motion
+    const mainMenuLinks = $('.td-navbar .navbar-nav > li > a');
+    const subMenuLinks = $('.td-navbar .dropdown-menu > li > a');
+    // on tab, if it hovers over nav-link in main menu
+    $(mainMenuLinks).bind('keydown', function (event) {
+      // if it's forward motion
+      if (event.shiftKey && event.key.toUpperCase() === "TAB") {
 
-    //
+      } else if (event.key.toUpperCase() === "TAB") {
+
+      }
+      // if it's backward motion
+    });
+
+    $(subMenuLinks).bind('keydown', function (event) {
+      // if it's forward motion
+      // if it's backward motion
+      if (event.shiftKey && event.key.toUpperCase() === "TAB") {
+
+      } else if (event.key.toUpperCase() === "TAB") {
+
+      }
+    });
   });
 
 
