@@ -40,9 +40,12 @@
     });
 
     $(subMenuLinks).bind('keydown', function (event) {
+
       if (!event.target.classList.contains("nav-link")) return;
 
       const navItem = $(this).closest(".nav-item");
+      const prevNavItem = $(navItem).prev();
+
       if (event.shiftKey && event.key.toUpperCase() === "TAB") {
         // if it has submenu, then close the submenu
       } else if (event.key.toUpperCase() === "TAB") {
