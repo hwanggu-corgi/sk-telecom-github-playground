@@ -67,6 +67,8 @@
       }
 
       const nextLi = $(currentLi).parent().closest("li.has-children");
+      $(nextLi).find("a[aria-expanded]").attr("aria-expanded", "false");
+      console.log($(nextLi).find("a[aria-expanded]"));
       nextLi.removeClass("submenu-open");
       closeSubmenu(nextLi);
     }
@@ -84,18 +86,22 @@
         // if it's a first item in submenu
         if (!$(prevNavItem).length) {
           $(navItem).parent().closest(".nav-item").removeClass("submenu-open");
+          $(navItem).parent().find("a[aria-expanded]").attr("aria-expanded", "false");
           return;
         }
 
         // if it's an item wiith submenu
         if ($(prevNavItem).hasClass("has-children")) {
           $(prevNavItem).addClass("submenu-open");
+          $(prevNavItem).find("> a").attr("aria-expanded", "true");
+          $(navItem).find("a[aria-expanded]").attr("aria-expanded", "false");
           return;
         }
 
         // if it's an item without submenu
         if (!$(prevNavItem).hasClass("has-children")) {
           $(navItem).parent("ul").find("li.has-children").removeClass("submenu-open");
+          $(navItem).find("a[aria-expanded]").attr("aria-expanded", "false");
           return;
         }
 
@@ -104,12 +110,12 @@
         // if current item has submenu
         if ($(navItem).hasClass("has-children")) {
           $(navItem).addClass("submenu-open");
+          $(navItem).find("> a").attr("aria-expanded", "true");
           return;
         }
 
         // if next item is none
         if ($(nextNavItem).length === 0) {
-          console.log("I am in here 2");
           closeSubmenu(navItem);
           return;
         }
