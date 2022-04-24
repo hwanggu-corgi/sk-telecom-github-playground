@@ -30,19 +30,19 @@ header {
 
 
 .td-navbar {
-    border-bottom: 0.0625rem solid $skorange;
-    min-height: 5rem;
+    border-bottom: 1px solid $skorange;
+    min-height: 80px;
     margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: $white;
     transition: $transition;
-    padding: 0.5rem 1.875rem;
+    padding: 8px 30px;
 
     @include media-breakpoint-down(md) {
         min-height: 4rem;
-        padding: 0.5rem 1rem;
+        padding: 8px 15px;
     }
 
     .brand-name {
@@ -57,11 +57,10 @@ header {
 
     .navbar-logo svg {
         display: inline-block;
-        height: 2.75rem;
+        height: 44px;
         width: 130px;
 
         @include media-breakpoint-down(md) {
-            left: 16px;
             width: 80px;
             height: auto;
         }
@@ -73,7 +72,7 @@ header {
 
     .nav-item > * {
         @include media-breakpoint-down(md) {
-            font-size: .875rem;
+            font-size: 14px;
         }
     }
 
@@ -81,11 +80,6 @@ header {
         text-transform: none;
         font-weight: $font-weight-medium;
         transition: $transition;
-
-        @include media-breakpoint-down(md) {
-            padding-right: .25rem;
-            padding-left: 0;
-        }
     }
 
     .nav-item.has-children > .nav-link {
@@ -191,7 +185,7 @@ header {
 
 header.mobile-menu-open .td-navbar {
     background: $skdarkgrey;
-    border-bottom: 1px solid $skdarkgrey2;
+    border-bottom: 0.0625rem solid $skdarkgrey2;
 
     .nav-link {
         color: $white;

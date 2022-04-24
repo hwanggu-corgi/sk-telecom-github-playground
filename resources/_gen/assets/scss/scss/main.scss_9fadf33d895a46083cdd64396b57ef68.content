@@ -12318,19 +12318,19 @@ header {
   text-shadow: none; }
 
 .td-navbar {
-  border-bottom: 0.0625rem solid #ff7a00;
-  min-height: 5rem;
+  border-bottom: 1px solid #ff7a00;
+  min-height: 80px;
   margin: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: #fff;
   transition: all 0.3s linear;
-  padding: 0.5rem 1.875rem; }
+  padding: 8px 30px; }
   @media (max-width: 991.98px) {
     .td-navbar {
       min-height: 4rem;
-      padding: 0.5rem 1rem; } }
+      padding: 8px 15px; } }
   .td-navbar .brand-name {
     display: none; }
   .td-navbar .navbar-brand {
@@ -12340,26 +12340,21 @@ header {
     padding: 0; }
   .td-navbar .navbar-logo svg {
     display: inline-block;
-    height: 2.75rem;
+    height: 44px;
     width: 130px; }
     @media (max-width: 991.98px) {
       .td-navbar .navbar-logo svg {
-        left: 16px;
         width: 80px;
         height: auto; } }
   .td-navbar .nav-item {
     position: relative; }
   @media (max-width: 991.98px) {
     .td-navbar .nav-item > * {
-      font-size: .875rem; } }
+      font-size: 14px; } }
   .td-navbar .nav-link {
     text-transform: none;
     font-weight: 500;
     transition: all 0.3s linear; }
-    @media (max-width: 991.98px) {
-      .td-navbar .nav-link {
-        padding-right: .25rem;
-        padding-left: 0; } }
   .td-navbar .nav-item.has-children > .nav-link::after {
     display: inline-block;
     width: 0;
@@ -12429,7 +12424,7 @@ header {
 
 header.mobile-menu-open .td-navbar {
   background: #262626;
-  border-bottom: 1px solid #3c3c41; }
+  border-bottom: 0.0625rem solid #3c3c41; }
   header.mobile-menu-open .td-navbar .nav-link {
     color: #fff; }
     header.mobile-menu-open .td-navbar .nav-link:hover {
