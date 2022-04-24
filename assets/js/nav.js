@@ -9,14 +9,15 @@
     const subMenuLinks = $('.td-navbar .dropdown-menu > li > a');
     // on tab, if it hovers over nav-link in main menu
     $(mainMenuLinks).bind('keydown', function (event) {
-      console.log(event.target);
       if (!event.target.classList.contains("nav-link")) return;
 
       const navItem = $(this).closest(".nav-item");
       const prevNavItem = $(navItem).prev();
 
-      // if it's backward motion
+      // if it's tabbing backward
       if (event.shiftKey && event.key.toUpperCase() === "TAB") {
+
+        // if it's an item with submenu
         if ($(prevNavItem).length && $(prevNavItem).hasClass("has-children")) {
           event.preventDefault();
 
@@ -31,10 +32,14 @@
         }
 
         $(prevNavItem).find("ul").first().removeClass("submenu-open");
+
+      // if it's tabbing forward
       } else if (event.key.toUpperCase() === "TAB") {
-        // if it has submenu, then open the submenu
+
+        // if it's an item with submenu
         if ($(navItem).hasClass("has-children")) {
           $(navItem).addClass("submenu-open");
+          return;
         }
       }
     });
@@ -46,10 +51,32 @@
       const navItem = $(this).closest(".nav-item");
       const prevNavItem = $(navItem).prev();
 
+      // if it's tabbing backward
       if (event.shiftKey && event.key.toUpperCase() === "TAB") {
-        // if it has submenu, then close the submenu
+
+        // if it's first item in submenu
+        if (!$(prevNavItem).length) {
+          console.log(event.target);
+          console.log($(navItem).closest(".nav-item").text());
+          $(navItem).parent().closest(".nav-item").removeClass("submenu-open")
+          return;
+        }
+
+      // if it's tabbing forward
       } else if (event.key.toUpperCase() === "TAB") {
-        // if it has submenu, then open the submenu
+
+        // if it's an item with submenu
+        if ($(navItem).hasClass("has-children")) {
+          $(navItem).addClass("submenu-open");
+          return;
+        }
+
+         // if it's a last of the last in submenu
+         if ($(navItem).is(':last-child') && !$(navItem).hasClass("has-children")) {
+          $(navItem).closest("ul").removeClass("submenu-open");
+        }
+
+        // if it's a last item in submenu
         if ($(navItem).is(':last-child') && !$(navItem).hasClass("has-children")) {
           $(navItem).closest("ul").removeClass("submenu-open");
         }
