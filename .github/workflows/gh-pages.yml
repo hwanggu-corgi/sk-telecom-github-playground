@@ -31,10 +31,12 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
-      - name: Install PostCSS
+      - name: Setup Node JS
         uses: actions/setup-node@v3
           with:
             node-version: '16'
+
+      - name: Build PostCSS
         run: npm i -g postcss postcss-cli
 
       - name: Build
