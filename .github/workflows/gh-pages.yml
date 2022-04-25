@@ -33,6 +33,9 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
+      - name: Build PostCSS
+        run: sudo npm i -g postcss postcss-cli autoprefixer
+
       - name: Build
         run: hugo --minify
 
