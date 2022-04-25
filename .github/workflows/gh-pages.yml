@@ -34,7 +34,7 @@ jobs:
           extended: true
 
       - name: Build PostCSS
-        run: sudo npm i -g postcss postcss-cli autoprefixer
+        run: sudo npm i postcss postcss-cli autoprefixer --save-dev
 
       - name: Build
         run: hugo --minify
