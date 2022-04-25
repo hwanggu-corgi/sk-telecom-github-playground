@@ -1,5 +1,4 @@
 # This is a workflow to deploy github pages
-
 name: github pages
 
 # Controls when the action will run.
