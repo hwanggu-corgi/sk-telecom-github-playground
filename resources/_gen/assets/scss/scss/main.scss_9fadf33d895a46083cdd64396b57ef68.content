@@ -12301,6 +12301,9 @@ readers do not read off random characters that represent icons */
 body.mobile-menu-open {
   overflow: hidden; }
 
+body > .td-outer {
+  transition: all 0.3s linear; }
+
 body.mobile-menu-open > .td-outer {
   visibility: hidden; }
 
