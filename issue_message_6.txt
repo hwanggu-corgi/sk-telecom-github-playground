@@ -32,13 +32,17 @@ https://user-images.githubusercontent.com/72232928/165225251-b8f4a648-2b48-4329-
 
 그다음 main menu에서 tab을 계속 누르다 보면은 자동으로 submenu가 열리도록 만들었습니다.
 
-[add video here]
 
-그다음 aria-expanded 그리고 aria-haspopup을 넣어 또다른 창이 있습니다 그리고 이 창은 닫혀있습니다/열려있습니다 하며 알 수 있게 했습니다.
+https://user-images.githubusercontent.com/72232928/165307619-35b03477-2096-4cfc-8693-b4fee0b9bfce.mov
 
-[add video here]
 
-그리고 mobile menu에서 사람들이 다시 choose 할 수 있게 tab을 계속 누르면은 focus가 다시 위로 올라가도록 만들었습니다.
+그다음 aria-expanded 그리고 aria-haspopup을 넣어 "이것을 누르면 또다른 창이 있습니다" 그리고 "이 창은 닫혀있습니다/열려있습니다" 하며 알 수 있게 했습니다.
+
+
+https://user-images.githubusercontent.com/72232928/165316785-53f0bbc1-d7a2-49b7-a034-528b85a76cec.mov
+
+
+마지막으로 mobile menu에서 tab을 계속 누르면은 focus가 다시 위로 올라가도록 만들었습니다.
 
 [add video here]
 
@@ -46,7 +50,7 @@ https://user-images.githubusercontent.com/72232928/165225251-b8f4a648-2b48-4329-
 
 [이 웹사이트](hyungmogu.github.io)에 가시면 제 결과물을 보실 수 있습니다.
 
-관리자님, 이 개선안을 어떻게 생각하십니까? 진행해도 괜찮습니까? 부족한 점이 있으면은 고치겠습니다.
+관리자님, 이 개선안을 진행해도 괜찮습니까? 부족한 점이 있으면은 고치겠습니다.
 
 관리자님, 제 issues를 봐주셔서 고맙습니다.
 
