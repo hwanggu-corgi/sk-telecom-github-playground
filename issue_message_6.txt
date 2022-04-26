@@ -44,7 +44,7 @@ https://user-images.githubusercontent.com/72232928/165316785-53f0bbc1-d7a2-49b7-
 
 마지막으로 mobile menu에서 tab을 계속 누르면은 focus가 다시 위로 올라가도록 만들었습니다.
 
-[add video here]
+Uploading header-6.mov…
 
 -------------------------
 
