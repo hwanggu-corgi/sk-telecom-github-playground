@@ -1,10 +1,10 @@
-안녕하세요.
+안녕하세요 관리자님,
 
-sktelecom.github.io header 관련 issue를 올립니다.
+sktelecom.github.io header 개선 관련 issue를 올립니다.
 
-관리자님, 브라우저를 특정 width로 줄이면은 header menu의 부분은 사라져 있고 그리고 로고가 off position이 됩니다.
+브라우저를 특정 width로 줄이면은 header menu의 부분은 사라져 있고 그리고 로고가 off position이 됩니다.
 
-이것을 보며 “한번 도전해 보자!” 하며 header를 개선 했습니다 ([이 페이지 참고](hyungmogu.github.io)).
+이것을 보며 “한번 도전해 보자!” 하며 header를 개선 했습니다.
 
 -------------------------
 
@@ -12,23 +12,23 @@ sktelecom.github.io header 관련 issue를 올립니다.
 
 디자인은 SK telecom 회사 웹사이트 하고 비슷하게 만들었습니다. 사람들에게 이것은 SK telecom 관련 회사 입니다 인상을 주고 싶었습니다.
 
-[add video here]
+https://user-images.githubusercontent.com/72232928/165224860-febf0e45-1262-4966-b62b-50f52f0aaabe.mov
 
 -------------------------
 
 두번째로 submenu feature를 추가했습니다
 
-현재의 header는 언어선택 창 빼고는 submenu 기능이 없습니다. 개선안에서는 메인메뉴 그리고 모바일 메뉴에서 2단계에서 3단계 까지 submenu를 추가 할 수 있도록 만들었습니다.
+현재의 header는 언어선택 창 빼고는 submenu 기능이 없습니다. 개선안에서는 3단계 까지 submenu를 추가 할 수 있도록 만들었습니다.
 
-[add video here]
+https://user-images.githubusercontent.com/72232928/165224959-3d326941-0566-4e3a-88bf-a6d3ae0bc4a0.mov
 
 -------------------------
 
 세번째로 장애인들을 위한 접근성을 추가했습니다.
 
-Mobile menu 버튼에 aria-label를 넣어 이것을 누르면은 open이 되는지 close 되는지 알 수 있게 했습니다.
+버튼에 aria-label를 넣어 이것이 for open menu인지 for close menu인지 알 수 있게 했습니다.
 
-[add video here]
+https://user-images.githubusercontent.com/72232928/165225251-b8f4a648-2b48-4329-b287-4df3efd05cb5.mov
 
 그다음 main menu에서 tab을 계속 누르다 보면은 자동으로 submenu가 열리도록 만들었습니다.
 
@@ -46,10 +46,8 @@ Mobile menu 버튼에 aria-label를 넣어 이것을 누르면은 open이 되는
 
 [이 웹사이트](hyungmogu.github.io)에 가시면 제 결과물을 보실 수 있습니다.
 
-관리자님, 이 개선안을 어떻게 생각하십니까? 이 개선안을 진행해도 괜찮습니까? 부족한 점이 있으면은 고치겠습니다.
+관리자님, 이 개선안을 어떻게 생각하십니까? 진행해도 괜찮습니까? 부족한 점이 있으면은 고치겠습니다.
 
 관리자님, 제 issues를 봐주셔서 고맙습니다.
 
 감사합니다.
-
-
