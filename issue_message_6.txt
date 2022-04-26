@@ -10,16 +10,32 @@ sktelecom.github.io header 관련 issue를 올립니다.
 
 디자인은 SK telecom 회사 웹사이트 하고 비슷하게 만들었습니다. 사람들에게 이것은 SK telecom 관련 회사 입니다 인상을 주고 싶었습니다.
 
+[add video here]
+
 두번째로 submenu feature를 추가했습니다
 
-현재의 header는 언어선택 창 빼고는 submenu 기능이 없습니다. 개선안에서는 메인메뉴 그리고 모바일 메뉴에서 2단계 에서 3단계 까지 submenu를 추가 할 수 있도록 만들었습니다.
+현재의 header는 언어선택 창 빼고는 submenu 기능이 없습니다. 개선안에서는 메인메뉴 그리고 모바일 메뉴에서 2단계에서 3단계 까지 submenu를 추가 할 수 있도록 만들었습니다.
+
+[add video here]
 
 세번째로 장애인들을 위한 접근성을 추가했습니다.
 
-Mobile menu 버튼에 aria-label를 넣어 이것을 누르면은 open이 되는지 close 되는지 알 수 있게 했습니다. 그리고 main menu에서 tab을 계속 누르다 보면은 자동으로 submenu가 열리도록 만들었습니다. 그리고
+Mobile menu 버튼에 aria-label를 넣어 이것을 누르면은 open이 되는지 close 되는지 알 수 있게 했습니다.
 
-그리고 메뉴에 텝을 사용하면은 자동이로 열리고 닫히도록 만들었습니다.
+[add video here]
 
-관리자님, 혹시 부족한 점이 있습니까?
+그다음 main menu에서 tab을 계속 누르다 보면은 자동으로 submenu가 열리도록 만들었습니다.
+
+[add video here]
+
+그다음 aria-expanded 그리고 aria-haspopup을 넣어 또다른 창이 있습니다 그리고 이 창은 닫혀있습니다/열려있습니다 하며 알 수 있게 했습니다.
+
+[add video here]
+
+그리고 mobile menu에서 사람들이 다시 choose 할 수 있게 tab을 계속 누르면은 focus가 다시 위로 올라가도록 만들었습니다.
+
+[add video here]
+
+관리자님, 혹시 여기에서 부족한 부분이나 추가해야 할 부분이 있습니까?
 
 감사합니다.
