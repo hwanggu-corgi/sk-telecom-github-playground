@@ -5,6 +5,11 @@ weight: 1
 type: docs
 description: >
   Open Source Program Office
+menu:
+  main:
+    title: "OSPO"
+    parent: "About"
+    weight: 10
 ---
 
 SK텔레콤은 OSPO<sub>Open Source Program Office</sub>를 설립하여 오픈소스 거버넌스 체계를 구축할 뿐만 아니라 ICT 기업으로서 성공을 위한 오픈소스 전략을 수립하고 이를 실행하는데 필요한 정책, 프로세스 구축 및 자동화 도구를 제공한다.
