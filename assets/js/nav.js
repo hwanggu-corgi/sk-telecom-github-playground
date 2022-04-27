@@ -5,12 +5,17 @@
   // Accessibility for desktop main menu items
   $(function () {
     function goToLastItemInSubmenu(navItem) {
-      let currentLiChildren = $(navItem);
+      let stack = [$(navItem)];
 
-      while ($(currentLiChildren).length) {
+      while (stack.length) {
+        const currentLiChildren = stack.pop();
         $(currentLiChildren).addClass("submenu-open");
         $(currentLiChildren).find("> a").attr("aria-expanded", "true");
-        currentLiChildren = $(currentLiChildren).find("> ul > li.has-children").last();
+
+        const lastChildrenLi = $(currentLiChildren).find("> ul > li.has-children").last();
+        if ($(lastChildrenLi).is($(currentLiChildren).find("> ul > li").last())) {
+          stack.push(lastChildrenLi);
+        }
       }
 
       $(navItem).find(".nav-link").last().focus();

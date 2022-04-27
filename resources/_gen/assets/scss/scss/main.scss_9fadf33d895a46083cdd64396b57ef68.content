@@ -12375,8 +12375,12 @@ header {
     display: block; }
   .td-navbar .dropdown-menu .nav-link {
     width: 100%;
-    padding: 4px 24px; }
-    .td-navbar .dropdown-menu .nav-link:hover {
+    padding: 4px 24px;
+    transition: none; }
+    .td-navbar .dropdown-menu .nav-link.active, .td-navbar .dropdown-menu .nav-link:active {
+      color: #fff !important;
+      background: #1d1160 linear-gradient(180deg, #3f3578, #1d1160) repeat-x !important; }
+    .td-navbar .dropdown-menu .nav-link:not(.active):hover, .td-navbar .dropdown-menu .nav-link:not(.active):focus {
       color: #000;
       background: #f8f9fa linear-gradient(180deg, #f9fafb, #f8f9fa) repeat-x; }
   .td-navbar .dropdown-menu .dropdown-menu {

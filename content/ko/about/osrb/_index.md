@@ -9,7 +9,7 @@ menu:
   main:
     title: "OSRB"
     parent: "About"
-    weight: 10
+    weight: 20
 ---
 
 OSRB(Open Source Review Board)는 기업의 오픈소스 관리를 위해 오픈소스 책임자와 법무팀, 특허팀, 개발팀, 인프라팀 등 관련 조직의 책임자로 구성된 협의체이다.
