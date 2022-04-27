@@ -2,12 +2,11 @@
 
 github gh-pages 관련 issue를 올립니다.
 
-/asset 폴더 안에 있는 _nav.scss파일의 콘텐츠를 바꾸고 github에 commit을 했더니 change가 gh-pages에 반영되지 않습니다.
+/assets/scss 폴더 안에 있는 _nav.scss파일의 콘텐츠를 바꾸고 github에 commit을 했더니 change가 gh-pages에 반영되지 않습니다.
 
 
 
-
-(/asset 안에 있는 아무 _nav.scss 파일을 변경하고 이것을 commit하면은 problem을 replicate 할 수 있습니다.)
+(/assets/scss 안에 있는 아무 _nav.scss 파일을 변경하고 이것을 commit하면은 problem을 replicate 할 수 있습니다.)
 
 [온라인](https://discourse.gohugo.io/t/postcss-error-with-snap-install/36136/2)에서는 이 원인이 postcss, postcss-cli 그리고 autoprefixer에 있고 그리고 설치하면은 문제를 해결 할 수 있다고 나와 있습니다.
 
