@@ -2,23 +2,20 @@
 
 github gh-pages 관련 issue를 올립니다.
 
-/asset 폴더 안에 있는 scss파일을 파꾸고 github에 commit을 했더니 change가 gh-pages에 반영되지 않습니다.
+/asset 폴더 안에 있는 _nav.scss파일의 콘텐츠를 바꾸고 github에 commit을 했더니 change가 gh-pages에 반영되지 않습니다.
 
-(/asset 안에 있는 아무 scss 파일을 변경하고 이것을 commit하면은 problem을 replicate 할 수 있습니다.)
+(/asset 안에 있는 아무 _nav.scss 파일을 변경하고 이것을 commit하면은 problem을 replicate 할 수 있습니다.)
 
-원인을 알아보니 PostCSS가 설치 되어 있지 않습니다.
+온라인에서는 이 원인이 postcss, postcss-cli 그리고 autoprefixer에 있고 그리고 설치하면은 문제를 해결 할 수 있다고 나와 있습니다.
 
-그리고 이 결과를 /themes/layouts/partials/head-css.html 안에 있는 코드를 /layouts/partials/head-css.html로
-복사하고 다음으로 변경하고 실행해서 확인 할 수 있었습니다.
+/themes/layouts/partials/head-css.html 안에 있는 코드를 /layouts/partials/head-css.html로
+복사하고 다음으로 변경한 다음 실행하면은 에러 "PostCSS가 설치 되어 있지 않습니다"를 확인 할 수 있었습니다.
 
+local repository에 이 package를 include하고 commit한 결과 scss change가 문제없이 github page에 반영이 됩니다.
 
-Hugo 웹사이트에서는 hugo-extended 설치 후 postcss, postcss-cli 그리고 autoprefixer를 설치하는것을 권장하고 있습니다.
+관리자님, 현재의 package-lock.json와 함께 commit을 하면은 다음의 에러가 일어납니다.
 
-이 package들을 설치하면 scss change가 문제없이 github에 반영이 됩니다.
-
-관리자님, 새로운 package.json을 만들었는데 현재의 package-lock.json을 갖고 실행하면은 다음의 문제가 일어납니다.
-
-관리자님, package-lock.json을 지우면은 문제없이 실행이 되는데 이 파일을 remove해도 괜찮습니까?
+package-lock.json을 지우면은 문제없이 실행이 되는데 이 파일을 remove해도 괜찮습니까?
 
 관리자님, 시간내어 제 issue를 읽어주셔서 고맙습니다.
 
