@@ -6,14 +6,16 @@ github gh-pages 관련 issue를 올립니다.
 
 ![comparison](https://user-images.githubusercontent.com/72232928/165450653-ff429ac3-f42c-4cf1-9676-b674923dcf10.png)
 
-참고: [_nav.scss 수정 전](), [_nav.scss 수정 후](), [수정 후 compiled 된 파일]()
+참고: [_nav.scss 수정 전](https://github.com/sktelecom/sktelecom.github.io/blob/master/assets/scss/_nav.scss), [_nav.scss 수정 후](https://github.com/hyungmogu/hyungmogu.github.io/blob/92ea41996814ea1059d6f45ddfb5534375514c8b/assets/scss/_nav.scss), [수정 후 compiled 된 파일](https://github.com/hyungmogu/hyungmogu.github.io/blob/a8c9a10aa48d8e87fe3e86a8622b24f754211946/scss/main.min.9ffeee081134e12243bebc919d1a0e498b6897457e5c8f756d67b785416cb6bf.css)
 
-(/assets/scss 안에 있는 아무 _nav.scss 파일을 변경하고 이것을 commit하면은 problem을 replicate 할 수 있습니다.)
+(/assets/scss 안에 있는 _nav.scss 파일을 변경하고 이것을 commit하면은 problem을 replicate 할 수 있습니다.)
 
 [온라인](https://discourse.gohugo.io/t/postcss-error-with-snap-install/36136/2)에서는 이 원인이 postcss, postcss-cli 그리고 autoprefixer에 있고 그리고 설치하면은 문제를 해결 할 수 있다고 나와 있습니다.
 
 /themes/layouts/partials/head-css.html 안에 있는 코드를 /layouts/partials/head-css.html로
 복사하고 다음으로 변경한 다음 `git commit`를 실행하면은 github action안에 에러 "PostCSS가 설치 되어 있지 않습니다"를 확인 할 수 있습니다.
+
+![comparison-2](https://user-images.githubusercontent.com/72232928/165538003-33e80e16-d4b7-422e-b291-70d605484c88.png)
 
 local repository에 이 package를 include하고 commit한 결과 scss change가 문제없이 github page에 반영이 됩니다.
 
