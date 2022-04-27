@@ -12,12 +12,50 @@ github gh-pages 관련 issue를 올립니다.
 
 [온라인](https://discourse.gohugo.io/t/postcss-error-with-snap-install/36136/2)에서는 이 원인이 postcss, postcss-cli 그리고 autoprefixer에 있고 그리고 설치하면은 문제를 해결 할 수 있다고 나와 있습니다.
 
-/themes/layouts/partials/head-css.html 안에 있는 코드를 /layouts/partials/head-css.html로
+그리고 /themes/layouts/partials/head-css.html 안에 있는 코드를 /layouts/partials/head-css.html로
 복사하고 다음으로 변경한 다음 `git commit`를 실행하면은 github action안에 에러 "PostCSS가 설치 되어 있지 않습니다"를 확인 할 수 있습니다.
 
-![comparison-2](https://user-images.githubusercontent.com/72232928/165538003-33e80e16-d4b7-422e-b291-70d605484c88.png)
+```
+<!-- /layouts/partials/head-css.html -->
 
-local repository에 이 package를 include하고 commit한 결과 scss change가 문제없이 github page에 반영이 됩니다.
+{{ $scssMain := "scss/main.scss"}}
+{{ if .Site.IsServer }}
+{{/* Note the missing postCSS. This makes it snappier to develop in Chrome, but makes it look sub-optimal in other browsers. */}}
+{{ $css := resources.Get $scssMain | toCSS (dict "enableSourceMap" true) }}
+<link href="{{ $css.RelPermalink }}" rel="stylesheet">
+{{ else }}
+{{ $css := resources.Get $scssMain | toCSS (dict "enableSourceMap" false) | postCSS | minify }}
+<link rel="preload" href="{{ $css.RelPermalink }}" as="style">
+<link href="{{ $css.RelPermalink }}" rel="stylesheet" integrity="{{ $css.Data.integrity }}">
+{{ end }}
+```
+
+![comparison-2-1](https://user-images.githubusercontent.com/72232928/165538584-b16a044d-ce89-4a62-87ea-a047326cf2bb.png)
+
+
+local repository에 다음의  package.json를 include하고 `hugo --minify`를 실행한 결과 scss change가 문제없이 반영이 됩니다.
+
+```
+{
+  "name": "sktelecom.github.io",
+  "version": "1.0.0",
+  "description": "Welcome to the GitHub repository for open source portal website at SK telecom. The portal are hosted at http://sktelecom.github.io/.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.5",
+    "postcss": "^8.4.12",
+    "postcss-cli": "^9.1.0"
+  }
+}
+```
 
 관리자님, 현재의 package-lock.json와 함께 commit을 하면은 다음의 에러가 일어납니다.
 
