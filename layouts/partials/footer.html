@@ -28,23 +28,32 @@
 </footer>
 <footer class="td-footer">
   <div class="container">
-    <section class="">
+    <section class="td-footer-header">
       <a class="footer-brand" href="{{ .Site.Home.RelPermalink }}">
         <span class="footer-logo">{{ with resources.Get "icons/logo-white.svg" }}{{ ( . | minify).Content | safeHTML }} {{ end }}</span>
         <span class="brand-name text-uppercase font-weight-bold">{{ .Site.Title }}</span>
       </a>
+    </section>
       <nav class="td-footer-nav">
-        <ul>
-          <li></li>
-        </ul>
+        {{ $p := . }}
+			  {{ range .Site.Menus.main }}
+          {{ $url := urls.Parse .URL }}
+          {{ $baseurl := urls.Parse $.Site.Params.Baseurl }}
+          {{ $active := or ($p.IsMenuCurrent "main" .) ($p.HasMenuCurrent "main" .) }}
+          <li class="nav-item-footer">
+            <a class="nav-link-footer{{if $active }} active{{end}}" href="{{ .URL }}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}>
+              <span{{if $active }} class="active"{{end}}>{{ .Name }}</span>
+            </a>
+          </li>
+			  {{ end }}
       </nav>
     </section>
     <section>
       <div class="col-6 col-sm-4 text-xs-center order-sm-2">
         {{ with $links }}
-        {{ with index . "user"}}
-        {{ template "footer-links-block"  . }}
-        {{ end }}
+          {{ with index . "user"}}
+          {{ template "footer-links-block"  . }}
+          {{ end }}
         {{ end }}
       </div>
     </section>
