@@ -13,7 +13,7 @@ github gh-pages 관련 issue를 올립니다.
 [온라인](https://discourse.gohugo.io/t/postcss-error-with-snap-install/36136/2)에서는 이 원인이 postcss, postcss-cli 그리고 autoprefixer에 있고 설치하면은 문제를 해결할 수 있다고 나와 있습니다.
 
 그리고 /themes/layouts/partials/head-css.html 안에 있는 코드를 /layouts/partials/head-css.html로
-복사하고 다음으로 변경한 다음 `git commit`를 실행해서 github action 안에 에러 "PostCSS가 설치되어 있지 않습니다"를 확인했습니다.
+복사하고 아래에 있는 내용으로 변경한 다음 `git commit`를 실행하면 github action 안에 에러 "PostCSS가 설치되어 있지 않습니다"를 확인했습니다.
 
 ```
 <!-- /layouts/partials/head-css.html -->
@@ -63,3 +63,4 @@ local repository에 다음의  package.json을 include하고 `git commit`을 실
 관리자님, 시간내어 제 issue를 읽어주셔서 고맙습니다.
 
 감사합니다.
+
