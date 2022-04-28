@@ -26,6 +26,30 @@
     </div>
   </div>
 </footer>
+<footer class="td-footer">
+  <div class="container">
+    <section class="">
+      <a class="footer-brand" href="{{ .Site.Home.RelPermalink }}">
+        <span class="footer-logo">{{ with resources.Get "icons/logo-white.svg" }}{{ ( . | minify).Content | safeHTML }} {{ end }}</span>
+        <span class="brand-name text-uppercase font-weight-bold">{{ .Site.Title }}</span>
+      </a>
+      <nav class="td-footer-nav">
+        <ul>
+          <li></li>
+        </ul>
+      </nav>
+    </section>
+    <section>
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        {{ with $links }}
+        {{ with index . "user"}}
+        {{ template "footer-links-block"  . }}
+        {{ end }}
+        {{ end }}
+      </div>
+    </section>
+  </div>
+</footer>
 {{ define "footer-links-block" }}
 <ul class="list-inline mb-0">
   {{ range . }}
