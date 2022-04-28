@@ -1,3 +1,10 @@
 .td-footer {
   background-color: $skdarkgrey;
 }
+
+.td-footer .td-footer-nav > ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+}
+

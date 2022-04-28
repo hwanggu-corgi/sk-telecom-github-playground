@@ -10909,6 +10909,11 @@ readers do not read off random characters that represent icons */
 .td-footer {
   background-color: #262626; }
 
+.td-footer .td-footer-nav > ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0; }
+
 .-bg-blue {
   color: #fff;
   background-color: #72A1E5; }

@@ -48,6 +48,7 @@
     </section>
       <nav class="td-footer-nav">
         {{ $p := . }}
+        <ul>
 			  {{ range .Site.Menus.main }}
           {{ $url := urls.Parse .URL }}
           {{ $baseurl := urls.Parse $.Site.Params.Baseurl }}
@@ -58,6 +59,7 @@
             </a>
           </li>
 			  {{ end }}
+        </ul>
       </nav>
     </section>
     <section>
