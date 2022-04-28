@@ -13,7 +13,10 @@
       </main>
       {{ partial "footer.html" . }}
       <footer class="td-footer">
-
+        <a class="footer-brand" href="{{ .Site.Home.RelPermalink }}">
+          <span class="footer-logo">{{ with resources.Get "icons/logo-white.svg" }}{{ ( . | minify).Content | safeHTML }} {{ end }}</span>
+          <span class="brand-name text-uppercase font-weight-bold">{{ .Site.Title }}</span>
+        </a>
       </footer>
     </div>
     {{ partialCached "scripts.html" . }}
