@@ -30,10 +30,10 @@ github gh-pages 관련 issue를 올립니다.
 {{ end }}
 ```
 
-![comparison-2-1](https://user-images.githubusercontent.com/72232928/165538584-b16a044d-ce89-4a62-87ea-a047326cf2bb.png)
 
 
-local repository에 다음의  package.json를 include하고 `hugo --minify`를 실행한 결과 scss change가 문제없이 반영이 됩니다.
+
+local repository에 다음의  package.json를 include하고 `git commit`을 실행한 결과 scss change가 문제없이 반영이 됩니다.
 
 ```
 {
@@ -57,14 +57,12 @@ local repository에 다음의  package.json를 include하고 `hugo --minify`를 
 }
 ```
 
-관리자님, 현재의 package-lock.json와 함께 commit을 하면은 다음의 에러가 일어납니다.
+관리자님, 현재의 package-lock.json은 아무 관련이 없는데 이 파일을 remove해도 괜찮습니까?
 
-package-lock.json을 지우면은 문제없이 실행이 되는데 이 파일을 remove해도 괜찮습니까?
+![package-lock](https://user-images.githubusercontent.com/72232928/165650165-c06927e1-8e61-4397-8801-ee531fec70be.png)
 
 관리자님, 시간내어 제 issue를 읽어주셔서 고맙습니다.
 
 감사합니다.
-
-
 
 
