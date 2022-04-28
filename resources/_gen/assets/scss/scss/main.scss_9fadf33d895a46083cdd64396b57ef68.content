@@ -10907,12 +10907,17 @@ readers do not read off random characters that represent icons */
     max-width: 80%; } }
 
 .td-footer {
-  background-color: #262626; }
+  background-color: #262626;
+  padding: 50px 0 80px 0;
+  box-sizing: content-box; }
 
 .td-footer .td-footer-nav > ul {
   list-style-type: none;
   display: flex;
   padding: 0; }
+
+.td-footer .nav-item-footer:not(:last-child) {
+  margin: 0 12px 0 0; }
 
 .-bg-blue {
   color: #fff;
