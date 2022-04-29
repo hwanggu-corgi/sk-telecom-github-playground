@@ -10964,6 +10964,17 @@ readers do not read off random characters that represent icons */
 .td-footer .list-inline-item:not(:last-child) {
   margin: 0 15px 0 0; }
 
+.td-footer .list-inline-item > a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #3c3c41;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px; }
+
 .td-footer .td-footer-copyright-privacy {
   color: #fff; }
 
