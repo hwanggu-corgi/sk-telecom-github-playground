@@ -40,35 +40,38 @@
 </footer>
 <footer class="td-footer">
   <div class="container">
-    <a class="td-footer-brand" href="{{ .Site.Home.RelPermalink }}">
-      {{ with resources.Get "icons/logo-white.svg" }}{{ ( . | minify).Content | safeHTML }} {{ end }}
-      <span class="td-footer-brand-name">{{ .Site.Title }}</span>
-    </a>
-    <nav class="td-footer-nav">
-      {{ $p := . }}
-      <ul>
-      {{ range .Site.Menus.main }}
-        {{ $url := urls.Parse .URL }}
-        {{ $baseurl := urls.Parse $.Site.Params.Baseurl }}
-        {{ $active := or ($p.IsMenuCurrent "main" .) ($p.HasMenuCurrent "main" .) }}
-        <li class="nav-item-footer">
-          <a class="nav-link-footer{{if $active }} active{{end}}" href="{{ .URL }}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}>
-            <span{{if $active }} class="active"{{end}}>{{ .Name }}</span>
-          </a>
-        </li>
-      {{ end }}
-      </ul>
-    </nav>
-    <section class="td-footer-copyright-privacy">
-      {{ with .Site.Params.copyright }}<small class="td-footer-copyright">Copyright &copy; 2018-{{ now.Year }} {{ .}} <br>{{ "Documentation Distributed under CC BY 4.0" }}</small>{{ end }}
-      {{ with .Site.Params.privacy_policy }}<small class="td-footer-privacy"><a href="https://sktelecom.com/view/footer/privacy.do" target="_blank">{{ T "footer_privacy_policy" }}</a></small>{{ end }}
+    <section class="td-footer-header">
     </section>
-    <section>
+    <section class="td-footer-main">
+      <a class="td-footer-brand" href="{{ .Site.Home.RelPermalink }}">
+        {{ with resources.Get "icons/logo-white.svg" }}{{ ( . | minify).Content | safeHTML }} {{ end }}
+      </a>
+      <nav class="td-footer-nav">
+        {{ $p := . }}
+        <ul>
+        {{ range .Site.Menus.main }}
+          {{ $url := urls.Parse .URL }}
+          {{ $baseurl := urls.Parse $.Site.Params.Baseurl }}
+          {{ $active := or ($p.IsMenuCurrent "main" .) ($p.HasMenuCurrent "main" .) }}
+          <li class="nav-item-footer">
+            <a class="nav-link-footer{{if $active }} active{{end}}" href="{{ .URL }}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}>
+              <span{{if $active }} class="active"{{end}}>{{ .Name }}</span>
+            </a>
+          </li>
+        {{ end }}
+        </ul>
+      </nav>
+    </section>
+    <div class="td-footer-icons">
       {{ with $links }}
         {{ with index . "user"}}
         {{ template "footer-links-block"  . }}
         {{ end }}
       {{ end }}
+    </div>
+    <section class="td-footer-copyright-privacy">
+      {{ with .Site.Params.copyright }}<small class="td-footer-copyright">Copyright &copy; 2018-{{ now.Year }} {{ .}} <br>{{ "Documentation Distributed under CC BY 4.0" }}</small>{{ end }}
+      {{ with .Site.Params.privacy_policy }}<small class="td-footer-privacy"><a href="https://sktelecom.com/view/footer/privacy.do" target="_blank">{{ T "footer_privacy_policy" }}</a></small>{{ end }}
     </section>
   </div>
 </footer>

@@ -10944,7 +10944,8 @@ readers do not read off random characters that represent icons */
 
 .td-footer .nav-link-footer {
   color: #7f7f7f;
-  transition: all 0.3s linear; }
+  transition: all 0.3s linear;
+  font-weight: bold; }
   .td-footer .nav-link-footer:hover {
     color: #fff; }
   .td-footer .nav-link-footer.active {
