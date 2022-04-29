@@ -1,12 +1,21 @@
 .td-footer {
   background-color: $skdarkgrey;
-  padding: 50px 30px 80px 30px;
+  padding: 50px 30px;
   box-sizing: content-box;
   font-size: 13px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   row-gap: 30px;
   column-gap: 30px;
+
+  @media screen and (min-width: 991px) {
+    & {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+.td-footer .td-footer-main {
+  align-self: flex-end;
 }
 
 .td-footer .td-footer-brand {
@@ -61,6 +70,13 @@
 .td-footer .td-footer-icons {
   align-self: flex-end;
   justify-self: flex-end;
+  order: -1;
+
+  @media screen and (min-width: 991px) {
+    & {
+      order: initial;
+    }
+  }
 }
 
 .td-footer .list-inline {
@@ -87,6 +103,11 @@
 
 .td-footer .td-footer-copyright-privacy {
   color: $white;
+  @media screen and (min-width: 991px) {
+    & {
+      grid-column: span 2;
+    }
+  }
 }
 
 .td-footer .td-footer-privacy {

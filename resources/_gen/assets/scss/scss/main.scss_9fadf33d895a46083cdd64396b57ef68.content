@@ -10908,13 +10908,17 @@ readers do not read off random characters that represent icons */
 
 .td-footer {
   background-color: #262626;
-  padding: 50px 30px 80px 30px;
+  padding: 50px 30px;
   box-sizing: content-box;
   font-size: 13px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   row-gap: 30px;
   column-gap: 30px; }
+  @media screen and (min-width: 991px) {
+    .td-footer {
+      grid-template-columns: repeat(2, 1fr); } }
+.td-footer .td-footer-main {
+  align-self: flex-end; }
 
 .td-footer .td-footer-brand {
   display: block;
@@ -10954,8 +10958,11 @@ readers do not read off random characters that represent icons */
 
 .td-footer .td-footer-icons {
   align-self: flex-end;
-  justify-self: flex-end; }
-
+  justify-self: flex-end;
+  order: -1; }
+  @media screen and (min-width: 991px) {
+    .td-footer .td-footer-icons {
+      order: initial; } }
 .td-footer .list-inline {
   margin: 0; }
 
@@ -10975,7 +10982,9 @@ readers do not read off random characters that represent icons */
 
 .td-footer .td-footer-copyright-privacy {
   color: #fff; }
-
+  @media screen and (min-width: 991px) {
+    .td-footer .td-footer-copyright-privacy {
+      grid-column: span 2; } }
 .td-footer .td-footer-privacy {
   font-weight: 600; }
 
