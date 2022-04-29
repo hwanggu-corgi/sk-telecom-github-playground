@@ -41,8 +41,8 @@
 <footer class="td-footer">
   <div class="container">
     <a class="td-footer-brand" href="{{ .Site.Home.RelPermalink }}">
-      <span class="footer-logo">{{ with resources.Get "icons/logo-white.svg" }}{{ ( . | minify).Content | safeHTML }} {{ end }}</span>
-      <span class="brand-name text-uppercase font-weight-bold">{{ .Site.Title }}</span>
+      {{ with resources.Get "icons/logo-white.svg" }}{{ ( . | minify).Content | safeHTML }} {{ end }}
+      <span class="td-footer-brand-name">{{ .Site.Title }}</span>
     </a>
     <nav class="td-footer-nav">
       {{ $p := . }}

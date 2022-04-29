@@ -2,11 +2,16 @@
   background-color: $skdarkgrey;
   padding: 50px 0 80px 0;
   box-sizing: content-box;
+  font-size: 13px;
 }
 
-.td-footer-brand {
+.td-footer .td-footer-brand {
   display: block;
   margin: 0 0 30px 0;
+}
+
+.td-footer .td-footer-brand > svg {
+  height: 38px;
 }
 
 .td-footer .td-footer-nav {
@@ -54,4 +59,20 @@
 
 .td-footer .td-footer-copyright-privacy {
   color: $white;
+}
+
+.td-footer .td-footer-privacy {
+  font-weight: 600;
+}
+
+.td-footer .td-footer-privacy > a {
+  font-weight: 600;
+  color: $white;
+  border-bottom: 1px dotted $white;
+  transition: $transition;
+
+  &:hover {
+    color: $skred;
+    border-bottom: 1px dotted $skred;
+  }
 }
