@@ -10911,13 +10911,18 @@ readers do not read off random characters that represent icons */
   padding: 50px 0 80px 0;
   box-sizing: content-box; }
 
-.td-footer-header {
+.td-footer-brand {
+  display: block;
+  margin: 0 0 30px 0; }
+
+.td-footer .td-footer-nav {
   margin: 0 0 30px 0; }
 
 .td-footer .td-footer-nav > ul {
   list-style-type: none;
   display: flex;
-  padding: 0; }
+  padding: 0;
+  margin: 0; }
 
 .td-footer .nav-item-footer {
   position: relative; }
@@ -10935,7 +10940,14 @@ readers do not read off random characters that represent icons */
 
 .td-footer .nav-link-footer {
   color: #7f7f7f;
-  font-weight: 600; }
+  transition: all 0.3s linear; }
+  .td-footer .nav-link-footer:hover {
+    color: #fff; }
+  .td-footer .nav-link-footer.active {
+    color: #fff; }
+
+.td-footer .td-footer-copyright-privacy {
+  color: #fff; }
 
 .-bg-blue {
   color: #fff;

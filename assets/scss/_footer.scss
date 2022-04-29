@@ -4,7 +4,12 @@
   box-sizing: content-box;
 }
 
-.td-footer-header {
+.td-footer-brand {
+  display: block;
+  margin: 0 0 30px 0;
+}
+
+.td-footer .td-footer-nav {
   margin: 0 0 30px 0;
 }
 
@@ -12,6 +17,7 @@
   list-style-type: none;
   display: flex;
   padding: 0;
+  margin: 0;
 }
 
 .td-footer .nav-item-footer {
@@ -35,9 +41,17 @@
 
 .td-footer .nav-link-footer {
   color: $skgrey;
-  font-weight: 600;
+  transition: $transition;
+
+  &:hover {
+    color: $white;
+  }
 
   &.active {
-
+    color: $white;
   }
+}
+
+.td-footer .td-footer-copyright-privacy {
+  color: $white;
 }
