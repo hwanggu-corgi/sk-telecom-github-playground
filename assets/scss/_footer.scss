@@ -4,6 +4,10 @@
   box-sizing: content-box;
 }
 
+.td-footer-header {
+  margin: 0 0 30px 0;
+}
+
 .td-footer .td-footer-nav > ul {
   list-style-type: none;
   display: flex;
@@ -11,9 +15,29 @@
 }
 
 .td-footer .nav-item-footer {
+  position: relative;
+
   &:not(:last-child) {
     margin: 0 12px 0 0;
   }
+
+  &:not(:last-child)::after {
+    content: "";
+    height: 9px;
+    width: 1px;
+    background-color: $skgrey;
+    position: absolute;
+    right: -6px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
+.td-footer .nav-link-footer {
+  color: $skgrey;
+  font-weight: 600;
 
+  &.active {
+
+  }
+}

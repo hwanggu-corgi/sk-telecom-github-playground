@@ -10911,13 +10911,31 @@ readers do not read off random characters that represent icons */
   padding: 50px 0 80px 0;
   box-sizing: content-box; }
 
+.td-footer-header {
+  margin: 0 0 30px 0; }
+
 .td-footer .td-footer-nav > ul {
   list-style-type: none;
   display: flex;
   padding: 0; }
 
-.td-footer .nav-item-footer:not(:last-child) {
-  margin: 0 12px 0 0; }
+.td-footer .nav-item-footer {
+  position: relative; }
+  .td-footer .nav-item-footer:not(:last-child) {
+    margin: 0 12px 0 0; }
+  .td-footer .nav-item-footer:not(:last-child)::after {
+    content: "";
+    height: 9px;
+    width: 1px;
+    background-color: #7f7f7f;
+    position: absolute;
+    right: -6px;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+
+.td-footer .nav-link-footer {
+  color: #7f7f7f;
+  font-weight: 600; }
 
 .-bg-blue {
   color: #fff;

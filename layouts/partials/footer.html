@@ -46,6 +46,7 @@
         <span class="brand-name text-uppercase font-weight-bold">{{ .Site.Title }}</span>
       </a>
     </section>
+    <section>
       <nav class="td-footer-nav">
         {{ $p := . }}
         <ul>
@@ -61,6 +62,10 @@
 			  {{ end }}
         </ul>
       </nav>
+    </section>
+    <section>
+      {{ with .Site.Params.copyright }}<small class="text-white">Copyright &copy; 2018-{{ now.Year }} {{ .}} <br>{{ "Documentation Distributed under CC BY 4.0" }}</small>{{ end }}
+      {{ with .Site.Params.privacy_policy }}<small class="ml-1"><a href="https://sktelecom.com/view/footer/privacy.do" target="_blank">{{ T "footer_privacy_policy" }}</a></small>{{ end }}
     </section>
     <section>
       {{ with $links }}
