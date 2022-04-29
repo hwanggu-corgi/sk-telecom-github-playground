@@ -1,6 +1,5 @@
 .td-footer {
   background-color: $skdarkgrey;
-  padding: 50px 30px;
   box-sizing: content-box;
   font-size: 13px;
   display: grid;
@@ -10,6 +9,7 @@
   @media screen and (min-width: 991px) {
     & {
       grid-template-columns: repeat(2, 1fr);
+      padding: 50px 30px;
     }
   }
 }
@@ -128,6 +128,10 @@
   font-size: 12px;
   font-weight: 600;
   color: $skgrey;
+}
+
+.td-footer .list-inline-item > a:hover > span {
+  color: $white;
 }
 
 .td-footer .td-footer-copyright-privacy {

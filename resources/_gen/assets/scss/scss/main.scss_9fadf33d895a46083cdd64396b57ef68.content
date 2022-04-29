@@ -10908,7 +10908,6 @@ readers do not read off random characters that represent icons */
 
 .td-footer {
   background-color: #262626;
-  padding: 50px 30px;
   box-sizing: content-box;
   font-size: 13px;
   display: grid;
@@ -10916,7 +10915,8 @@ readers do not read off random characters that represent icons */
   column-gap: 30px; }
   @media screen and (min-width: 991px) {
     .td-footer {
-      grid-template-columns: repeat(2, 1fr); } }
+      grid-template-columns: repeat(2, 1fr);
+      padding: 50px 30px; } }
 .td-footer .td-footer-main {
   align-self: flex-end; }
 
@@ -11001,6 +11001,9 @@ readers do not read off random characters that represent icons */
   font-size: 12px;
   font-weight: 600;
   color: #7f7f7f; }
+
+.td-footer .list-inline-item > a:hover > span {
+  color: #fff; }
 
 .td-footer .td-footer-copyright-privacy {
   color: #fff; }
