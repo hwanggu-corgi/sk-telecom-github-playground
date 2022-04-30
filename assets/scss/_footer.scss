@@ -314,7 +314,17 @@
   }
 }
 
-.td-footer-two .td-footer-brand > svg {
+.td-footer-two .td-footer-brand-desktop {
+  display: none;
+
+  @media screen and (min-width: 767px) {
+    & {
+      display: inline-block;
+    }
+  }
+}
+
+.td-footer-two .td-footer-brand-desktop > svg {
   height: 38px;
 
   @media screen and (min-width: 991px) {
@@ -404,6 +414,16 @@
       padding: 0;
     }
   }
+
+  @media screen and (min-width: 991px) {
+    & {
+      grid-column: initial;
+    }
+  }
+}
+
+.td-footer-two .td-footer-copyright-privacy-main > * {
+  display: block;
 }
 
 .td-footer-two .td-footer-privacy {

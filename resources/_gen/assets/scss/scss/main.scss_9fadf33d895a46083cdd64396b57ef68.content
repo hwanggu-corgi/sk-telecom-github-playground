@@ -11113,10 +11113,15 @@ readers do not read off random characters that represent icons */
   @media screen and (min-width: 991px) {
     .td-footer-two .td-footer-header {
       margin: 0; } }
-.td-footer-two .td-footer-brand > svg {
+.td-footer-two .td-footer-brand-desktop {
+  display: none; }
+  @media screen and (min-width: 767px) {
+    .td-footer-two .td-footer-brand-desktop {
+      display: inline-block; } }
+.td-footer-two .td-footer-brand-desktop > svg {
   height: 38px; }
   @media screen and (min-width: 991px) {
-    .td-footer-two .td-footer-brand > svg {
+    .td-footer-two .td-footer-brand-desktop > svg {
       height: 44px; } }
 .td-footer-two .td-footer-nav {
   padding: 35px 15px 16px 15px; }
@@ -11172,6 +11177,12 @@ readers do not read off random characters that represent icons */
     .td-footer-two .td-footer-copyright-privacy {
       grid-column: span 2;
       padding: 0; } }
+  @media screen and (min-width: 991px) {
+    .td-footer-two .td-footer-copyright-privacy {
+      grid-column: initial; } }
+.td-footer-two .td-footer-copyright-privacy-main > * {
+  display: block; }
+
 .td-footer-two .td-footer-privacy {
   font-weight: 600; }
 
