@@ -6,7 +6,7 @@
   column-gap: 30px;
   row-gap: 0;
 
-  @media screen and (min-width: 991px) {
+  @media screen and (min-width: 767px) {
     & {
       grid-template-columns: repeat(2, 1fr);
       padding: 50px 30px;
@@ -17,10 +17,10 @@
 
 .td-footer .td-footer-main {
   align-self: flex-end;
-  padding: 35px 15px;
+  padding: 35px 15px 16px 15px;
   position: relative;
 
-  @media screen and (min-width: 991px) {
+  @media screen and (min-width: 767px) {
     & {
       padding: 0;
     }
@@ -35,11 +35,11 @@
     position: absolute;
     left: 0;
     bottom: 0;
-  }
 
-  @media screen and (min-width: 991px) {
-    &::after {
-      content: none;
+    @media screen and (min-width: 767px) {
+      & {
+        content: none;
+      }
     }
   }
 }
@@ -48,7 +48,7 @@
   display: none;
   margin: 0 0 30px 0;
 
-  @media screen and (min-width: 991px) {
+  @media screen and (min-width: 767px) {
     & {
       display: inline-block;
     }
@@ -67,7 +67,7 @@
   max-width: 280px;
   flex-wrap: wrap;
 
-  @media screen and (min-width: 991px) {
+  @media screen and (min-width: 767px) {
     & {
       flex-wrap: initial;
     }
@@ -77,20 +77,21 @@
 .td-footer .nav-item-footer {
   position: relative;
   margin: 0 0 19px 0;
+  line-height: 1;
 
-  @media screen and (min-width: 991px) {
+  @media screen and (min-width: 767px) {
     & {
       margin-bottom: 0;
     }
   }
 
   &:not(:last-child) {
-    margin: 0 12px 19px 0;
-  }
+    margin: 0 20px 19px 0;
 
-  @media screen and (min-width: 991px) {
-    &:not(:last-child) {
-      margin: 0 12px 0 0;
+    @media screen and (min-width: 767px) {
+      & {
+        margin: 0 12px 0 0;
+      }
     }
   }
 
@@ -100,9 +101,15 @@
     width: 1px;
     background-color: $skgrey2;
     position: absolute;
-    right: -6px;
+    right: -10px;
     top: 50%;
     transform: translate(-50%, -50%);
+
+    @media screen and (min-width: 767px) {
+      & {
+        right: -6px;
+      }
+    }
   }
 }
 
@@ -125,7 +132,7 @@
   position: relative;
   padding: 35px 15px;
 
-  @media screen and (min-width: 991px) {
+  @media screen and (min-width: 767px) {
     & {
       align-self: flex-end;
       justify-self: flex-end;
@@ -143,11 +150,11 @@
     position: absolute;
     left: 0;
     bottom: 0;
-  }
 
-  @media screen and (min-width: 991px) {
-    &::after {
-      content: none;
+    @media screen and (min-width: 767px) {
+      & {
+        content: none;
+      }
     }
   }
 }
@@ -157,7 +164,7 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
 
-  @media screen and (min-width: 991px) {
+  @media screen and (min-width: 767px) {
     & {
       display: flex;
     }
@@ -166,7 +173,7 @@
 
 .td-footer .list-inline-item {
   justify-self: center;
-  @media screen and (min-width: 991px) {
+  @media screen and (min-width: 767px) {
     &:not(:last-child) {
       margin: 0 15px 0 0;
     }
@@ -190,7 +197,7 @@
   font-size: 14px;
   margin: 0 0 7px 0;
 
-  @media screen and (min-width: 991px) {
+  @media screen and (min-width: 767px) {
     & {
       width: 40px;
       height: 40px;
@@ -206,7 +213,7 @@
   transition: $transition;
   text-align: center;
 
-  @media screen and (min-width: 991px) {
+  @media screen and (min-width: 767px) {
     & {
       font-size: 12px;
     }
@@ -220,7 +227,7 @@
 .td-footer .td-footer-copyright-privacy {
   color: $skgrey2;
   padding: 27px 15px;
-  @media screen and (min-width: 991px) {
+  @media screen and (min-width: 767px) {
     & {
       grid-column: span 2;
       padding: 0;
@@ -232,7 +239,7 @@
   margin: 0 0 11px 0;
   display: inline-block;
 
-  @media screen and (min-width: 991px) {
+  @media screen and (min-width: 767px) {
     display: none;
   }
 }
