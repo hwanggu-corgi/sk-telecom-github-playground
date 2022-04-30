@@ -282,7 +282,14 @@
   box-sizing: border-box;
   font-size: 13px;
   display: grid;
-  grid-template-columns: 1.66fr 6.66fr 1.66fr;
+  grid-template-columns: 2.27fr 6.2fr 1.53fr;
+  column-gap: 48px;
+
+  @media screen and (min-width: 1200px) {
+    & {
+      grid-template-columns: 1.53fr 6.94fr 1.53fr;
+    }
+  }
 }
 
 
