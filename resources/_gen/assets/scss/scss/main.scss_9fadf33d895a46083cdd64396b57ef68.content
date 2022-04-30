@@ -11078,6 +11078,9 @@ readers do not read off random characters that represent icons */
 .td-footer .td-footer-brand-mobile > svg {
   height: 20px; }
 
+.td-footer .td-footer-copyright-privacy-main > * {
+  display: block; }
+
 .td-footer .td-footer-privacy {
   font-weight: 600; }
 
