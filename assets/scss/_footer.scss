@@ -278,7 +278,6 @@
 /*Footer 2*/
 .td-footer-two {
   background-color: $skdarkgrey;
-  padding: 40px 30px 96px 30px;
   box-sizing: border-box;
   font-size: 13px;
   display: grid;
@@ -288,6 +287,7 @@
   @media screen and (min-width: 767px) {
     & {
       grid-template-columns: 7fr 3fr;
+      padding: 40px 30px 96px 30px;
     }
   }
 
@@ -325,8 +325,11 @@
 }
 
 .td-footer-two .td-footer-nav {
+  padding: 35px 15px 16px 15px;
+
   @media screen and (min-width: 767px) {
     margin: 0 0 40px 0;
+    padding: 0;
   }
 }
 

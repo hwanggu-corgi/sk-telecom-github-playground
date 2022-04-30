@@ -11093,7 +11093,6 @@ readers do not read off random characters that represent icons */
 /*Footer 2*/
 .td-footer-two {
   background-color: #262626;
-  padding: 40px 30px 96px 30px;
   box-sizing: border-box;
   font-size: 13px;
   display: grid;
@@ -11101,7 +11100,8 @@ readers do not read off random characters that represent icons */
   column-gap: 48px; }
   @media screen and (min-width: 767px) {
     .td-footer-two {
-      grid-template-columns: 7fr 3fr; } }
+      grid-template-columns: 7fr 3fr;
+      padding: 40px 30px 96px 30px; } }
   @media screen and (min-width: 991px) {
     .td-footer-two {
       grid-template-columns: 2.27fr 5.0fr 1.6fr; } }
@@ -11118,10 +11118,12 @@ readers do not read off random characters that represent icons */
   @media screen and (min-width: 991px) {
     .td-footer-two .td-footer-brand > svg {
       height: 44px; } }
-@media screen and (min-width: 767px) {
-  .td-footer-two .td-footer-nav {
-    margin: 0 0 40px 0; } }
-
+.td-footer-two .td-footer-nav {
+  padding: 35px 15px 16px 15px; }
+  @media screen and (min-width: 767px) {
+    .td-footer-two .td-footer-nav {
+      margin: 0 0 40px 0;
+      padding: 0; } }
 .td-footer-two .td-footer-nav > ul {
   list-style-type: none;
   display: flex;
