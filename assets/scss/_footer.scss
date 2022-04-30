@@ -277,5 +277,8 @@
 
 /*Footer 2*/
 .td-footer-two {
-
+  background-color: $skdarkgrey;
+  padding: 40px 30px 96px 30px;
+  display: grid;
+  grid-template-columns: 1.66fr 6.66fr 1.66fr;
 }
