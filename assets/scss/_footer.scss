@@ -622,13 +622,7 @@
 
   @media screen and (min-width: 991px) {
     & {
-      grid-template-columns: 2.27fr 5.0fr 1.6fr;
-    }
-  }
-
-  @media screen and (min-width: 1200px) {
-    & {
-      grid-template-columns: 1.53fr 6.65fr 1.53fr;
+      grid-template-columns: 1.53fr 5.0fr 1.53fr;
     }
   }
 }

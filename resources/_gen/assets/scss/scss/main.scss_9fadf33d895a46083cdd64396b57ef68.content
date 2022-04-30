@@ -11319,10 +11319,7 @@ readers do not read off random characters that represent icons */
       padding: 80px 30px; } }
   @media screen and (min-width: 991px) {
     .td-footer-three {
-      grid-template-columns: 2.27fr 5.0fr 1.6fr; } }
-  @media screen and (min-width: 1200px) {
-    .td-footer-three {
-      grid-template-columns: 1.53fr 6.65fr 1.53fr; } }
+      grid-template-columns: 1.53fr 5.0fr 1.53fr; } }
 .td-footer-three .td-footer-icons-mobile {
   position: relative;
   padding: 35px 15px; }
