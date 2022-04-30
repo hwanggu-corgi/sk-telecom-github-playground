@@ -93,7 +93,7 @@
 </footer>
 <footer class="td-footer-two">
   <section class="td-footer-header">
-    <a class="td-footer-brand-desktop" href="{{ .Site.Home.RelPermalink }}">
+    <a class="td-footer-brand" href="{{ .Site.Home.RelPermalink }}">
       {{ with resources.Get "icons/logo-white.svg" }}{{ ( . | minify).Content | safeHTML }} {{ end }}
     </a>
   </section>

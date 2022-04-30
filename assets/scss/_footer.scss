@@ -282,7 +282,7 @@
   box-sizing: border-box;
   font-size: 13px;
   display: grid;
-  grid-template-columns: 2.27fr 6.2fr 1.53fr;
+  grid-template-columns: 2.27fr 5.0fr 1.6fr;
   column-gap: 48px;
 
   @media screen and (min-width: 1200px) {
@@ -293,7 +293,15 @@
 }
 
 
+.td-footer-two .td-footer-brand > svg {
+  height: 38px;
 
+  @media screen and (min-width: 991px) {
+    & {
+      height: 44px;
+    }
+  }
+}
 
 .td-footer-two .td-footer-nav > ul {
   list-style-type: none;
