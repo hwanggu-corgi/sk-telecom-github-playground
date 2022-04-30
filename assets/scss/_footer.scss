@@ -4,11 +4,13 @@
   font-size: 13px;
   display: grid;
   column-gap: 30px;
+  row-gap: 0;
 
   @media screen and (min-width: 991px) {
     & {
       grid-template-columns: repeat(2, 1fr);
       padding: 50px 30px;
+      row-gap: 30px;
     }
   }
 }
@@ -16,6 +18,19 @@
 .td-footer .td-footer-main {
   align-self: flex-end;
   padding: 35px 15px;
+  position: relative;
+
+  &::after {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: $white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
 
   @media screen and (min-width: 991px) {
     & {
@@ -169,9 +184,11 @@
 
 .td-footer .td-footer-copyright-privacy {
   color: $white;
+  padding: 27px 15px;
   @media screen and (min-width: 991px) {
     & {
       grid-column: span 2;
+      padding: 0;
     }
   }
 }

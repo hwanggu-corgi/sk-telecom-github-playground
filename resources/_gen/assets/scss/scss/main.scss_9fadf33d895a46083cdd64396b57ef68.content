@@ -10911,14 +10911,26 @@ readers do not read off random characters that represent icons */
   box-sizing: content-box;
   font-size: 13px;
   display: grid;
-  column-gap: 30px; }
+  column-gap: 30px;
+  row-gap: 0; }
   @media screen and (min-width: 991px) {
     .td-footer {
       grid-template-columns: repeat(2, 1fr);
-      padding: 50px 30px; } }
+      padding: 50px 30px;
+      row-gap: 30px; } }
 .td-footer .td-footer-main {
   align-self: flex-end;
-  padding: 35px 15px; }
+  padding: 35px 15px;
+  position: relative; }
+  .td-footer .td-footer-main::after {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0; }
   @media screen and (min-width: 991px) {
     .td-footer .td-footer-main {
       padding: 0; } }
@@ -11023,10 +11035,12 @@ readers do not read off random characters that represent icons */
   color: #fff; }
 
 .td-footer .td-footer-copyright-privacy {
-  color: #fff; }
+  color: #fff;
+  padding: 27px 15px; }
   @media screen and (min-width: 991px) {
     .td-footer .td-footer-copyright-privacy {
-      grid-column: span 2; } }
+      grid-column: span 2;
+      padding: 0; } }
 .td-footer .td-footer-privacy {
   font-weight: 600; }
 
@@ -12875,11 +12889,6 @@ header.mobile-menu-open .td-navbar-mobile {
   .td-search-input.form-control:focus {
     border-color: #bbb2f1;
     box-shadow: 0 0 0 2px #4a30da; }
-
-.td-outer {
-  display: flex;
-  flex-direction: column;
-  height: 100vh; }
 
 @media (min-width: 768px) {
   .td-default main section:first-of-type {
