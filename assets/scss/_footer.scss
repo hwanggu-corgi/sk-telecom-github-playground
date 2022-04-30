@@ -20,21 +20,26 @@
   padding: 35px 15px;
   position: relative;
 
+  @media screen and (min-width: 991px) {
+    & {
+      padding: 0;
+    }
+  }
+
   &::after {
     display: block;
     content: "";
     height: 1px;
     width: 100%;
-    background-color: $white;
+    background-color: $skdarkgrey3;
     position: absolute;
     left: 0;
     bottom: 0;
   }
 
-
   @media screen and (min-width: 991px) {
-    & {
-      padding: 0;
+    &::after {
+      content: none;
     }
   }
 }
@@ -55,20 +60,39 @@
   margin: 0;
   max-width: 280px;
   flex-wrap: wrap;
+
+  @media screen and (min-width: 991px) {
+    & {
+      flex-wrap: initial;
+    }
+  }
 }
 
 .td-footer .nav-item-footer {
   position: relative;
+  margin: 0 0 19px 0;
+
+  @media screen and (min-width: 991px) {
+    & {
+      margin-bottom: 0;
+    }
+  }
 
   &:not(:last-child) {
-    margin: 0 12px 0 0;
+    margin: 0 12px 19px 0;
+  }
+
+  @media screen and (min-width: 991px) {
+    &:not(:last-child) {
+      margin: 0 12px 0 0;
+    }
   }
 
   &:not(:last-child)::after {
     content: "";
     height: 9px;
     width: 1px;
-    background-color: $skgrey;
+    background-color: $skgrey2;
     position: absolute;
     right: -6px;
     top: 50%;
@@ -77,7 +101,7 @@
 }
 
 .td-footer .nav-link-footer {
-  color: $skgrey;
+  color: $skgrey2;
   transition: $transition;
   font-weight: bold;
 
@@ -109,7 +133,7 @@
     content: "";
     height: 1px;
     width: 100%;
-    background-color: $white;
+    background-color: $skdarkgrey3;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -169,7 +193,7 @@
 .td-footer .list-inline-item span {
   font-size: 11px;
   font-weight: 600;
-  color: $skgrey;
+  color: $skgrey2;
   transition: $transition;
   text-align: center;
 
@@ -185,7 +209,7 @@
 }
 
 .td-footer .td-footer-copyright-privacy {
-  color: $white;
+  color: $skgrey2;
   padding: 27px 15px;
   @media screen and (min-width: 991px) {
     & {
@@ -201,8 +225,8 @@
 
 .td-footer .td-footer-privacy > a {
   font-weight: 600;
-  color: $white;
-  border-bottom: 1px dotted $white;
+  color: $skgrey2;
+  border-bottom: 1px dotted $skgrey2;
   transition: $transition;
 
   &:hover {
