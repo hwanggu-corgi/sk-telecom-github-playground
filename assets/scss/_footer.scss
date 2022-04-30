@@ -23,6 +23,23 @@
   @media screen and (min-width: 767px) {
     display: none;
   }
+
+  &::after {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: $skdarkgrey3;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    @media screen and (min-width: 767px) {
+      & {
+        content: none;
+      }
+    }
+  }
 }
 
 .td-footer .td-footer-main {
@@ -149,23 +166,6 @@
       display: block;
     }
   }
-
-  &::after {
-    display: block;
-    content: "";
-    height: 1px;
-    width: 100%;
-    background-color: $skdarkgrey3;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-
-    @media screen and (min-width: 767px) {
-      & {
-        content: none;
-      }
-    }
-  }
 }
 
 .td-footer .list-inline {
@@ -272,5 +272,3 @@
     border-bottom: 1px dotted $skred;
   }
 }
-
-
