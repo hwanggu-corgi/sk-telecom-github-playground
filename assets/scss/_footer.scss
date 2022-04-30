@@ -429,6 +429,14 @@
       align-self: center;
     }
   }
+
+  @media screen and (min-width: 991px) {
+    & {
+      grid-row: initial;
+      grid-column: initial;
+      align-self: initial;
+    }
+  }
 }
 
 .td-footer-two .list-inline {
