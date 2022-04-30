@@ -10912,7 +10912,8 @@ readers do not read off random characters that represent icons */
   font-size: 13px;
   display: grid;
   column-gap: 30px;
-  row-gap: 0; }
+  row-gap: 0;
+  position: relative; }
   @media screen and (min-width: 767px) {
     .td-footer {
       grid-template-columns: repeat(2, 1fr);
