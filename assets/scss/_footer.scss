@@ -291,7 +291,7 @@
   @media screen and (min-width: 767px) {
     & {
       grid-template-columns: 7fr 3fr;
-      padding: 40px 30px 96px 30px;
+      padding: 80px 30px;
     }
   }
 
@@ -309,9 +309,27 @@
 }
 
 .td-footer-two .td-footer-icons-mobile {
+  position: relative;
+  padding: 35px 15px;
+
   @media screen and (min-width: 767px) {
-    & {
-      display: none;
+    display: none;
+  }
+
+  &::after {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: $skdarkgrey3;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    @media screen and (min-width: 767px) {
+      & {
+        content: none;
+      }
     }
   }
 }
@@ -359,10 +377,28 @@
 
 .td-footer-two .td-footer-nav {
   padding: 35px 15px 16px 15px;
+  position: relative;
 
   @media screen and (min-width: 767px) {
     margin: 0 0 40px 0;
     padding: 0;
+  }
+
+  &::after {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: $skdarkgrey3;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    @media screen and (min-width: 767px) {
+      & {
+        content: none;
+      }
+    }
   }
 }
 
