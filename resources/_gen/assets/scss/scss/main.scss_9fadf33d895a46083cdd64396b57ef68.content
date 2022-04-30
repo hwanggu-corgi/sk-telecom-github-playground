@@ -10937,11 +10937,13 @@ readers do not read off random characters that represent icons */
   @media screen and (min-width: 991px) {
     .td-footer .td-footer-main::after {
       content: none; } }
-.td-footer .td-footer-brand {
-  display: inline-block;
+.td-footer .td-footer-brand-desktop {
+  display: none;
   margin: 0 0 30px 0; }
-
-.td-footer .td-footer-brand > svg {
+  @media screen and (min-width: 991px) {
+    .td-footer .td-footer-brand-desktop {
+      display: inline-block; } }
+.td-footer .td-footer-brand-desktop > svg {
   height: 38px; }
 
 .td-footer .td-footer-nav > ul {
@@ -10978,7 +10980,7 @@ readers do not read off random characters that represent icons */
 .td-footer .nav-link-footer {
   color: #bababf;
   transition: all 0.3s linear;
-  font-weight: bold; }
+  font-weight: 500; }
   .td-footer .nav-link-footer:hover {
     color: #fff; }
   .td-footer .nav-link-footer.active {
@@ -11013,9 +11015,11 @@ readers do not read off random characters that represent icons */
   @media screen and (min-width: 991px) {
     .td-footer .list-inline {
       display: flex; } }
-.td-footer .list-inline-item:not(:last-child) {
-  margin: 0 15px 0 0; }
-
+.td-footer .list-inline-item {
+  justify-self: center; }
+  @media screen and (min-width: 991px) {
+    .td-footer .list-inline-item:not(:last-child) {
+      margin: 0 15px 0 0; } }
 .td-footer .list-inline-item > a {
   display: flex;
   flex-direction: column;
@@ -11055,6 +11059,15 @@ readers do not read off random characters that represent icons */
     .td-footer .td-footer-copyright-privacy {
       grid-column: span 2;
       padding: 0; } }
+.td-footer .td-footer-brand-mobile {
+  margin: 0 0 11px 0;
+  display: inline-block; }
+  @media screen and (min-width: 991px) {
+    .td-footer .td-footer-brand-mobile {
+      display: none; } }
+.td-footer .td-footer-brand-mobile > svg {
+  height: 20px; }
+
 .td-footer .td-footer-privacy {
   font-weight: 600; }
 
