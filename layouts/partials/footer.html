@@ -46,6 +46,13 @@
       {{ with .Site.Params.privacy_policy }}<small class="td-footer-privacy"><a href="https://sktelecom.com/view/footer/privacy.do" target="_blank">{{ T "footer_privacy_policy" }}</a></small>{{ end }}
     </section>
   </div> -->
+    <section class="td-footer-icons-mobile">
+      {{ with $links }}
+        {{ with index . "user"}}
+        {{ template "footer-links-block"  . }}
+        {{ end }}
+      {{ end }}
+    </section>
     <section class="td-footer-main">
       <a class="td-footer-brand-desktop" href="{{ .Site.Home.RelPermalink }}">
         {{ with resources.Get "icons/logo-white.svg" }}{{ ( . | minify).Content | safeHTML }} {{ end }}
@@ -66,7 +73,7 @@
         </ul>
       </nav>
     </section>
-    <section class="td-footer-icons">
+    <section class="td-footer-icons-desktop">
       {{ with $links }}
         {{ with index . "user"}}
         {{ template "footer-links-block"  . }}

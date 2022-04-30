@@ -10919,6 +10919,12 @@ readers do not read off random characters that represent icons */
       grid-template-columns: repeat(2, 1fr);
       padding: 50px 30px;
       row-gap: 30px; } }
+.td-footer .td-footer-icons-mobile {
+  position: relative;
+  padding: 35px 15px; }
+  @media screen and (min-width: 767px) {
+    .td-footer .td-footer-icons-mobile {
+      display: none; } }
 .td-footer .td-footer-main {
   align-self: flex-end;
   padding: 35px 15px 16px 15px;
@@ -10990,17 +10996,16 @@ readers do not read off random characters that represent icons */
   .td-footer .nav-link-footer.active {
     color: #fff; }
 
-.td-footer .td-footer-icons {
-  order: -1;
-  position: relative;
-  padding: 35px 15px; }
+.td-footer .td-footer-icons-desktop {
+  display: none; }
   @media screen and (min-width: 767px) {
-    .td-footer .td-footer-icons {
+    .td-footer .td-footer-icons-desktop {
       align-self: flex-end;
       justify-self: flex-end;
       order: initial;
-      padding: 0; } }
-  .td-footer .td-footer-icons::after {
+      padding: 0;
+      display: block; } }
+  .td-footer .td-footer-icons-desktop::after {
     display: block;
     content: "";
     height: 1px;
@@ -11010,7 +11015,7 @@ readers do not read off random characters that represent icons */
     left: 0;
     bottom: 0; }
     @media screen and (min-width: 767px) {
-      .td-footer .td-footer-icons::after {
+      .td-footer .td-footer-icons-desktop::after {
         content: none; } }
 .td-footer .list-inline {
   margin: 0;

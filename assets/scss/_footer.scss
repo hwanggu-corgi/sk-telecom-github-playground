@@ -16,6 +16,15 @@
   }
 }
 
+.td-footer .td-footer-icons-mobile {
+  position: relative;
+  padding: 35px 15px;
+
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+}
+
 .td-footer .td-footer-main {
   align-self: flex-end;
   padding: 35px 15px 16px 15px;
@@ -128,10 +137,8 @@
   }
 }
 
-.td-footer .td-footer-icons {
-  order: -1;
-  position: relative;
-  padding: 35px 15px;
+.td-footer .td-footer-icons-desktop {
+  display: none;
 
   @media screen and (min-width: 767px) {
     & {
@@ -139,6 +146,7 @@
       justify-self: flex-end;
       order: initial;
       padding: 0;
+      display: block;
     }
   }
 
@@ -264,3 +272,4 @@
     border-bottom: 1px dotted $skred;
   }
 }
+
