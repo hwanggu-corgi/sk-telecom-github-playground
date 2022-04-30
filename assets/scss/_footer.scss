@@ -53,6 +53,8 @@
   display: flex;
   padding: 0;
   margin: 0;
+  max-width: 280px;
+  flex-wrap: wrap;
 }
 
 .td-footer .nav-item-footer {
