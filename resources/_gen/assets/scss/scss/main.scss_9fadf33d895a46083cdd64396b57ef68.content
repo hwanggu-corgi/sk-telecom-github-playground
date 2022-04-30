@@ -11316,7 +11316,7 @@ readers do not read off random characters that represent icons */
   @media screen and (min-width: 767px) {
     .td-footer-three {
       grid-template-columns: 7fr 3fr;
-      padding: 80px 30px; } }
+      padding: 60px 30px; } }
   @media screen and (min-width: 991px) {
     .td-footer-three {
       grid-template-columns: 1.53fr 5.0fr 1.53fr; } }
