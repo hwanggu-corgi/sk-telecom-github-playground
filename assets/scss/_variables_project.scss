@@ -25,13 +25,10 @@ html.smooth-scroll {
 // dark : #444444
 
 $skdarkgrey : #262626;
-$skdarkgrey2 : #3c3c41;
-$skdarkgrey3 : #3d3d42;
 $skred: #ea002c;
 $skorange: #ff7a00;
 $skpurple: #1d1160;
 $skgrey: #7f7f7f;
-$skgrey2: #bababf;
 
 $primary: $skpurple;
 $secondary: #fff;
@@ -49,7 +46,6 @@ $light: #dee2e6;
 // $navbar-dark-active-color: $navbar-dark-color;
 
 $white: #fff; // background
-$black: #000;
 $navbar-dark-color: #000; // nav font default color
 $navbar-dark-hover-color: $skred; // nav font hover color
 $navbar-dark-active-color: $skred;
@@ -63,10 +59,6 @@ $link-hover-decoration: none !default;
 // Fonts
 
 $google_font_family: "Open+Sans:300,300i,400,400i,600,600i,700,700i&display=swap" !default;
-
-// Transition
-
-$transition: all 0.3s linear;
 
 // Front page styling
 
@@ -83,13 +75,13 @@ $transition: all 0.3s linear;
 
   a {
     border-bottom: 1px dotted paleturquoise;
-
+    
     // color: paleturquoise !important;
     color: #fff !important;
     font-weight: 600;
     padding: 0 2px 1px 2px;
     text-decoration: none;
-
+    
     &:hover {
       // border-bottom: 1px dotted #fff;
       // color: #fff !important;
@@ -104,13 +96,13 @@ $transition: all 0.3s linear;
 
   a {
     border-bottom: 1px dotted paleturquoise;
-
+    
     // color: paleturquoise !important;
     color: #fff !important;
     font-weight: 600;
     padding: 0 2px 1px 2px;
     text-decoration: none;
-
+    
     &:hover {
       // border-bottom: 1px dotted #fff;
       // color: #fff !important;
