@@ -1,4 +1,8 @@
 // The outer page container for the default base template.
+.td-outer {
+    padding: 80px 0 0 0;
+}
+
 .td-default {
     main {
         section:first-of-type {
