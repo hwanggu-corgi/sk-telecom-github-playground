@@ -11326,6 +11326,9 @@ readers do not read off random characters that represent icons */
   @media (min-width: 992px) {
     .td-footer-three {
       grid-template-columns: 1.53fr 5.0fr 1.53fr; } }
+.td-footer-three a {
+  text-decoration: none; }
+
 .td-footer-three .td-footer-icons-mobile {
   position: relative;
   padding: 35px 15px; }
