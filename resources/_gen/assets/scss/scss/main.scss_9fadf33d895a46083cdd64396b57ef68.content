@@ -11338,23 +11338,15 @@ readers do not read off random characters that represent icons */
     @media screen and (min-width: 767px) {
       .td-footer-three .td-footer-icons-mobile::after {
         content: none; } }
-.td-footer-three .td-footer-header {
-  margin: 0 0 30px 0;
-  display: none; }
-  @media screen and (min-width: 767px) {
-    .td-footer-three .td-footer-header {
-      display: block; } }
-  @media screen and (min-width: 991px) {
-    .td-footer-three .td-footer-header {
-      margin: 0; } }
+@media screen and (min-width: 767px) {
+  .td-footer-three .td-footer-header {
+    margin: 0 0 30px 0; } }
+
 .td-footer-three .td-footer-brand-desktop {
   display: none; }
   @media screen and (min-width: 767px) {
     .td-footer-three .td-footer-brand-desktop {
       display: inline-block; } }
-.td-footer-three .td-footer-brand-desktop {
-  display: inline-block; }
-
 .td-footer-three .td-footer-brand-desktop > svg {
   height: 38px; }
   @media screen and (min-width: 991px) {
