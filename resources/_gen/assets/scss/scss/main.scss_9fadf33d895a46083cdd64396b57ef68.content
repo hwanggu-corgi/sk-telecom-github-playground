@@ -12743,11 +12743,6 @@ header.mobile-menu-open .td-navbar-mobile {
     border-color: #bbb2f1;
     box-shadow: 0 0 0 2px #4a30da; }
 
-.td-outer {
-  display: flex;
-  flex-direction: column;
-  height: 100vh; }
-
 @media (min-width: 768px) {
   .td-default main section:first-of-type {
     padding-top: 8rem; } }
