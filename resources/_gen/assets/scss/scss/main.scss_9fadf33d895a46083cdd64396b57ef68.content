@@ -73,10 +73,11 @@ html.smooth-scroll {
   margin: 0 0 1.5em 1.5em; }
 
 #overview {
-  margin: 0 0 30px 0; }
+  margin: 0 0 60px 0;
+  text-align: center; }
 
 #community {
-  border-top: 2px solid #1d1160; }
+  text-align: center; }
 
 #pageContent .lead {
   margin: 0 1.5em 3em 1.5em; }
@@ -10903,6 +10904,18 @@ readers do not read off random characters that represent icons */
 
 .content-area {
   padding: 90px 30px; }
+
+.content-area--line-top {
+  position: relative; }
+  .content-area--line-top::before {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #1d1160;
+    position: absolute;
+    top: 0;
+    left: 0; }
 
 .-bg-blue {
   color: #fff;
