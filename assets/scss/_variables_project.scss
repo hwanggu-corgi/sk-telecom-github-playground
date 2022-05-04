@@ -151,16 +151,10 @@ $transition: all 0.3s linear;
     float: right;
     margin: 0 0 1.5em 1.5em; }
 
-#overview, #community {
-  // padding: 6em 1.5em 3em 1.5em;
-  padding: 6em 1.5em 3em 1.5em;
-  text-align: center;
-  margin: 0; }
-  #overview p, #community p {
-    font-size: 1.125em;}
 
 #overview {
   // border-bottom: 2px solid #b6d0ff;
+  margin: 0 0 30px 0;
 }
 
 #community {

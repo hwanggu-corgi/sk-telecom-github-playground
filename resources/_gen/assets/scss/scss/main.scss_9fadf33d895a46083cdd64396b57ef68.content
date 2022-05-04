@@ -72,13 +72,8 @@ html.smooth-scroll {
   float: right;
   margin: 0 0 1.5em 1.5em; }
 
-#overview, #community {
-  padding: 6em 1.5em 3em 1.5em;
-  text-align: center;
-  margin: 0; }
-
-#overview p, #community p {
-  font-size: 1.125em; }
+#overview {
+  margin: 0 0 30px 0; }
 
 #community {
   border-top: 2px solid #1d1160; }
@@ -10905,6 +10900,9 @@ readers do not read off random characters that represent icons */
 @media (min-width: 992px) {
   .td-max-width-on-larger-screens, .td-content > pre, .td-content > .highlight, .td-content > .lead, .td-content > h1, .td-content > h2, .td-content > ul, .td-content > ol, .td-content > p, .td-content > blockquote, .td-content > dl dd, .td-content .footnotes, .td-content > .alert {
     max-width: 80%; } }
+
+.content-area {
+  padding: 90px 30px; }
 
 .-bg-blue {
   color: #fff;
