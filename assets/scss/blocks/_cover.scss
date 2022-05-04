@@ -7,6 +7,7 @@
 }
 
 .td-cover-block {
+    color: $white;
     background-color: $primary;
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,4 +19,33 @@
     @include media-breakpoint-up(lg) {
         padding: 80px 0 0 0;
     }
+
+    &::before {
+
+    }
+}
+
+.td-cover-block__title {
+    margin: 0 0 40px 0;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.td-cover-block__description {
+    margin: 0 auto 40px auto;
+}
+
+.td-cover-block__buttons {
+    margin: 0 0 48px 0;
+}
+
+.td-cover-block__buttons > * {
+    &:not(:last-child) {
+        margin: 0 16px 0 0;
+    }
+}
+
+.td-cover-block__down-icon p {
+    margin: 0;
 }

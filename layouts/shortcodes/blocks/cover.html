@@ -25,7 +25,7 @@
 </style>
 {{ end }}
 <section id="{{ $blockID }}" class="td-cover-block">
-  <div class="container td-overlay__inner">
+  <div class="container">
     <div class="td-cover-block__wrap">
       <div class="text-center">
         {{ with .Get "title" }}<h1 class="td-cover-block__title">{{ $title := . }}{{ with $logo_image }}{{ $logo_image_resized := (.Fit (printf "70x70 %s" $logo_anchor)) }}<img class="td-cover-logo" src="{{ $logo_image_resized.RelPermalink }}" alt="{{ $title | html }} Logo">{{ end }}{{ $title | html }}</h1>{{ end }}
