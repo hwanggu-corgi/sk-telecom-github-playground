@@ -2212,7 +2212,7 @@ input[type="button"].btn-block {
 
 .dropdown-menu {
   position: absolute;
-  top: 100%;
+  top: 95%;
   left: 0;
   z-index: 1000;
   display: none;
@@ -12743,11 +12743,6 @@ header.mobile-menu-open .td-navbar-mobile {
     border-color: #bbb2f1;
     box-shadow: 0 0 0 2px #4a30da; }
 
-.td-outer {
-  padding: 64px 0 0 0; }
-  @media (min-width: 992px) {
-    .td-outer {
-      padding: 80px 0 0 0; } }
 @media (min-width: 768px) {
   .td-default main section:first-of-type {
     padding-top: 8rem; } }
