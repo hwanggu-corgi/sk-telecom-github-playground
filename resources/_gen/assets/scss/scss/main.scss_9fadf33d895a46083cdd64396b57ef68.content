@@ -12778,15 +12778,17 @@ header.mobile-menu-open .td-navbar-mobile {
   margin-right: 0.5em; }
 
 .td-cover-block {
+  background-color: #1d1160;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   padding: 64px 0 0 0;
-  height: calc(100vh - 64px); }
+  height: 100vh;
+  display: flex;
+  align-items: center; }
   @media (min-width: 992px) {
     .td-cover-block {
-      padding: 80px 0 0 0;
-      height: calc(100vh - 80px); } }
+      padding: 80px 0 0 0; } }
 .td-bg-arrow-wrapper {
   position: relative; }
 
