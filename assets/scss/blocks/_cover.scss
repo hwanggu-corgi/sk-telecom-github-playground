@@ -7,22 +7,36 @@
 }
 
 .td-cover-block {
+    position: relative;
     color: $white;
     background-color: $primary;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 64px 0 0 0;
-    height: 100vh;
+    margin: 64px 0 0 0;
+    height: calc(100vh - 64px);
     display: flex;
     align-items: center;
     @include media-breakpoint-up(lg) {
-        padding: 80px 0 0 0;
+        margin: 80px 0 0 0;
+        height: calc(100vh - 80px);
     }
 
     &::before {
-
+        background-color: rgba(38,38,38,.3);
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
     }
+}
+
+.td-cover-block > * {
+    position: relative;
+    z-index: 1;
 }
 
 .td-cover-block__title {
