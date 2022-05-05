@@ -12278,8 +12278,8 @@ readers do not read off random characters that represent icons */
 
 .td-blog .td-rss-button {
   position: absolute;
-  top: 5.5rem;
-  right: 1rem;
+  top: 32px;
+  right: 24px;
   z-index: 22; }
 
 .td-content .highlight {
@@ -12605,7 +12605,7 @@ header.mobile-menu-open .td-navbar-mobile {
   margin-left: -15px; }
 
 .td-sidebar__inner {
-  padding: 32px 8px 32px 24px; }
+  padding: 32px 24px; }
   @media (min-width: 992px) {
     @supports (position: sticky) {
       .td-sidebar__inner {
@@ -12623,17 +12623,20 @@ header.mobile-menu-open .td-navbar-mobile {
 .td-toc {
   position: relative;
   order: 2;
-  border-left: 1px solid #dee2e6; }
+  border-left: 1px solid #dee2e6;
+  display: none; }
+  @media (min-width: 1200px) {
+    .td-toc {
+      display: block; } }
   .td-toc__inner {
-    padding: 32px 16px; }
-    @media (min-width: 992px) {
-      @supports (position: sticky) {
-        .td-toc__inner {
-          height: calc(100vh - 80px);
-          position: sticky;
-          overflow-y: auto;
-          top: 80px;
-          z-index: 10; } } }
+    padding: 32px 24px; }
+    @supports (position: sticky) {
+      .td-toc__inner {
+        height: calc(100vh - 80px);
+        position: sticky;
+        overflow-y: auto;
+        top: 80px;
+        z-index: 10; } }
   .td-toc a {
     display: block;
     font-weight: 300;
@@ -12643,8 +12646,10 @@ header.mobile-menu-open .td-navbar-mobile {
     display: block; }
   .td-toc li li {
     margin-left: 0.5rem; }
-  .td-toc .td-page-meta a {
-    font-weight: 500; }
+  .td-toc .td-page-meta {
+    margin: 0 0 16px 0; }
+    .td-toc .td-page-meta a {
+      font-weight: 500; }
   .td-toc #TableOfContents a {
     color: #888; }
     .td-toc #TableOfContents a:hover {
@@ -12770,15 +12775,20 @@ header.mobile-menu-open .td-navbar-mobile {
 
 .td-blog .td-main {
   display: grid;
-  grid-template-columns: 1.65fr 6.7fr 1.65fr;
   margin: 64px 0 0 0; }
   @media (min-width: 992px) {
     .td-blog .td-main {
+      grid-template-columns: 290px 1fr;
       margin: 80px 0 0 0; } }
+  @media (min-width: 1200px) {
+    .td-blog .td-main {
+      grid-template-columns: 300px 6.7fr 300px; } }
 .td-blog main {
-  padding: 32px 24px 32px 48px;
+  padding: 32px 15px;
   position: relative; }
-
+  @media (min-width: 992px) {
+    .td-blog main {
+      padding: 32px 24px 32px 48px; } }
 .td-cover-block--height-min {
   min-height: 300px; }
 

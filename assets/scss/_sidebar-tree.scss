@@ -98,7 +98,7 @@
     }
 
     &__inner {
-        padding: 32px 8px 32px 24px;
+        padding: 32px 24px;
 
         @include media-breakpoint-up(lg) {
             @supports (position: sticky) {

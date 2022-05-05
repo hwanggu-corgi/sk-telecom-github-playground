@@ -5,17 +5,20 @@
     position: relative;
     order: 2;
     border-left: 1px solid $border-color;
+    display: none;
+
+    @include media-breakpoint-up(xl) {
+        display: block;
+    }
 
     &__inner {
-        padding: 32px 16px;
-        @include media-breakpoint-up(lg) {
-            @supports (position: sticky) {
-                height: calc(100vh - 80px);
-                position: sticky;
-                overflow-y: auto;
-                top: 80px;
-                z-index: 10;
-            }
+        padding: 32px 24px;
+        @supports (position: sticky) {
+            height: calc(100vh - 80px);
+            position: sticky;
+            overflow-y: auto;
+            top: 80px;
+            z-index: 10;
         }
     }
 
@@ -35,6 +38,8 @@
     }
 
     .td-page-meta {
+        margin: 0 0 16px 0;
+
         a {
             font-weight: $font-weight-medium;
         }
