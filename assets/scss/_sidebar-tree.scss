@@ -2,10 +2,6 @@
 // Left side navigation
 //
 .td-sidebar-nav {
-    padding-right: 0.5rem;
-    margin-right: -15px;
-    margin-left: -15px;
-
     @include media-breakpoint-up(md) {
         @supports (position: sticky) {
             overflow-y: auto;
@@ -86,7 +82,6 @@
 .td-sidebar {
     @include media-breakpoint-up(md) {
         background-color: $td-sidebar-bg-color;
-        padding-right: 1rem;
         border-right: 1px solid $td-sidebar-border-color;
     }
 
@@ -106,10 +101,17 @@
     }
 
     &__inner {
-        order: 0;
+        @include media-breakpoint-up(lg) {
+            height: calc(100vh - 80px);
+            top: 80px;
+        }
 
         @include media-breakpoint-up(md) {
             @supports (position: sticky) {
+                height: calc(100vh - 64px);
+                overflow-y: auto;
+                position: sticky;
+                top: 64px;
                 z-index: 10;
             }
         }
@@ -125,3 +127,4 @@
         }
     }
 }
+
