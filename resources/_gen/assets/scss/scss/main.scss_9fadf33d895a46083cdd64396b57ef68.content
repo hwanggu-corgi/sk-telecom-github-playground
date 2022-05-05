@@ -12621,13 +12621,19 @@ header.mobile-menu-open .td-navbar-mobile {
     width: 100%; }
 
 .td-toc {
-  border-left: 1px solid #dee2e6;
+  position: relative;
   order: 2;
-  vertical-align: top; }
-  @supports (position: sticky) {
-    .td-toc {
-      position: sticky;
-      overflow-y: auto; } }
+  border-left: 1px solid #dee2e6; }
+  .td-toc__inner {
+    padding: 32px 16px; }
+    @media (min-width: 992px) {
+      @supports (position: sticky) {
+        .td-toc__inner {
+          height: calc(100vh - 80px);
+          position: sticky;
+          overflow-y: auto;
+          top: 80px;
+          z-index: 10; } } }
   .td-toc a {
     display: block;
     font-weight: 300;
