@@ -12616,8 +12616,6 @@ header.mobile-menu-open .td-navbar-mobile {
 .td-toc {
   border-left: 1px solid #dee2e6;
   order: 2;
-  padding-top: 0.75rem;
-  padding-bottom: 1.5rem;
   vertical-align: top; }
   @supports (position: sticky) {
     .td-toc {
@@ -12764,6 +12762,9 @@ header.mobile-menu-open .td-navbar-mobile {
   @media (min-width: 992px) {
     .td-blog .td-main {
       margin: 80px 0 0 0; } }
+.td-blog main {
+  padding: 0 24px 0 48px; }
+
 .td-cover-block--height-min {
   min-height: 300px; }
 
