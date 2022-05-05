@@ -50,6 +50,10 @@
     margin: 0 auto 40px auto;
 }
 
+.td-cover-block__description > *:last-child {
+    margin: 0;
+}
+
 .td-cover-block__buttons {
     margin: 0 0 48px 0;
 }

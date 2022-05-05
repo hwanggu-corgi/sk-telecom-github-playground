@@ -44,6 +44,12 @@ html.smooth-scroll {
   font-weight: bold;
   padding: 0 0 1em 0; }
 
+.section-description {
+  margin: 0 0 30px 0; }
+
+.section-description > *:last-child {
+  margin: 0; }
+
 .contain {
   margin: 0 auto;
   max-width: 1200px; }
@@ -12825,6 +12831,9 @@ header.mobile-menu-open .td-navbar-mobile {
 
 .td-cover-block__description {
   margin: 0 auto 40px auto; }
+
+.td-cover-block__description > *:last-child {
+  margin: 0; }
 
 .td-cover-block__buttons {
   margin: 0 0 48px 0; }
