@@ -85,9 +85,6 @@
         border-right: 1px solid $td-sidebar-border-color;
     }
 
-
-    padding-bottom: 1rem;
-
     &__toggle {
         line-height: 1;
         color: $gray-900;
@@ -101,17 +98,14 @@
     }
 
     &__inner {
-        @include media-breakpoint-up(lg) {
-            height: calc(100vh - 80px);
-            top: 80px;
-        }
+        padding: 32px 8px 32px 24px;
 
-        @include media-breakpoint-up(md) {
+        @include media-breakpoint-up(lg) {
             @supports (position: sticky) {
-                height: calc(100vh - 64px);
+                height: calc(100vh - 80px);
                 overflow-y: auto;
                 position: sticky;
-                top: 64px;
+                top: 80px;
                 z-index: 10;
             }
         }

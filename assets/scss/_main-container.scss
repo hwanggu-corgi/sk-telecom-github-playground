@@ -15,7 +15,7 @@
 
 .td-blog .td-main {
     display: grid;
-    grid-template-columns: 1.5fr 7fr 1.5fr;
+    grid-template-columns: 1.65fr 6.7fr 1.65fr;
     margin: 64px 0 0 0;
 
     @include media-breakpoint-up(lg) {
@@ -24,5 +24,5 @@
 }
 
 .td-blog main {
-    padding: 0 24px 0 48px;
+    padding: 32px 24px 32px 48px;
 }
