@@ -80,6 +80,8 @@
 }
 
 .td-sidebar {
+    min-width: 260px;
+
     @include media-breakpoint-up(md) {
         background-color: $td-sidebar-bg-color;
         border-right: 1px solid $td-sidebar-border-color;
