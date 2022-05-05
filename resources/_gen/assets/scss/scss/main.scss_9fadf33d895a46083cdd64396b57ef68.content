@@ -12599,16 +12599,19 @@ header.mobile-menu-open .td-navbar-mobile {
     text-align: left;
     background-color: #7f7f7f;
     padding: 15px; }
+    @media (min-width: 992px) {
+      .td-sidebar__toggle {
+        display: none; } }
     .td-sidebar__toggle.btn {
       border-radius: 5px; }
   @media (min-width: 768px) {
     .td-sidebar__search {
       padding: 1rem 15px; } }
   .td-sidebar__inner {
-    padding: 32px 15px; }
+    padding: 32px 15px 16px 15px; }
     @media (min-width: 768px) {
       .td-sidebar__inner {
-        padding: 32px; } }
+        padding: 32px 32px 16px 32px; } }
     @media (min-width: 992px) {
       @supports (position: sticky) {
         .td-sidebar__inner {
