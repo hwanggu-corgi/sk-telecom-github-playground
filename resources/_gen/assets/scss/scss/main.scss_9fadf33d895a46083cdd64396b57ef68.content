@@ -154,7 +154,7 @@ See https://github.com/twbs/bootstrap/pull/23260
   @media screen and (min-width: 767px) {
     .card-list {
       grid-template-columns: repeat(2, 1fr); } }
-  @media screen and (min-width: 991px) {
+  @media screen and (min-width: 1200px) {
     .card-list {
       grid-template-columns: repeat(3, 1fr); } }
 /*!
