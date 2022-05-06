@@ -43,7 +43,7 @@
         font-weight: 700;
         line-height: 1.2;
 
-        @include media-breakpoint-up(md) {
+        @include media-breakpoint-up(lg) {
             font-size: 3rem;
         }
     }
@@ -52,7 +52,7 @@
         margin: 0 auto 40px auto;
         font-weight: 300;
 
-        @include media-breakpoint-up(md) {
+        @include media-breakpoint-up(lg) {
             font-size: 1.25rem;
         }
     }
@@ -69,5 +69,9 @@
         &:not(:last-child) {
             margin: 0 16px 0 0;
         }
+    }
+
+    &__down-icon > * {
+        margin: 0;
     }
 }

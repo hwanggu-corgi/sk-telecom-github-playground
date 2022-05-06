@@ -44,7 +44,7 @@ html.smooth-scroll {
   margin: 0 0 32px 0; }
   @media screen and (max-width: 991px) {
     .section-head {
-      font-size: 1.25em; } }
+      font-size: 1.5em; } }
 .section-description {
   margin: 0 0 32px 0; }
 
@@ -12904,13 +12904,13 @@ header.mobile-menu-open .td-navbar-mobile {
     margin: 0 0 40px 0;
     font-weight: 700;
     line-height: 1.2; }
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       .td-cover-block__title {
         font-size: 3rem; } }
   .td-cover-block__description {
     margin: 0 auto 40px auto;
     font-weight: 300; }
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       .td-cover-block__description {
         font-size: 1.25rem; } }
   .td-cover-block__description > *:last-child {
@@ -12919,6 +12919,8 @@ header.mobile-menu-open .td-navbar-mobile {
     margin: 0 0 48px 0; }
   .td-cover-block__buttons > *:not(:last-child) {
     margin: 0 16px 0 0; }
+  .td-cover-block__down-icon > * {
+    margin: 0; }
 
 .td-bg-arrow-wrapper {
   position: relative; }
