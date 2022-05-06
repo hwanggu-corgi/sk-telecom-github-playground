@@ -70,38 +70,4 @@
             margin: 0 16px 0 0;
         }
     }
-
-    &__mouse {
-        position: relative;
-        width: 26px;
-        height: 40px;
-        border-radius: 15px;
-        border: 2px solid $white;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translate(-50%, 0);
-        margin: 0 0 32px 0;
-
-        &::before {
-            content: "";
-            display: block;
-            border-radius: 50%;
-            width: 10px;
-            height: 10px;
-            background-color: $white;
-            top: 5px;
-            position: absolute;
-            left: 50%;
-            transform: translate(-50%, 0);
-            animation: mouse-wheels 2s infinite ease-in-out;
-        }
-    }
-}
-
-@keyframes mouse-wheels {
-    to {
-        opacity: 0;
-        top: 20px;
-    }
 }
