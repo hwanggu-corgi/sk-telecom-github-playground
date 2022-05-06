@@ -10,16 +10,18 @@
 {{ end }}
 <div>
 	{{ range $pageGroups }}
-	<h2>{{ T "post_posts_in" }} {{ .Key }}</h2>
-	<ul class="list-unstyled mt-4">
+	<h2 class="td-blog-list-title">{{ T "post_posts_in" }} {{ .Key }}</h2>
+	<ul class="td-blog-list list-unstyled mt-4">
 		{{ range .Pages }}
-		<li class="media mb-4">
+		<li class="td-blog-list__item media">
 			<div class="media-body">
-				<h5 class="mt-0 mb-1"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h5>
-				<p class="mb-2 mb-md-3"><small class="text-muted">{{ .Date.Format ($.Param "time_format_blog") }} {{ T "ui_in"}} {{ .CurrentSection.LinkTitle }}</small></p>
-				{{ partial "featured-image.html" (dict "p" . "w" 250 "h" 125 "class" "float-left mr-3 pt-1 d-none d-md-block") }}
-				<p class="pt-0 mt-0">{{ .Plain | safeHTML | truncate 250 }}</p>
-				<p class="pt-0"><a href="{{ .RelPermalink }}">{{ T "ui_read_more"}}</a></p>
+				<h5 class="td-blog-list__item-title"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h5>
+				<p class="td-blog-list__item-date"><small class="text-muted">{{ .Date.Format ($.Param "time_format_blog") }} {{ T "ui_in"}} {{ .CurrentSection.LinkTitle }}</small></p>
+				<div class="td-blog-list__item-content">
+					{{ partial "featured-image.html" (dict "p" . "w" 250 "h" 125 "class" "td-blog-list_item-image") }}
+					<p class="td-blog-list__item-summary">{{ .Plain | safeHTML | truncate 250 }}</p>
+					<div class="td-blog-list__item-buttons"><a href="{{ .RelPermalink }}">{{ T "ui_read_more"}}</a></div>
+				</div>
 			</div>
 		</li>
 		{{ end }}
