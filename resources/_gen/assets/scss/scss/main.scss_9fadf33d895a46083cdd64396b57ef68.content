@@ -12639,13 +12639,15 @@ header.mobile-menu-open .td-navbar-mobile {
       .td-sidebar__inner {
         padding: 32px 32px 8px 32px; } }
     @media (min-width: 992px) {
-      @supports (position: sticky) {
-        .td-sidebar__inner {
-          height: calc(100vh - 80px);
-          overflow-y: auto;
-          position: sticky;
-          top: 80px;
-          z-index: 10; } } }
+      .td-sidebar__inner {
+        padding: 32px 24px; }
+        @supports (position: sticky) {
+          .td-sidebar__inner {
+            height: calc(100vh - 80px);
+            overflow-y: auto;
+            position: sticky;
+            top: 80px;
+            z-index: 10; } } }
     @media (min-width: 1200px) {
       .td-sidebar__inner {
         flex: 0 1 320px; } }
@@ -12758,7 +12760,8 @@ header.mobile-menu-open .td-navbar-mobile {
       color: #262626; }
 
 .td-content {
-  order: 1; }
+  order: 1;
+  max-width: 1300px; }
   .td-content p, .td-content li, .td-content td {
     font-weight: 400; }
   .td-content > h1 {
