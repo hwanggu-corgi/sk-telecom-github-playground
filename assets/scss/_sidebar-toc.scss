@@ -6,7 +6,7 @@
     order: 2;
     border-left: 1px solid $border-color;
     display: none;
-    min-width: 230px;
+    min-width: 260px;
 
     @include media-breakpoint-up(xl) {
         display: block;

@@ -3,8 +3,9 @@
 //
 .td-sidebar-nav {
     background-color: rgba(29, 17, 96, 0.03);
-    padding: 15px;
     border: 1px solid rgb(222, 226, 230);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 
     @include media-breakpoint-up(lg) {
         background-color: transparent;
@@ -24,9 +25,8 @@
             list-style: none;
         }
 
-        ul {
-            padding: 0;
-            margin: 0;
+        & > ul {
+            padding-left: .5rem;
         }
 
         @include media-breakpoint-up(md) {
@@ -37,6 +37,14 @@
 
 
         padding-left: 0;
+    }
+
+    & > &__section {
+        padding: 15px;
+
+        @include media-breakpoint-up(lg) {
+            padding: 0;
+        }
     }
 
     &__section-title {
@@ -99,6 +107,7 @@
         text-align: left;
         background-color: $skgrey;
         padding: 15px;
+        transition: $transition;
 
         @include media-breakpoint-up(lg) {
             display: none;
@@ -106,6 +115,11 @@
 
         &.btn {
             border-radius: 5px;
+        }
+
+        &:not(.collapsed) {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
         }
     }
 
