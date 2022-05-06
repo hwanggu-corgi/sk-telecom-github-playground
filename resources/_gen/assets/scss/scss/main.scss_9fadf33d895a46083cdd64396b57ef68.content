@@ -12580,7 +12580,7 @@ header.mobile-menu-open .td-navbar-mobile {
     color: #fff;
     width: 100%;
     text-align: left;
-    background-color: #dee2e6;
+    background-color: #7f7f7f;
     padding: 15px;
     transition: all 0.3s linear; }
     @media (min-width: 992px) {
@@ -12868,7 +12868,7 @@ header.mobile-menu-open .td-navbar-mobile {
     margin: 0 16px 0 0; }
   .td-cover-block__mouse {
     position: relative;
-    width: 25px;
+    width: 26px;
     height: 40px;
     border-radius: 15px;
     border: 2px solid #fff;
@@ -12884,11 +12884,11 @@ header.mobile-menu-open .td-navbar-mobile {
       width: 10px;
       height: 10px;
       background-color: #fff;
-      top: 2px;
+      top: 5px;
       position: absolute;
       left: 50%;
       transform: translate(-50%, 0);
-      animation: mouse-wheels 2s infinite; }
+      animation: mouse-wheels 2s infinite ease-in-out; }
 
 @keyframes mouse-wheels {
   to {
