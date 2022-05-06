@@ -11,19 +11,20 @@
 <div>
 	{{ range $pageGroups }}
 	<h2 class="td-blog-list-title">{{ T "post_posts_in" }} {{ .Key }}</h2>
-	<ul class="td-blog-list list-unstyled mt-4">
+	<ul class="td-blog-list list-unstyled">
 		{{ range .Pages }}
-		<li class="td-blog-list__item media">
-			<div class="media-body">
-				<h5 class="td-blog-list__item-title"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h5>
-				<p class="td-blog-list__item-date"><small class="text-muted">{{ .Date.Format ($.Param "time_format_blog") }} {{ T "ui_in"}} {{ .CurrentSection.LinkTitle }}</small></p>
-				<div class="td-blog-list__item-content">
-					{{ partial "featured-image.html" (dict "p" . "w" 250 "h" 125 "class" "td-blog-list_item-image") }}
-					<p class="td-blog-list__item-summary">{{ .Plain | safeHTML | truncate 250 }}</p>
-					<div class="td-blog-list__item-buttons"><a href="{{ .RelPermalink }}">{{ T "ui_read_more"}}</a></div>
+			{{ $image := (.Resources.ByType "image").GetMatch "**featured*" }}
+			<li class="td-blog-list__item media">
+				<div class="media-body">
+					<h5 class="td-blog-list__item-title"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h5>
+					<p class="td-blog-list__item-date"><small class="text-muted">{{ .Date.Format ($.Param "time_format_blog") }} {{ T "ui_in"}} {{ .CurrentSection.LinkTitle }}</small></p>
+					<div class="td-blog-list__item-content{{ with $image }} td-blog-list__item-content--with-image{{ end }}">
+						{{ partial "featured-image.html" (dict "p" . "w" 250 "h" 125 "class" "td-blog-list__item-image") }}
+						<p class="td-blog-list__item-summary">{{ .Plain | safeHTML | truncate 250 }}</p>
+						<div class="td-blog-list__item-buttons"><a href="{{ .RelPermalink }}">{{ T "ui_read_more"}}</a></div>
+					</div>
 				</div>
-			</div>
-		</li>
+			</li>
 		{{ end }}
 	</ul>
 	{{ end }}

@@ -9,16 +9,33 @@
     }
 }
 
+.td-blog-list-title {
+    margin: 0 0 32px 0;
+}
+
 .td-blog-list {
     display: grid;
-    row-gap: 30px;
+    row-gap: 40px;
+
+    &:not(:last-of-type) {
+        margin: 0 0 40px 0;
+    }
 
     &__item-content {
 
-        &.withImage {
-            display: grid;
-            grid-template-columns: 250px 1fr;
-            column-gap: 30px;
+        &--with-image {
+            @include media-breakpoint-up(lg) {
+                display: grid;
+                grid-template-columns: 250px 1fr;
+                column-gap: 16px;
+            }
+        }
+    }
+
+    &__item-image {
+        display: none;
+        @include media-breakpoint-up(lg) {
+            display: block;
         }
     }
 }

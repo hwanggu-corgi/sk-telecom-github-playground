@@ -30,6 +30,7 @@
 .td-blog main {
     padding: 32px 15px;
     position: relative;
+    overflow-x: auto;
 
     @include media-breakpoint-up(md) {
         padding: 32px;
