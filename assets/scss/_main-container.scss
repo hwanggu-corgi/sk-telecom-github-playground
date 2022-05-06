@@ -13,7 +13,8 @@
     }
 }
 
-.td-blog .td-main {
+.td-section .td-main,
+.td-page .td-main {
     display: grid;
     margin: 64px 0 0 0;
 
@@ -27,7 +28,8 @@
     }
 }
 
-.td-blog main {
+.td-section main,
+.td-page main {
     padding: 32px 15px;
     position: relative;
     overflow-x: auto;
