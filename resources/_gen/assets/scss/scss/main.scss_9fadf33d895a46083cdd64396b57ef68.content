@@ -10905,7 +10905,7 @@ readers do not read off random characters that represent icons */
     z-index: 1; }
 
 @media (min-width: 992px) {
-  .td-max-width-on-larger-screens, .td-content > pre, .td-content > .highlight, .td-content > .lead, .td-content > h1, .td-content > h2, .td-content > ul, .td-content > ol, .td-content > p, .td-content > blockquote, .td-content > dl dd, .td-content .footnotes, .td-content > .alert {
+  .td-max-width-on-larger-screens {
     max-width: 80%; } }
 
 .content-area {
@@ -12290,13 +12290,18 @@ readers do not read off random characters that represent icons */
   row-gap: 40px; }
   .td-blog-list:not(:last-of-type) {
     margin: 0 0 40px 0; }
+  .td-blog-list__item-header {
+    margin: 0 0 24px 0; }
+  .td-blog-list__item-header > *:last-child {
+    margin: 0; }
   @media (min-width: 992px) {
-    .td-blog-list__item-content--with-image {
+    .td-blog-list__item-main--with-image {
       display: grid;
       grid-template-columns: 250px 1fr;
-      column-gap: 16px; } }
+      column-gap: 24px; } }
   .td-blog-list__item-image {
-    display: none; }
+    display: none;
+    margin: 0; }
     @media (min-width: 992px) {
       .td-blog-list__item-image {
         display: block; } }
