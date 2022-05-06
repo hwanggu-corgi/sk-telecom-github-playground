@@ -12547,13 +12547,16 @@ header.mobile-menu-open .td-navbar-mobile {
   padding: 15px;
   border: 1px solid #dee2e6; }
   @media (min-width: 992px) {
-    @supports (position: sticky) {
-      .td-sidebar-nav {
-        overflow-y: auto; } } }
-  @media (min-width: 992px) {
     .td-sidebar-nav {
-      display: block !important; } }
+      background-color: transparent;
+      padding: 0;
+      border: none;
+      display: block !important; }
+      @supports (position: sticky) {
+        .td-sidebar-nav {
+          overflow-y: auto; } } }
   .td-sidebar-nav__section {
+    margin: 0;
     padding-left: 0; }
     .td-sidebar-nav__section li {
       list-style: none; }
@@ -12608,10 +12611,10 @@ header.mobile-menu-open .td-navbar-mobile {
     .td-sidebar__search {
       padding: 1rem 15px; } }
   .td-sidebar__inner {
-    padding: 32px 15px 16px 15px; }
+    padding: 32px 15px 8px 15px; }
     @media (min-width: 768px) {
       .td-sidebar__inner {
-        padding: 32px 32px 16px 32px; } }
+        padding: 32px 32px 8px 32px; } }
     @media (min-width: 992px) {
       @supports (position: sticky) {
         .td-sidebar__inner {
