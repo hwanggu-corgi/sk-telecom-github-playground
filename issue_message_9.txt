@@ -1,12 +1,12 @@
 안녕하세요 관리자님,
 
-꽃이 많이 핀 요즘 가족과 함께 좋은 시간 보낼 수 있도록 여름처럼 덥지 않고 산들바람이 가득합니다.
+꽃이 많이 핀 요즘 가족과 함께 좋은 시간 보낼 수 있도록 따뜻한 산들바람이 가득합니다.
 
-관리자님, 이번에 layout 개선안 관련 issue를 올립니다.
+관리자님, 이번엔 SK Telecom에 오시는 모든 분들께 보다 좋은 user experience를 갖기 위한 layout 개선안 관련 issue를 올립니다.
 
 처음에 footer를 개선하며 아, footer를 먼저 하기전에 이것을 먼저 개선해야 겠구나 생각이 들었습니다.
 
-제 개선안의 핵심은 "mobile view는 mobile에 맞게, tablet view는 tablet에 맞게, desktop view는 desktop에 맞게" 입니다.
+제 개선안의 핵심은 "깔끔히 mobile view는 mobile에 맞게, tablet view는 tablet에 맞게, desktop view는 desktop에 맞게" 입니다.
 
 ---------------------
 
@@ -14,26 +14,33 @@
 
 ---------------------
 
-2. 두번째로 footer의 white space문제를 해결했을때 blog page하고 document page에서 양 옆의 부분이 browser width 밖으로 나가는 문제를 바로잡았습니다.
+2. 두번째로 첫번째 문제를 해결했을때 blog page, document page, project page에서 양 옆의 부분이 browser width 밖으로 나가는 문제를 바로잡았습니다.
+
 ---------------------
 
 3. 세번째로 Home page banner의 text하고 button이 위로 쏠린 문제를 해결했습니다.
 
 ---------------------
 
-4. 세번째는 모바일 view 관련 문제입니다. Side bar menu가 mobile header menu 안에 끼는 문제를 해결했습니다. 그리고 이것을 손 쉽게 press 할 수 있는 sidebar menu button bar를 만들었습니다.
+4. 네번째로 Home page banner의 다음 버튼을 누르면 완벽하게 target section으로 갈 수 있게 해결했습니다.
 
 ---------------------
 
-5. 세번째는 모바일 view 관련 문제입니다. Side bar menu가 mobile header menu 안에 끼는 문제를 해결했습니다. 그리고 이것을 손 쉽게 press 할 수 있는 sidebar menu button bar를 만들었습니다.
+5. 다섯번째로 Home page의 콘텐츠가 mobile, tablet, 그리고 desktop에서 깔끔하게 보이도록 layout을 정리 했습니다.
 
 ---------------------
 
-6. 네번째는 모바일 view 관련 문제입니다. Side bar menu가 mobile header menu 안에 끼는 문제를 해결했습니다. 그리고 이것을 손 쉽게 press 할 수 있는 sidebar menu button bar를 만들었습니다.
+6. 여섯번째로 blog page, project page, document page 안에 있는 side bar menu가 mobile header menu 안에 끼는 문제를 해결했습니다.
+
+그리고 이것을 사람들이 보다 쉽게 접근 할 수 있게 sidebar menu button bar를 만들었습니다.
 
 ---------------------
 
-3. 내번째는 tablet view 관련 문제입니다. Blog page의 개선했습니다. Samsung galaxy S tablet에서 image하고 sidebar 하고 content하고 함께보니 북적하다는 느낌이 들었습니다. Tablet에는 sidebar 하고 text만 보이게하여 읽기 쉽고 보기 시원하게 했습니다.
+7. 일곱번째로 hovoer color를 sk telecom theme에 맞게 정리 했습니다.
+
+---------------------
+
+7. 일곱번째로 tablet view 관련 문제입니다. Blog page의 개선했습니다. Samsung galaxy S tablet에서 image하고 sidebar 하고 content하고 함께보니 북적하다는 느낌이 들었습니다. Tablet에는 sidebar 하고 text만 보이게하여 읽기 쉽고 보기 시원하게 했습니다.
 
 
 
