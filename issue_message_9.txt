@@ -24,7 +24,7 @@
 
 3. 세번째로 home page banner의 text하고 button이 위로 쏠린 문제를 해결했습니다.
 
-![correction-3](https://user-images.githubusercontent.com/72232928/167269275-12811488-66ad-419a-938e-ff606b738a61.png)
+![correction-3](https://user-images.githubusercontent.com/72232928/167269835-8dfcc29e-24d5-48d6-b943-76eea6a569b0.png)
 
 ---------------------
 
