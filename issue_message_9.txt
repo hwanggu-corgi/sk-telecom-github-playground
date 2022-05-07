@@ -1,22 +1,29 @@
-# sktelecom.github.io layout 개선
-
 안녕하세요 관리자님,
 
-layout 개선안 관련 issue를 올립니다.
+꽃이 많이 핀 요즘 가족과 함께 좋은 시간 보낼 수 있도록 여름처럼 덥지 않고 산들바람이 가득합니다.
 
-관리자님, 처음에 footer를 개선하며 아, footer를 먼저 하기전에 이것을 먼저 개선해야 겠구나 생각이 들었습니다.
+관리자님, 이번에 layout 개선안 관련 issue를 올립니다.
 
-제 개선안의 핵심은 "mobile view는  mobile에 맞게, tablet view는 tablet에 맞게, desktop view는 desktop에 맞게" 입니다.
+처음에 footer를 개선하며 아, footer를 먼저 하기전에 이것을 먼저 개선해야 겠구나 생각이 들었습니다.
 
----------------------
-
-1. 첫번째로 footer의 white space문제를 해결했습니다
-
-
+제 개선안의 핵심은 "mobile view는 mobile에 맞게, tablet view는 tablet에 맞게, desktop view는 desktop에 맞게" 입니다.
 
 ---------------------
 
-2. 두번째로 footer의
+1. 첫번째로 footer의 white space문제를 해결했습니다.
+
+
+---------------------
+
+2. 두번째로 footer의 white space문제를 해결하면서 blog page하고 document page에서 양 옆의 부분이 browser width 밖으로 나가는 문제를 바로잡았습니다.
+
+---------------------
+
+3. 세번째는 새로운 header를 implement 하면서 side bar menu가 mobile menu 안에 끼는 문제를 해결했습니다.
+
+---------------------
+
+3. 내번째로
 
 
 
