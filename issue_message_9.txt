@@ -12,33 +12,35 @@
 
 1. 첫번째로 mobile, tablet, 그리고 desktop의 공통적인 문제인 footer의 white space문제를 해결했습니다.
 
----------------------
-
-2. 두번째로 첫번째 문제를 해결했을때 blog page, document page, project page에서 양 옆의 부분이 browser width 밖으로 나가는 문제를 바로잡았습니다.
+![image](https://user-images.githubusercontent.com/72232928/167267403-0c40927f-054a-418e-ac7c-67eea02dba80.png)
 
 ---------------------
 
-3. 세번째로 home page banner의 text하고 button이 위로 쏠린 문제를 해결했습니다.
+3. 두번째로 첫번째 문제를 해결했을때 blog page, document page, project page에서 양 옆의 부분이 browser width 밖으로 나가는 문제를 바로잡았습니다.
 
 ---------------------
 
-4. 네번째로 home page banner의 다음 버튼을 누르면 완벽하게 target section으로 갈 수 있게 해결했습니다.
+4. 세번째로 home page banner의 text하고 button이 위로 쏠린 문제를 해결했습니다.
 
 ---------------------
 
-5. 다섯번째로 home page의 콘텐츠가 mobile, tablet, 그리고 desktop view에서 깔끔하게 보이도록 layout을 tune 했습니다.
+5. 네번째로 home page banner의 다음 버튼을 누르면 완벽하게 target section으로 갈 수 있게 해결했습니다.
 
 ---------------------
 
-6. 여섯번째로 blog, project, 그리고 document page 안에 있는 mobile side bar menu가 header menu 안에 끼는 문제를 해결했습니다. 그리고 사람들이 보다 쉽게 접근 할 수 있게 button의 width를 넓히고 색깔을 회색으로 바꾸었습니다.
+6. 다섯번째로 home page의 콘텐츠가 mobile, tablet, 그리고 desktop view에서 깔끔하게 보이도록 layout을 tune 했습니다.
 
 ---------------------
 
-7. 일곱번째로 오른쪽 sidebar에 있는 푸른색 hover color를 sk telecom theme에 맞게 오랜지 색으로 바꾸었습니다.
+7. 여섯번째로 blog, project, 그리고 document page 안에 있는 mobile side bar menu가 header menu 안에 끼는 문제를 해결했습니다. 그리고 사람들이 보다 쉽게 접근 할 수 있게 button의 width를 넓히고 색깔을 회색으로 바꾸었습니다.
 
 ---------------------
 
-8. 여덟번째로 tablet으로 blog page로 들어갔을때 필수적인 sidebar 하고 text만 보이게하여 북적함을 줄이고 읽기 쉽게 했습니다.
+8. 일곱번째로 오른쪽 sidebar에 있는 푸른색 hover color를 sk telecom theme에 맞게 오랜지 색으로 바꾸었습니다.
+
+---------------------
+
+9. 여덟번째로 tablet으로 blog page로 들어갔을때 필수적인 sidebar 하고 text만 보이게하여 북적함을 줄이고 읽기 쉽게 했습니다.
 
 관리자님, 수정해야 할 부분이 있으면 꼭 말씀해 주세요. 수정하겠습니다.
 
