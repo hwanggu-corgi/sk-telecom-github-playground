@@ -26,21 +26,19 @@
 
 ---------------------
 
-5. 다섯번째로 Home page의 콘텐츠가 mobile, tablet, 그리고 desktop에서 깔끔하게 보이도록 layout을 정리 했습니다.
+5. 다섯번째로 home page의 콘텐츠가 mobile, tablet, 그리고 desktop view에서 깔끔하게 보이도록 layout을 tune 했습니다.
 
 ---------------------
 
-6. 여섯번째로 blog page, project page, document page 안에 있는 side bar menu가 mobile header menu 안에 끼는 문제를 해결했습니다.
-
-그리고 이것을 사람들이 보다 쉽게 접근 할 수 있게 sidebar menu button bar를 만들었습니다.
+6. 여섯번째로 blog, project, 그리고 document page 안에 있는 mobile side bar menu가 header menu 안에 끼는 문제를 해결했습니다. 그리고 사람들이 보다 쉽게 접근 할 수 있게 button의 width를 넓히고 색깔을 회색으로 바꾸었습니다.
 
 ---------------------
 
-7. 일곱번째로 hovoer color를 sk telecom theme에 맞게 정리 했습니다.
+7. 일곱번째로 오른쪽 sidebar에 있는 푸른색 hover color를 sk telecom theme에 맞게 오랜지 색으로 바꾸었습니다.
 
 ---------------------
 
-7. 일곱번째로 tablet view 관련 문제입니다. Blog page의 개선했습니다. Samsung galaxy S tablet에서 image하고 sidebar 하고 content하고 함께보니 북적하다는 느낌이 들었습니다. Tablet에는 sidebar 하고 text만 보이게하여 읽기 쉽고 보기 시원하게 했습니다.
+8. 여덟번째로 tablet view 관련 문제입니다. Blog page의 개선했습니다. Samsung galaxy S tablet에서 image하고 sidebar 하고 content하고 함께보니 북적하다는 느낌이 들었습니다. Tablet에는 sidebar 하고 text만 보이게하여 읽기 쉽고 보기 시원하게 했습니다.
 
 
 
