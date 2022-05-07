@@ -2,8 +2,12 @@
   display: grid;
   column-gap: 30px;
   row-gap: 30px;
+  max-width: 420px;
+  margin: 0 auto;
 
   @include media-breakpoint-up(md) {
+    margin: initial;
+    max-width: initial;
     grid-template-columns: repeat(2, 1fr);
   }
 

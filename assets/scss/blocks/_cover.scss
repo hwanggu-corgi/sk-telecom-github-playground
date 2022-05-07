@@ -79,7 +79,11 @@
         }
     }
 
-    &__down-icon > * {
+    &__down-icon p {
         margin: 0;
+    }
+
+    &__down-icon a {
+        font-size: 0.75rem;
     }
 }
