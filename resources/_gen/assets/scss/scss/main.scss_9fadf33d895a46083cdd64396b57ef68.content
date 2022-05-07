@@ -10912,11 +10912,12 @@ readers do not read off random characters that represent icons */
   margin: 0 auto; }
   @media (min-width: 768px) {
     .card-list {
-      margin: initial;
-      max-width: initial;
+      max-width: 800px;
       grid-template-columns: repeat(2, 1fr); } }
   @media (min-width: 1200px) {
     .card-list {
+      margin: initial;
+      max-width: initial;
       grid-template-columns: repeat(3, 1fr); } }
 .card-title {
   font-weight: bold;
@@ -12312,7 +12313,7 @@ readers do not read off random characters that represent icons */
     margin: 0 0 24px 0; }
   .td-blog-list__item-header > *:last-child {
     margin: 0; }
-  @media (min-width: 992px) {
+  @media (min-width: 1200px) {
     .td-blog-list__item-main--with-image {
       display: grid;
       grid-template-columns: 250px 1fr;
@@ -12320,7 +12321,7 @@ readers do not read off random characters that represent icons */
   .td-blog-list__item-image {
     display: none;
     margin: 0; }
-    @media (min-width: 992px) {
+    @media (min-width: 1200px) {
       .td-blog-list__item-image {
         display: block; } }
 .td-content .highlight {
@@ -12913,6 +12914,9 @@ header.mobile-menu-open .td-navbar-mobile {
   .td-cover-block > * {
     position: relative;
     z-index: 1; }
+  .td-cover-block__main {
+    max-width: 700px;
+    margin: 0 auto; }
   .td-cover-block__title {
     margin: 0 0 40px 0;
     font-weight: 700;

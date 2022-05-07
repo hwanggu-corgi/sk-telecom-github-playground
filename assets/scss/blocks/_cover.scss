@@ -38,6 +38,11 @@
         z-index: 1;
     }
 
+    &__main {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
     &__title {
         margin: 0 0 40px 0;
         font-weight: 700;

@@ -6,12 +6,13 @@
   margin: 0 auto;
 
   @include media-breakpoint-up(md) {
-    margin: initial;
-    max-width: initial;
+    max-width: 800px;
     grid-template-columns: repeat(2, 1fr);
   }
 
   @include media-breakpoint-up(xl) {
+    margin: initial;
+    max-width: initial;
     grid-template-columns: repeat(3, 1fr);
   }
 }
