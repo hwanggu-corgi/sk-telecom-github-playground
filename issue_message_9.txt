@@ -14,15 +14,26 @@
 
 ---------------------
 
-2. 두번째로 footer의 white space문제를 해결하면서 blog page하고 document page에서 양 옆의 부분이 browser width 밖으로 나가는 문제를 바로잡았습니다.
+2. 두번째로 footer의 white space문제를 해결했을때 blog page하고 document page에서 양 옆의 부분이 browser width 밖으로 나가는 문제를 바로잡았습니다.
+---------------------
+
+3. 세번째로 Home page banner의 text하고 button이 위로 쏠린 문제를 해결했습니다.
 
 ---------------------
 
-3. 세번째는 새로운 header를 implement 하면서 side bar menu가 mobile menu 안에 끼는 문제를 해결했습니다. 그리고 이것을 손 쉽게 press 할 수 있는 button bar를 만들었습니다.
+4. 세번째는 모바일 view 관련 문제입니다. Side bar menu가 mobile header menu 안에 끼는 문제를 해결했습니다. 그리고 이것을 손 쉽게 press 할 수 있는 sidebar menu button bar를 만들었습니다.
 
 ---------------------
 
-3. 내번째로
+5. 세번째는 모바일 view 관련 문제입니다. Side bar menu가 mobile header menu 안에 끼는 문제를 해결했습니다. 그리고 이것을 손 쉽게 press 할 수 있는 sidebar menu button bar를 만들었습니다.
+
+---------------------
+
+6. 네번째는 모바일 view 관련 문제입니다. Side bar menu가 mobile header menu 안에 끼는 문제를 해결했습니다. 그리고 이것을 손 쉽게 press 할 수 있는 sidebar menu button bar를 만들었습니다.
+
+---------------------
+
+3. 내번째는 tablet view 관련 문제입니다. Blog page의 개선했습니다. Samsung galaxy S tablet에서 image하고 sidebar 하고 content하고 함께보니 북적하다는 느낌이 들었습니다. Tablet에는 sidebar 하고 text만 보이게하여 읽기 쉽고 보기 시원하게 했습니다.
 
 
 
