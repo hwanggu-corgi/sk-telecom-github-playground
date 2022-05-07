@@ -12953,7 +12953,9 @@ header.mobile-menu-open .td-navbar-mobile {
     margin: 0; }
   .td-cover-block__down-icon a {
     font-size: 0.75rem; }
-
+    @media (min-width: 768px) {
+      .td-cover-block__down-icon a {
+        font-size: 1rem; } }
 .td-bg-arrow-wrapper {
   position: relative; }
 
