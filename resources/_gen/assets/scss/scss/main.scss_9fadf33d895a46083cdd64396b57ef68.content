@@ -12909,24 +12909,27 @@ header.mobile-menu-open .td-navbar-mobile {
   .td-cover-block__title {
     margin: 0 0 40px 0;
     font-weight: 700;
-    line-height: 1.2;
-    font-size: 3rem; }
+    line-height: 1.2; }
     @media (min-width: 992px) {
       .td-cover-block__title {
         font-size: 3rem; } }
   .td-cover-block__description {
     margin: 0 auto 40px auto;
-    font-weight: 300;
-    font-size: 1.25rem; }
+    font-weight: 300; }
     @media (min-width: 992px) {
       .td-cover-block__description {
         font-size: 1.25rem; } }
   .td-cover-block__description > *:last-child {
     margin: 0; }
-  .td-cover-block__buttons {
+  .td-cover-block__buttons-block {
     margin: 0 0 48px 0; }
-  .td-cover-block__buttons > *:not(:last-child) {
+  .td-cover-block__buttons-block > *:not(:last-child) {
     margin: 0 16px 0 0; }
+  .td-cover-block__button {
+    font-size: 1rem; }
+    @media (min-width: 992px) {
+      .td-cover-block__button {
+        font-size: 1.25rem; } }
   .td-cover-block__down-icon > * {
     margin: 0; }
 
