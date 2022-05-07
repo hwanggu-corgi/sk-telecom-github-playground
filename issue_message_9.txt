@@ -10,8 +10,7 @@
 
 ---------------------
 
-1. 첫번째로 footer의 white space문제를 해결했습니다.
-
+1. 첫번째로 mobile, tablet, 그리고 desktop의 공통적인 문제인 footer의 white space문제를 해결했습니다.
 
 ---------------------
 
@@ -19,7 +18,7 @@
 
 ---------------------
 
-3. 세번째는 새로운 header를 implement 하면서 side bar menu가 mobile menu 안에 끼는 문제를 해결했습니다.
+3. 세번째는 새로운 header를 implement 하면서 side bar menu가 mobile menu 안에 끼는 문제를 해결했습니다. 그리고 이것을 손 쉽게 press 할 수 있는 button bar를 만들었습니다.
 
 ---------------------
 
