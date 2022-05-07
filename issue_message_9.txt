@@ -38,6 +38,8 @@
 
 6. 여섯번째로 blog, project, 그리고 document page 안에 있는 mobile side bar menu가 header menu 안에 끼는 문제를 해결했습니다. 그리고 사람들이 보다 쉽게 접근 할 수 있게 button의 width를 넓히고 색깔을 회색으로 바꾸었습니다.
 
+
+
 ---------------------
 
 7. 일곱번째로 오른쪽 sidebar에 있는 푸른색 hover color를 sk telecom theme에 맞게 오랜지 색으로 바꾸었습니다.
