@@ -48,9 +48,10 @@
         margin: 0 0 40px 0;
         font-weight: 700;
         line-height: 1.2;
+        font-size: 2.5rem;
 
         @include media-breakpoint-up(md) {
-            font-size: 2.5rem;
+            font-size: 2.75rem;
         }
 
         @include media-breakpoint-up(lg) {
@@ -60,6 +61,8 @@
 
     &__description {
         margin: 0 auto 40px auto;
+    }
+    &__description p {
         font-weight: 300;
 
         @include media-breakpoint-up(md) {

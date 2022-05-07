@@ -130,10 +130,10 @@
     }
 
     &__inner {
-        padding: 32px 15px 0 15px;
+        padding: 32px 15px 4px 15px;
 
         @include media-breakpoint-up(md) {
-            padding: 32px 32px 0 32px;
+            padding: 32px 32px 4px 32px;
         }
 
         @include media-breakpoint-up(lg) {
