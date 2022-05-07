@@ -40,7 +40,7 @@
 
 **수정 전**
 
-Uploading correction-6-before.mov…
+https://user-images.githubusercontent.com/72232928/167271862-9f9de877-71d0-46d8-87ff-7b365ea18549.mov
 
 **수정 후**
 
@@ -53,6 +53,8 @@ https://user-images.githubusercontent.com/72232928/167271422-3ebc31e4-a91d-464f-
 ---------------------
 
 9. 여덟번째로 tablet으로 blog page로 들어갔을때 필수적인 sidebar 하고 text만 보이게하여 북적함을 줄이고 읽기 쉽게 했습니다.
+
+
 
 관리자님, 수정해야 할 부분이 있으면 꼭 말씀해 주세요. 수정하겠습니다.
 
