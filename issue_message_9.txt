@@ -12,7 +12,7 @@
 
 1. 첫번째로 mobile, tablet, 그리고 desktop의 공통적인 문제인 footer의 white space문제를 해결했습니다.
 
-![image](https://user-images.githubusercontent.com/72232928/167267403-0c40927f-054a-418e-ac7c-67eea02dba80.png)
+![correction-1](https://user-images.githubusercontent.com/72232928/167268330-a5fd45d2-a849-43e4-9262-95c82dd0ff39.png)
 
 ---------------------
 
