@@ -147,16 +147,6 @@ Bootstrap variables overrides for theme.
 See https://github.com/twbs/bootstrap/pull/23260
 */
 @fa-font-path :        "../webfonts";
-.card-list {
-  display: grid;
-  column-gap: 30px;
-  row-gap: 30px; }
-  @media screen and (min-width: 767px) {
-    .card-list {
-      grid-template-columns: repeat(2, 1fr); } }
-  @media screen and (min-width: 1200px) {
-    .card-list {
-      grid-template-columns: repeat(3, 1fr); } }
 /*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -10911,6 +10901,22 @@ readers do not read off random characters that represent icons */
   .td-max-width-on-larger-screens {
     max-width: 80%; } }
 
+.card-list {
+  display: grid;
+  column-gap: 30px;
+  row-gap: 30px; }
+  @media (min-width: 768px) {
+    .card-list {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 1200px) {
+    .card-list {
+      grid-template-columns: repeat(3, 1fr); } }
+.card-title {
+  font-weight: bold;
+  padding: 0;
+  margin: 0 0 16px 0;
+  font-size: 1.25em; }
+
 .content-area {
   padding: 60px 0; }
   @media (min-width: 992px) {
@@ -12634,7 +12640,7 @@ header.mobile-menu-open .td-navbar-mobile {
     width: 100%;
     text-align: left;
     background-color: #7f7f7f;
-    padding: 15px;
+    padding: 13px 15px;
     transition: all 0.3s linear; }
     @media (min-width: 992px) {
       .td-sidebar__toggle {
