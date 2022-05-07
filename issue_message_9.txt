@@ -38,7 +38,7 @@
 
 ---------------------
 
-8. 여덟번째로 tablet view 관련 문제입니다. Blog page의 개선했습니다. Samsung galaxy S tablet에서 image하고 sidebar 하고 content하고 함께보니 북적하다는 느낌이 들었습니다. Tablet에는 sidebar 하고 text만 보이게하여 읽기 쉽고 보기 시원하게 했습니다.
+8. 여덟번째로 tablet으로 blog page로 들어갔을때 필수적인 sidebar 하고 text만 보이게하여 북적함을 줄이고 읽기 쉽게 했습니다.
 
 
 
