@@ -48,11 +48,17 @@ https://user-images.githubusercontent.com/72232928/167271422-3ebc31e4-a91d-464f-
 
 ---------------------
 
-8. 일곱번째로 오른쪽 sidebar에 있는 푸른색 hover color를 sk telecom theme에 맞게 오랜지 색으로 바꾸었습니다.
+7. 일곱번째로 오른쪽 sidebar에 있는 푸른색 hover color를 sk telecom theme에 맞게 오랜지 색으로 바꾸었습니다.
 
 ---------------------
 
-9. 여덟번째로 tablet으로 blog page로 들어갔을때 필수적인 sidebar 하고 text만 보이게하여 북적함을 줄이고 읽기 쉽게 했습니다.
+8. 여덟번째로 tablet으로 blog page로 들어갔을때 필수적인 sidebar 하고 text만 보이게하여 북적함을 줄이고 읽기 쉽게 했습니다.
+
+![correction-8](https://user-images.githubusercontent.com/72232928/167273266-9c860ef9-4a9b-437b-a9df-4df731a3fa71.png)
+
+---------------------
+
+10. 아홉번째로 blog page안에 있는 contents에 maximum width을 set 하여 큰 화면일때 보다 읽기 쉽게 만들었습니다
 
 
 
