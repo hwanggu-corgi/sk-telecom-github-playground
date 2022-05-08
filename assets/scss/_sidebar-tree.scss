@@ -148,12 +148,6 @@
             }
         }
 
-
-        @include media-breakpoint-up(xl) {
-            flex: 0 1 320px;
-        }
-
-
         .td-search-box {
             width: 100%;
         }
