@@ -44,6 +44,7 @@
 
 ![correction-4]()
 
+
 ---------------------
 
 5. 다섯번째로 home page의 콘텐츠가 mobile, tablet, 그리고 desktop view에서 깔끔하게 보이도록 layout을 tune 했습니다.
