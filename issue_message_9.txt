@@ -24,7 +24,7 @@
 
 3. 세번째로 home page banner의 text하고 button이 위로 쏠린 문제를 해결했습니다.
 
-![correction-3](https://user-images.githubusercontent.com/72232928/167274630-1f9338f9-8cdd-4cb4-96fe-2fba679da86b.png)
+![correction-3](https://user-images.githubusercontent.com/72232928/167275875-4942bd80-d508-4276-b33b-87f31179f2c3.png)
 
 ---------------------
 
@@ -61,6 +61,7 @@ https://user-images.githubusercontent.com/72232928/167271422-3ebc31e4-a91d-464f-
 ---------------------
 
 10. 아홉번째로 blog page안에 있는 contents에 maximum width을 set 하여 큰 화면일때 보다 읽기 쉽게 만들었습니다
+
 
 
 
