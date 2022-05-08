@@ -14,35 +14,47 @@
 
 ![correction-1](https://user-images.githubusercontent.com/72232928/167268330-a5fd45d2-a849-43e4-9262-95c82dd0ff39.png)
 
+[Commit link](https://github.com/hyungmogu/sktelecom.github.io/commit/f87791bda62eb01a657b49a93cb78c69dcd93b4f)
+
 ---------------------
 
 2. 두번째로 new footer를 implement했을때 양 옆이 하얗게 보이는 문제를 고쳤습니다.
 
 ![correction-1](https://user-images.githubusercontent.com/72232928/167268330-a5fd45d2-a849-43e4-9262-95c82dd0ff39.png)
 
+[Commit link]()
+
 ---------------------
 
-2. 두번째로 첫번째 문제를 해결했을때 blog page, document page, project page에서 양 옆의 부분이 browser width 밖으로 나가는 문제를 바로잡았습니다.
+3. 세번째로 첫번째 문제를 해결했을때 blog page, document page, project page에서 양 옆의 부분이 browser width 밖으로 나가는 문제를 바로잡았습니다.
 
 ![correction-2](https://user-images.githubusercontent.com/72232928/167268816-153f5c95-1f64-4629-be19-1f5cd600972c.png)
 
+[Commit link]()
+
 ---------------------
 
-3. 세번째로 home page banner의 text하고 button이 위로 쏠린 문제를 해결했습니다.
+4. 네번째로 home page banner의 text하고 button이 위로 쏠린 문제를 해결했습니다.
 
 ![correction-3](https://user-images.githubusercontent.com/72232928/167275875-4942bd80-d508-4276-b33b-87f31179f2c3.png)
 
----------------------
-
-4. 네번째로 home page banner의 다음 버튼을 누르면 완벽하게 target section으로 갈 수 있게 해결했습니다.
+[Commit link]()
 
 ---------------------
 
-5. 다섯번째로 home page의 콘텐츠가 mobile, tablet, 그리고 desktop view에서 깔끔하게 보이도록 layout을 tune 했습니다.
+5. 다섯번째로 home page banner의 다음 버튼을 누르면 완벽하게 target section으로 갈 수 있게 해결했습니다.
+
+[Commit link]()
 
 ---------------------
 
-6. 여섯번째로 blog, project, 그리고 document page 안에 있는 mobile side bar menu가 header menu 안에 끼는 문제를 해결했습니다. 그리고 사람들이 보다 쉽게 접근 할 수 있게 button의 width를 넓히고 색깔을 회색으로 바꾸었습니다.
+6. 여섯번째로 home page의 콘텐츠가 mobile, tablet, 그리고 desktop view에서 깔끔하게 보이도록 layout을 tune 했습니다.
+
+[Commit link]()
+
+---------------------
+
+7. 일곱번째로 blog, project, 그리고 document page 안에 있는 mobile side bar menu가 header menu 안에 끼는 문제를 해결했습니다. 그리고 사람들이 보다 쉽게 접근 할 수 있게 button의 width를 넓히고 색깔을 회색으로 바꾸었습니다.
 
 **수정 전**
 
@@ -52,23 +64,29 @@ https://user-images.githubusercontent.com/72232928/167271862-9f9de877-71d0-46d8-
 
 https://user-images.githubusercontent.com/72232928/167271422-3ebc31e4-a91d-464f-957c-ae0fdde5ad12.mov
 
+[Commit link]()
+
 ---------------------
 
-7. 일곱번째로 오른쪽 sidebar에 있는 푸른색 hover color를 sk telecom theme에 맞게 오랜지 색으로 바꾸었습니다.
+8. 여덟번째로 오른쪽 sidebar에 있는 푸른색 hover color를 sk telecom theme에 맞게 오랜지 색으로 바꾸었습니다.
 
 ![correction-7](https://user-images.githubusercontent.com/72232928/167273982-120b629c-0598-490c-8301-0d40574fad71.png)
 
+[Commit link]()
+
 ---------------------
 
-8. 여덟번째로 tablet으로 blog page로 들어갔을때 필수적인 sidebar 하고 text만 보이게하여 북적함을 줄이고 읽기 쉽게 했습니다.
+9. 아홉번째로 tablet으로 blog page로 들어갔을때 필수적인 sidebar 하고 text만 보이게하여 북적함을 줄이고 읽기 쉽게 했습니다.
 
 ![correction-8](https://user-images.githubusercontent.com/72232928/167273560-946c9cf9-b31c-4e21-8ea0-181a31c6b185.png)
 
+[Commit link]()
+
 ---------------------
 
-10. 아홉번째로 blog page안에 있는 contents에 maximum width을 set 하여 큰 화면일때 보다 읽기 쉽게 만들었습니다
+10. 마지막으로 blog page안에 있는 contents에 maximum width을 set 하여 큰 화면일때 보다 읽기 쉽게 만들었습니다
 
-
+[Commit link]()
 
 
 관리자님, 수정해야 할 부분이 있으면 꼭 말씀해 주세요. 수정하겠습니다.
