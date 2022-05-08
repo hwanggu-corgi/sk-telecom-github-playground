@@ -30,7 +30,7 @@
 
 ![correction-3](https://user-images.githubusercontent.com/72232928/167280282-a06d3712-dc8e-4aeb-b347-5a95f61b2fe4.png)
 
-[Commit 링크]()
+[Commit 링크](https://github.com/hyungmogu/sktelecom.github.io/commit/d7bc49ad84a4fad95b9c834e4b8560c9c25688e0)
 
 ---------------------
 
