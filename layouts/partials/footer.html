@@ -160,23 +160,23 @@
     {{ end }}
   </section>
   <section class="td-footer-four__main">
-    <nav class="td-footer-nav">
+    <nav class="td-footer-four__nav">
       {{ $p := . }}
       <ul>
       {{ range .Site.Menus.main }}
         {{ $url := urls.Parse .URL }}
         {{ $baseurl := urls.Parse $.Site.Params.Baseurl }}
         {{ $active := or ($p.IsMenuCurrent "main" .) ($p.HasMenuCurrent "main" .) }}
-        <li class="nav-item-footer">
-          <a class="nav-link-footer{{if $active }} active{{end}}" href="{{ .URL }}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}>
+        <li class="td-footer-four__nav-item">
+          <a class="td-footer-four__nav-link{{if $active }} active{{end}}" href="{{ .URL }}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}>
             <span{{if $active }} class="active"{{end}}>{{ .Name }}</span>
           </a>
         </li>
       {{ end }}
       </ul>
     </nav>
-    <div class="td-footer-copyright-privacy">
-      <a class="td-footer-brand-mobile" href="{{ .Site.Home.RelPermalink }}">
+    <div class="td-footer-four__copyright-privacy">
+      <a class="td-footer-four__brand-mobile" href="{{ .Site.Home.RelPermalink }}">
         {{ with resources.Get "icons/logo-white.svg" }}{{ ( . | minify).Content | safeHTML }} {{ end }}
       </a>
       <div class="td-footer-copyright-privacy-main">
