@@ -1115,8 +1115,46 @@
     }
   }
 
+  &__copyright-privacy>small {
+    &:not(:last-of-type) {
+      margin: 0 0 16px 0;
+    }
+  }
+
+  &__copyright-privacy a {
+    font-weight: 600;
+    color: $skgrey2;
+    border-bottom: 1px dotted $skgrey2;
+    transition: $transition;
+
+    &:hover {
+      color: $skred;
+      border-bottom: 1px dotted $skred;
+    }
+  }
+
+  &__brand-mobile {
+    display: inline-block;
+    @include media-breakpoint-up(lg) {
+      & {
+        display: none;
+      }
+    }
+  }
+
   &__brand-mobile>svg {
     height: 20px;
+  }
+
+  &__copyright,
+  &__privacy {
+    display: block;
+
+    @include media-breakpoint-up(lg) {
+      & {
+        text-align: center;
+      }
+    }
   }
 }
 
