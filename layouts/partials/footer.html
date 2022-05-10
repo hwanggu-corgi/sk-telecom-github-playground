@@ -152,14 +152,14 @@
   </section>
 </footer>
 <footer class="td-footer-four">
-  <section class="td-footer-header">
+  <section class="td-footer-four__header">
     {{ with $links }}
       {{ with index . "user"}}
       {{ template "footer-links-block"  . }}
       {{ end }}
     {{ end }}
   </section>
-  <section class="td-footer-main">
+  <section class="td-footer-four__main">
     <nav class="td-footer-nav">
       {{ $p := . }}
       <ul>

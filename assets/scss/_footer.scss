@@ -956,51 +956,40 @@
   @include media-breakpoint-up(md) {
     padding: 60px 30px;
   }
-}
 
-.td-footer-four a {
-  text-decoration: none;
-}
-
-.td-footer-four .td-footer-icons-mobile {
-  position: relative;
-  padding: 35px 15px;
-
-  @include media-breakpoint-up(md) {
-    display: none;
+  a {
+    text-decoration: none;
   }
 
-}
-
-.td-footer-four .td-footer-header {
-  position: relative;
-  padding: 35px 15px;
-
-  @include media-breakpoint-up(md) {
-    & {
-      padding: 0;
-      margin: 0 0 16px 0;
-    }
-  }
-
-  &::after {
-    display: block;
-    content: "";
-    height: 1px;
-    width: 100%;
-    background-color: $skdarkgrey3;
-    position: absolute;
-    left: 0;
-    bottom: 0;
+  &__header {
+    position: relative;
+    padding: 35px 15px;
 
     @include media-breakpoint-up(md) {
       & {
-        content: none;
+        padding: 0;
+        margin: 0 0 16px 0;
+      }
+    }
+
+    &::after {
+      display: block;
+      content: "";
+      height: 1px;
+      width: 100%;
+      background-color: $skdarkgrey3;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+
+      @include media-breakpoint-up(md) {
+        & {
+          content: none;
+        }
       }
     }
   }
 }
-
 
 .td-footer-four .list-inline {
   margin: 0;
