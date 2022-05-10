@@ -12,12 +12,12 @@
 {{ end }}
 
 {{ define "footer-four-links-block" }}
-<ul class="footer-four__list-inline">
+<ul class="td-footer-four__list-inline">
   {{ range . }}
-  <li class="footer-four__list-inline-item" data-toggle="tooltip" data-placement="top" title="{{ .name }}">
-    <a class="footer-four__list-inline-link" target="_blank" href="{{ .url }}" aria-label="{{ .name }}">
-      <i class="footer-four__list-inline-icon {{ .icon }}"></i>
-      <span class="footer-four__list-inline-label">{{ .name }}</span>
+  <li class="td-footer-four__list-inline-item" data-toggle="tooltip" data-placement="top" title="{{ .name }}">
+    <a class="td-footer-four__list-inline-link" target="_blank" href="{{ .url }}" aria-label="{{ .name }}">
+      <i class="td-footer-four__list-inline-icon {{ .icon }}"></i>
+      <span class="td-footer-four__list-inline-label">{{ .name }}</span>
     </a>
   </li>
   {{ end }}

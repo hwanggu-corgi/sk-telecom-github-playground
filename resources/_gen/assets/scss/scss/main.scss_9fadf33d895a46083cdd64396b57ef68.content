@@ -12920,7 +12920,7 @@ readers do not read off random characters that represent icons */
   background-color: #262626;
   box-sizing: border-box;
   font-size: 13px; }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     .td-footer-four {
       padding: 60px 30px; } }
   .td-footer-four a {
@@ -12928,10 +12928,10 @@ readers do not read off random characters that represent icons */
   .td-footer-four__header {
     position: relative;
     padding: 35px 15px; }
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       .td-footer-four__header {
         padding: 0;
-        margin: 0 0 16px 0; } }
+        margin: 0 0 24px 0; } }
     .td-footer-four__header::after {
       display: block;
       content: "";
@@ -12941,13 +12941,58 @@ readers do not read off random characters that represent icons */
       position: absolute;
       left: 0;
       bottom: 0; }
-      @media (min-width: 768px) {
+      @media (min-width: 992px) {
         .td-footer-four__header::after {
           content: none; } }
+  .td-footer-four__list-inline {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 0; }
+    @media (min-width: 992px) {
+      .td-footer-four__list-inline {
+        display: flex;
+        justify-content: center; } }
+  .td-footer-four__list-inline-item {
+    justify-self: center; }
+    @media (min-width: 992px) {
+      .td-footer-four__list-inline-item:not(:last-child) {
+        margin: 0 15px 0 0; } }
+  .td-footer-four__list-inline-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff !important; }
+  .td-footer-four__list-inline-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #3c3c41;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px; }
+    @media (min-width: 768px) {
+      .td-footer-four__list-inline-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 18px; } }
+  .td-footer-four__list-inline-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: #bababf;
+    transition: all 0.3s linear;
+    text-align: center; }
+    @media (min-width: 992px) {
+      .td-footer-four__list-inline-label {
+        font-size: 12px;
+        display: none; } }
+  .td-footer-four__list-inline-link:hover > .td-footer-four__list-inline-label {
+    color: #fff; }
   .td-footer-four__nav {
     padding: 35px 15px 16px 15px;
     position: relative; }
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       .td-footer-four__nav {
         margin: 0 0 30px 0;
         padding: 0; } }
@@ -12960,7 +13005,7 @@ readers do not read off random characters that represent icons */
       position: absolute;
       left: 0;
       bottom: 0; }
-      @media (min-width: 768px) {
+      @media (min-width: 992px) {
         .td-footer-four__nav::after {
           content: none; } }
   .td-footer-four__nav > ul {
@@ -12970,23 +13015,21 @@ readers do not read off random characters that represent icons */
     margin: 0;
     max-width: 280px;
     flex-wrap: wrap; }
-    @media (min-width: 768px) {
-      .td-footer-four__nav > ul {
-        flex-wrap: initial;
-        max-width: initial; } }
     @media (min-width: 992px) {
       .td-footer-four__nav > ul {
+        flex-wrap: initial;
+        max-width: initial;
         justify-content: center; } }
   .td-footer-four__nav-item {
     position: relative;
     margin: 0 0 19px 0;
     line-height: 1; }
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       .td-footer-four__nav-item {
         margin-bottom: 0; } }
     .td-footer-four__nav-item:not(:last-child) {
       margin: 0 20px 19px 0; }
-      @media (min-width: 768px) {
+      @media (min-width: 992px) {
         .td-footer-four__nav-item:not(:last-child) {
           margin: 0 20px 0 0; } }
     .td-footer-four__nav-item:not(:last-child)::after {
@@ -13009,19 +13052,16 @@ readers do not read off random characters that represent icons */
   .td-footer-four__brand-mobile {
     margin: 0 0 16px 0;
     display: inline-block; }
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       .td-footer-four__brand-mobile {
         display: none; } }
   .td-footer-four__copyright-privacy {
     color: #bababf;
     padding: 27px 15px; }
-    @media (min-width: 768px) {
-      .td-footer-four__copyright-privacy {
-        grid-column: span 2;
-        padding: 0; } }
     @media (min-width: 992px) {
       .td-footer-four__copyright-privacy {
-        grid-column: initial; } }
+        grid-column: initial;
+        padding: 0; } }
   .td-footer-four__copyright-privacy > small:not(:last-of-type) {
     margin: 0 0 16px 0; }
   .td-footer-four__copyright-privacy a {
@@ -13044,55 +13084,6 @@ readers do not read off random characters that represent icons */
     @media (min-width: 992px) {
       .td-footer-four__copyright, .td-footer-four__privacy {
         text-align: center; } }
-.td-footer-four .list-inline {
-  margin: 0;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr); }
-  @media (min-width: 768px) {
-    .td-footer-four .list-inline {
-      display: flex;
-      justify-content: center; } }
-.td-footer-four .list-inline-item {
-  justify-self: center; }
-  @media (min-width: 768px) {
-    .td-footer-four .list-inline-item:not(:last-child) {
-      margin: 0 15px 0 0; } }
-.td-footer-four .list-inline-item > a {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.td-footer-four .list-inline-item i {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #3c3c41;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-  margin: 0 0 7px 0; }
-  @media (min-width: 768px) {
-    .td-footer-four .list-inline-item i {
-      width: 40px;
-      height: 40px;
-      font-size: 18px; } }
-.td-footer-four .list-inline-item span {
-  font-size: 11px;
-  font-weight: 600;
-  color: #bababf;
-  transition: all 0.3s linear;
-  text-align: center; }
-  @media (min-width: 768px) {
-    .td-footer-four .list-inline-item span {
-      font-size: 12px; } }
-  @media (min-width: 992px) {
-    .td-footer-four .list-inline-item span {
-      font-size: 12px;
-      display: none; } }
-.td-footer-four .list-inline-item > a:hover > span {
-  color: #fff; }
-
 body.mobile-menu-open {
   overflow: hidden; }
 
