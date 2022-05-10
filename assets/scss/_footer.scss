@@ -4,12 +4,10 @@
   font-size: 13px;
 
   @include media-breakpoint-up(lg) {
-    padding: 50px 30px;
-  }
+    padding: 50px 30px;}
 
   a {
-    text-decoration: none;
-  }
+    text-decoration: none;}
 
   &__header {
     position: relative;
@@ -18,9 +16,7 @@
     @include media-breakpoint-up(lg) {
       & {
         padding: 0;
-        margin: 0 0 24px 0;
-      }
-    }
+        margin: 0 0 24px 0;}}
 
     &::after {
       display: block;
@@ -34,11 +30,7 @@
 
       @include media-breakpoint-up(lg) {
         & {
-          content: none;
-        }
-      }
-    }
-  }
+          content: none;}}}}
 
   &__list-inline {
     margin: 0;
@@ -49,27 +41,20 @@
     @include media-breakpoint-up(lg) {
       & {
         display: flex;
-        justify-content: center;
-      }
-    }
-  }
+        justify-content: center;}}}
 
   &__list-inline-item {
     justify-self: center;
 
     @include media-breakpoint-up(lg) {
       &:not(:last-child) {
-        margin: 0 15px 0 0;
-      }
-    }
-  }
+        margin: 0 15px 0 0;}}}
 
   &__list-inline-link {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: $white !important;
-  }
+    color: $white !important;}
 
   &__list-inline-icon {
     width: 30px;
@@ -85,10 +70,7 @@
       & {
         width: 40px;
         height: 40px;
-        font-size: 18px;
-      }
-    }
-  }
+        font-size: 18px;}}}
 
   &__list-inline-label {
     font-size: 11px;
@@ -100,14 +82,10 @@
     @include media-breakpoint-up(lg) {
       & {
         font-size: 12px;
-        display: none;
-      }
-    }
-  }
+        display: none;}}}
 
   &__list-inline-link:hover > &__list-inline-label  {
-    color: $white;
-  }
+    color: $white;}
 
   &__nav {
     padding: 35px 15px 16px 15px;
@@ -116,9 +94,7 @@
     @include media-breakpoint-up(lg) {
       & {
         margin: 0 0 30px 0;
-        padding: 0;
-      }
-    }
+        padding: 0;}}
 
     &::after {
       display: block;
@@ -132,11 +108,7 @@
 
       @include media-breakpoint-up(lg) {
         & {
-          content: none;
-        }
-      }
-    }
-  }
+          content: none;}}}}
 
   &__nav > ul {
     list-style-type: none;
@@ -150,10 +122,7 @@
       & {
         flex-wrap: initial;
         max-width: initial;
-        justify-content: center;
-      }
-    }
-  }
+        justify-content: center;}}}
 
   &__nav-item {
     position: relative;
@@ -162,19 +131,14 @@
 
     @include media-breakpoint-up(lg) {
       & {
-        margin-bottom: 0;
-      }
-    }
+        margin-bottom: 0;}}
 
     &:not(:last-child) {
       margin: 0 20px 19px 0;
 
       @include media-breakpoint-up(lg) {
         & {
-          margin: 0 20px 0 0;
-        }
-      }
-    }
+          margin: 0 20px 0 0;}}}
 
     &:not(:last-child)::after {
       content: "";
@@ -184,9 +148,7 @@
       position: absolute;
       right: -10px;
       top: 50%;
-      transform: translate(-50%, -50%);
-    }
-  }
+      transform: translate(-50%, -50%);}}
 
   &__nav-link {
     color: $skgrey2;
@@ -194,22 +156,17 @@
     font-weight: 500;
 
     &:hover {
-      color: $white;
-    }
+      color: $white;}
 
     &.active {
-      color: $white;
-    }
-  }
+      color: $white;}}
 
   &__brand-mobile {
     margin: 0 0 16px 0;
     display: inline-block;
 
     @include media-breakpoint-up(lg) {
-      display: none;
-    }
-  }
+      display: none;}}
 
   &__copyright-privacy {
     color: $skgrey2;
@@ -218,16 +175,11 @@
     @include media-breakpoint-up(lg) {
       & {
         grid-column: initial;
-        padding: 0;
-      }
-    }
-  }
+        padding: 0;}}}
 
   &__copyright-privacy>small {
     &:not(:last-of-type) {
-      margin: 0 0 16px 0;
-    }
-  }
+      margin: 0 0 16px 0;}}
 
   &__copyright-privacy a {
     font-weight: 600;
@@ -237,22 +189,16 @@
 
     &:hover {
       color: $skred;
-      border-bottom: 1px dotted $skred;
-    }
-  }
+      border-bottom: 1px dotted $skred;}}
 
   &__brand-mobile {
     display: inline-block;
     @include media-breakpoint-up(lg) {
       & {
-        display: none;
-      }
-    }
-  }
+        display: none;}}}
 
   &__brand-mobile>svg {
-    height: 20px;
-  }
+    height: 20px;}
 
   &__copyright,
   &__privacy {
@@ -260,8 +206,4 @@
 
     @include media-breakpoint-up(lg) {
       & {
-        text-align: center;
-      }
-    }
-  }
-}
+        text-align: center;}}}}
