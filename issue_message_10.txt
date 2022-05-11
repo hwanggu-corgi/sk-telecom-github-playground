@@ -4,18 +4,25 @@
 
 (그리고 이 issue만으로 부족해 다음의 issue를 함께 올립니다: https://github.com/sktelecom/sktelecom.github.io/issues/56)
 
-다음 4개의 footer를 시도했습니다. 궁국적인 목표는 모든페이지에 맞는 깔끔하고 professional한 footer를 만드는것 입니다.
+다음 4개의 footer를 시도했습니다. 궁국적인 목표는 모든페이지에 맞는 깔끔한 footer를 만드는것 입니다.
 
 1. 첫 번째는 sk telecom footer하고 비슷하게 만들었습니다.
+
+![sk-teleccom-footer](https://user-images.githubusercontent.com/72232928/167760391-d4c97804-5406-4b4e-b150-ef94506f8180.jpg)
+
 - 장점은 깔끔하고 세련되어 보입니다
-- 단점은 browser width 가 wide할때 빈공간이 많아 보입니다. 특히 homepage에서 이 단점이 많이 들어납니다.
-2. 두 번째는 sksquare.com에 있는 footer하고 sk telecom footer를 융합했습니다.
+- 단점은 browser width 가 wide할때 빈공간이 많아 보입니다. 특히 homepage에서 이 단점이 많이 보입니다.
+2. 두 번째는 sksquare.com에 있는 footer하고 sk telecom mobile footer를 융합했습니다.
+
 - 장점은 빈공간이 첫번째보다 채워져 있습니다
 - 단점은 middle content 위치가 project하고 blog 페이지에 마추었기 때문에 home page에서는 어색해 보입니다.
-3. 세 번째는 skplanet.com footer하고 sk telecom footer를 융합했습니다.
+4. 세 번째는 skplanet.com footer하고 sk telecom mobile footer를 융합했습니다.
+
+![sk-planet-footer](https://user-images.githubusercontent.com/72232928/167760825-6bbdcbca-b14f-47ee-b49a-d9c951428a3c.jpg)
+
 - 장점은 빈공간이 채워져 있습니다 그리고 모든 페이지에 맞게 보입니다.
 - 단점은 한쪽은 로고 다른한쪽은 아이콘으로 되어있어 깔끔함이 다소 감소 되어있습니다.
-4. 네 번째는 현재의 footer를 정리해 보았습니다
+6. 네 번째는 현재의 footer를 정리해 보았습니다
 - 장점은 깔끔하고 모든 페이지에 맞게 보입니다.
 - 단점은 양 옆이 없어 보입니다.
 
