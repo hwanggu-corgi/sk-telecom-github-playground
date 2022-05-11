@@ -12368,7 +12368,7 @@ readers do not read off random characters that represent icons */
     .td-footer {
       grid-template-columns: 7fr 3fr;
       padding: 60px 30px; } }
-  @media (min-width: 992px) {
+  @media (min-width: 1200px) {
     .td-footer {
       grid-template-columns: 1.53fr 5.0fr 1.53fr; } }
   .td-footer a {
@@ -12400,7 +12400,7 @@ readers do not read off random characters that represent icons */
         grid-column: 2;
         align-self: center;
         display: block; } }
-    @media (min-width: 992px) {
+    @media (min-width: 1200px) {
       .td-footer__icons--desktop {
         grid-row: initial;
         grid-column: initial; } }
@@ -12411,7 +12411,7 @@ readers do not read off random characters that represent icons */
     @media (min-width: 768px) {
       .td-footer__header {
         display: block; } }
-    @media (min-width: 992px) {
+    @media (min-width: 1200px) {
       .td-footer__header {
         margin: 0; } }
   .td-footer__brand---desktop {
@@ -12421,7 +12421,7 @@ readers do not read off random characters that represent icons */
         display: inline-block; } }
   .td-footer__brand--desktop > svg {
     height: 38px; }
-    @media (min-width: 992px) {
+    @media (min-width: 1200px) {
       .td-footer__brand--desktop > svg {
         height: 44px; } }
   .td-footer__brand--mobile {
@@ -12439,9 +12439,6 @@ readers do not read off random characters that represent icons */
       .td-footer__nav {
         margin: 0 0 32px 0;
         padding: 0; } }
-    @media (min-width: 992px) {
-      .td-footer__nav {
-        margin: 0 0 24px 0; } }
     .td-footer__nav::after {
       display: block;
       content: "";
@@ -12465,7 +12462,7 @@ readers do not read off random characters that represent icons */
       .td-footer__nav > ul {
         flex-wrap: initial;
         max-width: initial; } }
-    @media (min-width: 992px) {
+    @media (min-width: 1200px) {
       .td-footer__nav > ul {
         justify-content: center; } }
   .td-footer__nav-item {
@@ -12504,12 +12501,12 @@ readers do not read off random characters that represent icons */
       .td-footer__copyright-privacy {
         grid-column: span 2;
         padding: 0; } }
-    @media (min-width: 992px) {
+    @media (min-width: 1200px) {
       .td-footer__copyright-privacy {
         grid-column: initial; } }
   .td-footer__copyright-privacy > small {
     display: block; }
-    @media (min-width: 992px) {
+    @media (min-width: 1200px) {
       .td-footer__copyright-privacy > small {
         text-align: center; } }
     .td-footer__copyright-privacy > small:not(:last-of-type) {
@@ -12562,7 +12559,7 @@ readers do not read off random characters that represent icons */
     color: #bababf;
     transition: all 0.3s linear;
     text-align: center; }
-    @media (min-width: 992px) {
+    @media (min-width: 1200px) {
       .td-footer__list-inline-label {
         font-size: 12px;
         display: none; } }
