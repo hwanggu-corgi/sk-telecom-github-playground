@@ -12517,8 +12517,8 @@ readers do not read off random characters that represent icons */
     border-bottom: 1px dotted #bababf;
     transition: all 0.3s linear; }
     .td-footer__copyright-privacy a:hover {
-      color: #ea002c;
-      border-bottom: 1px dotted #ea002c; }
+      color: #fff;
+      border-bottom: 1px dotted #fff; }
   .td-footer__list-inline {
     margin: 0;
     display: grid;

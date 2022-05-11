@@ -9,19 +9,14 @@
   @include media-breakpoint-up(md) {
     & {
       grid-template-columns: 7fr 3fr;
-      padding: 60px 30px;
-    }
-  }
+      padding: 60px 30px;}}
 
   @include media-breakpoint-up(xl) {
     & {
-      grid-template-columns: 1.53fr 5.0fr 1.53fr;
-    }
-  }
+      grid-template-columns: 1.53fr 5.0fr 1.53fr;}}
 
   a {
-    text-decoration: none;
-  }
+    text-decoration: none;}
 
   &__icons {
     &--mobile {
@@ -43,10 +38,7 @@
         bottom: 0;
 
         @include media-breakpoint-up(md) {
-          content: none;
-        }
-      }
-    }
+          content: none;}}}
 
     &--desktop {
       justify-self: flex-end;
@@ -56,15 +48,11 @@
         grid-row: 1 / span 2;
         grid-column: 2;
         align-self: center;
-        display: block;
-      }
+        display: block;}
 
       @include media-breakpoint-up(xl) {
         grid-row: initial;
-        grid-column: initial;
-      }
-    }
-  }
+        grid-column: initial;}}}
 
   &__header {
     display: none;
@@ -72,44 +60,33 @@
     margin: 0 0 32px 0;
 
     @include media-breakpoint-up(md) {
-      display: block;
-    }
+      display: block;}
 
     @include media-breakpoint-up(xl) {
-      margin: 0;
-    }
-  }
+      margin: 0;}}
 
   &__brand {
     &---desktop {
       display: none;
 
       @include media-breakpoint-up(md) {
-        display: inline-block;
-      }
-    }
+        display: inline-block;}}
 
     &--desktop>svg {
       height: 38px;
 
       @include media-breakpoint-up(xl) {
-        height: 44px;
-      }
-    }
+        height: 44px;}}
 
     &--mobile {
       margin: 0 0 11px 0;
       display: inline-block;
 
       @include media-breakpoint-up(md) {
-        display: none;
-      }
-    }
+        display: none;}}
 
     &--mobile > svg {
-      height: 20px;
-    }
-  }
+      height: 20px;}}
 
   &__nav {
     padding: 35px 15px 16px 15px;
@@ -117,8 +94,7 @@
 
     @include media-breakpoint-up(md) {
       margin: 0 0 32px 0;
-      padding: 0;
-    }
+      padding: 0;}
 
     &::after {
       display: block;
@@ -132,11 +108,7 @@
 
       @include media-breakpoint-up(md) {
         & {
-          content: none;
-        }
-      }
-    }
-  }
+          content: none;}}}}
 
   &__nav>ul {
     list-style-type: none;
@@ -148,15 +120,11 @@
 
     @include media-breakpoint-up(md) {
       flex-wrap: initial;
-      max-width: initial;
-    }
+      max-width: initial;}
 
     @include media-breakpoint-up(xl) {
       & {
-        justify-content: center;
-      }
-    }
-  }
+        justify-content: center;}}}
 
   &__nav-item {
     position: relative;
@@ -165,19 +133,14 @@
 
     @include media-breakpoint-up(md) {
       & {
-        margin-bottom: 0;
-      }
-    }
+        margin-bottom: 0;}}
 
     &:not(:last-child) {
       margin: 0 20px 19px 0;
 
       @include media-breakpoint-up(md) {
         & {
-          margin: 0 20px 0 0;
-        }
-      }
-    }
+          margin: 0 20px 0 0;}}}
 
     &:not(:last-child)::after {
       content: "";
@@ -187,9 +150,7 @@
       position: absolute;
       right: -10px;
       top: 50%;
-      transform: translate(-50%, -50%);
-    }
-  }
+      transform: translate(-50%, -50%);}}
 
   &__nav-link {
     color: $skgrey2;
@@ -197,13 +158,10 @@
     font-weight: 500;
 
     &:hover {
-      color: $white;
-    }
+      color: $white;}
 
     &.active {
-      color: $white;
-    }
-  }
+      color: $white;}}
 
   &__copyright-privacy {
     color: $skgrey2;
@@ -211,29 +169,21 @@
 
     @include media-breakpoint-up(md) {
       grid-column: span 2;
-      padding: 0;
-    }
+      padding: 0;}
 
     @include media-breakpoint-up(xl) {
       & {
-        grid-column: initial;
-      }
-    }
-  }
+        grid-column: initial;}}}
 
   &__copyright-privacy>small {
     display: block;
 
     @include media-breakpoint-up(xl) {
       & {
-        text-align: center;
-      }
-    }
+        text-align: center;}}
 
     &:not(:last-of-type) {
-      margin: 0 0 4px 0;
-    }
-  }
+      margin: 0 0 4px 0;}}
 
   &__copyright-privacy a {
     font-weight: 600;
@@ -242,8 +192,8 @@
     transition: $transition;
 
     &:hover {
-      color: $skred;
-      border-bottom: 1px dotted $skred;
+      color: $white;
+      border-bottom: 1px dotted $white;
     }
   }
 
