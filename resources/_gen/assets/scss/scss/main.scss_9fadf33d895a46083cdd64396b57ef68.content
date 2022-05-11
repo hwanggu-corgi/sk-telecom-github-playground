@@ -12373,13 +12373,13 @@ readers do not read off random characters that represent icons */
       grid-template-columns: 1.53fr 5.0fr 1.53fr; } }
   .td-footer a {
     text-decoration: none; }
-  .td-footer__icons---mobile {
+  .td-footer__icons--mobile {
     position: relative;
     padding: 35px 15px; }
     @media (min-width: 768px) {
-      .td-footer__icons---mobile {
+      .td-footer__icons--mobile {
         display: none; } }
-    .td-footer__icons---mobile::after {
+    .td-footer__icons--mobile::after {
       display: block;
       content: "";
       height: 1px;
@@ -12389,7 +12389,7 @@ readers do not read off random characters that represent icons */
       left: 0;
       bottom: 0; }
       @media (min-width: 768px) {
-        .td-footer__icons---mobile::after {
+        .td-footer__icons--mobile::after {
           content: none; } }
   .td-footer__icons--desktop {
     justify-self: flex-end;
@@ -12403,10 +12403,17 @@ readers do not read off random characters that represent icons */
     @media (min-width: 992px) {
       .td-footer__icons--desktop {
         grid-row: initial;
-        grid-column: initial;
-        align-self: initial; } }
+        grid-column: initial; } }
   .td-footer__header {
-    align-self: center; }
+    display: none;
+    align-self: center;
+    margin: 0 0 32px 0; }
+    @media (min-width: 768px) {
+      .td-footer__header {
+        display: block; } }
+    @media (min-width: 992px) {
+      .td-footer__header {
+        margin: 0; } }
   .td-footer__brand---desktop {
     display: none; }
     @media (min-width: 768px) {
@@ -12430,8 +12437,11 @@ readers do not read off random characters that represent icons */
     position: relative; }
     @media (min-width: 768px) {
       .td-footer__nav {
-        margin: 0 0 30px 0;
+        margin: 0 0 32px 0;
         padding: 0; } }
+    @media (min-width: 992px) {
+      .td-footer__nav {
+        margin: 0 0 24px 0; } }
     .td-footer__nav::after {
       display: block;
       content: "";
@@ -12497,17 +12507,19 @@ readers do not read off random characters that represent icons */
     @media (min-width: 992px) {
       .td-footer__copyright-privacy {
         grid-column: initial; } }
-  .td-footer__copyright-privacy > span {
+  .td-footer__copyright-privacy > small {
     display: block; }
     @media (min-width: 992px) {
-      .td-footer__copyright-privacy > span {
+      .td-footer__copyright-privacy > small {
         text-align: center; } }
-  .td-footer__copyright > a {
+    .td-footer__copyright-privacy > small:not(:last-of-type) {
+      margin: 0 0 4px 0; }
+  .td-footer__copyright-privacy a {
     font-weight: 600;
     color: #bababf;
     border-bottom: 1px dotted #bababf;
     transition: all 0.3s linear; }
-    .td-footer__copyright > a:hover {
+    .td-footer__copyright-privacy a:hover {
       color: #ea002c;
       border-bottom: 1px dotted #ea002c; }
   .td-footer__list-inline {
@@ -12515,13 +12527,13 @@ readers do not read off random characters that represent icons */
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     padding: 0; }
-    @media (min-width: 992px) {
+    @media (min-width: 768px) {
       .td-footer__list-inline {
         display: flex;
         justify-content: center; } }
   .td-footer__list-inline-item {
     justify-self: center; }
-    @media (min-width: 992px) {
+    @media (min-width: 768px) {
       .td-footer__list-inline-item:not(:last-child) {
         margin: 0 15px 0 0; } }
   .td-footer__list-inline-link {
@@ -12537,7 +12549,8 @@ readers do not read off random characters that represent icons */
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 14px; }
+    font-size: 14px;
+    margin: 0 0 8px 0; }
     @media (min-width: 768px) {
       .td-footer__list-inline-icon {
         width: 40px;
