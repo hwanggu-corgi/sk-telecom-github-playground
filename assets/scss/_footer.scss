@@ -193,9 +193,7 @@
 
     &:hover {
       color: $white;
-      border-bottom: 1px dotted $white;
-    }
-  }
+      border-bottom: 1px dotted $white;}}
 
   &__list-inline {
     margin: 0;
@@ -206,27 +204,20 @@
     @include media-breakpoint-up(md) {
       & {
         display: flex;
-        justify-content: center;
-      }
-    }
-  }
+        justify-content: center;}}}
 
   &__list-inline-item {
     justify-self: center;
 
     @include media-breakpoint-up(md) {
       &:not(:last-child) {
-        margin: 0 15px 0 0;
-      }
-    }
-  }
+        margin: 0 15px 0 0;}}}
 
   &__list-inline-link {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: $white !important;
-  }
+    color: $white !important;}
 
   &__list-inline-icon {
     width: 30px;
@@ -243,10 +234,7 @@
       & {
         width: 40px;
         height: 40px;
-        font-size: 18px;
-      }
-    }
-  }
+        font-size: 18px;}}}
 
   &__list-inline-label {
     font-size: 11px;
@@ -258,12 +246,7 @@
     @include media-breakpoint-up(xl) {
       & {
         font-size: 12px;
-        display: none;
-      }
-    }
-  }
+        display: none;}}}
 
   &__list-inline-link:hover>&__list-inline-label {
-    color: $white;
-  }
-}
+    color: $white;}}
