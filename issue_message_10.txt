@@ -4,11 +4,11 @@ sktelecom.github.io 홈페이지의 보다 나은 user experience를 위해 foot
 
 이 footer는 sk telecom footer 하고 sk planet footer를 융합해서 만들었습니다.
 
-처음에는 sk telecom footer만 사용했었습니다. 깔끔해 보였습니다. 하지만 browser width 가 wide 할 때 빈 공간이 많아 보였습니다.
+처음에는 sk telecom footer만 사용했습니다. 깔끔해 보였습니다. 하지만 browser width 가 wide 할 때 빈 공간이 많아 보였습니다.
 
 이 단점을 sk planet footer style을 넣어서 보완 했습니다.
 
-결과물을 이 [링크]()에서 보실 수 있습니다.
+결과물을 이 [링크](https://hyungmogu.github.io/sktelecom-footer-revision-demo/)에서 보실 수 있습니다.
 
 관리자님, 비록 이 footer를 올리지만 이 외에도 마음에 드시는 footer가 있으시면 말씀 주세요. 꼭 수정하겠습니다.
 
@@ -19,6 +19,3 @@ sktelecom.github.io 홈페이지의 보다 나은 user experience를 위해 foot
 감사합니다.
 
 https://user-images.githubusercontent.com/72232928/167970041-0dab12ab-3d0d-47dc-97c0-72a3fc50657f.mov
-
-
-
