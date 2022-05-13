@@ -1,10 +1,1 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SKT Open Source – OSRB</title><link>/about/osrb/</link><description>Recent content in OSRB on SKT Open Source</description><generator>Hugo -- gohugo.io</generator><language>ko-kr</language><atom:link href="/about/osrb/index.xml" rel="self" type="application/rss+xml"/><item><title>About: Test</title><link>/about/osrb/test/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/about/osrb/test/</guid><description>
-&lt;p>OSRB(Open Source Review Board)는 기업의 오픈소스 관리를 위해 오픈소스 책임자와 법무팀, 특허팀, 개발팀, 인프라팀 등 관련 조직의 책임자로 구성된 협의체이다.&lt;/p>
-&lt;ul>
-&lt;li>OSRB는 오픈소스 관리를 위한 정책과 프로세스를 만들고, 이를 수행하기 위한 기업 내의 R&amp;amp;R을 정의한다.&lt;/li>
-&lt;li>기업 내 오픈소스 관리 이슈 발생 시, 해결 방안을 논의하고, 대응 방안을 마련한다.&lt;/li>
-&lt;li>필요 시, 임원진에 이슈를 보고하여 리스크 완화 방안에 대한 피드백을 받는다.&lt;/li>
-&lt;/ul>
-&lt;h1 id="sk텔레콤-osrb">SK텔레콤 OSRB&lt;/h1>
-&lt;p>SK텔레콤의 OSRB는 준법경영법무그룹에서 주관하고, ESG Tech Product Hub, Career그룹, Cloud Application 그룹, 정보보호담당에서 참여한다.&lt;/p>
-&lt;img src="./osrb.png" width="450"/></description></item></channel></rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SKT Open Source – OSRB</title><link>/about/osrb/</link><description>Recent content in OSRB on SKT Open Source</description><generator>Hugo -- gohugo.io</generator><language>ko-kr</language><atom:link href="/about/osrb/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
