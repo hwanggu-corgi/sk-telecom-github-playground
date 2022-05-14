@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "SynergyDisplay";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/SynergyDisplayLight.woff") format("woff"), url("../fonts/SynergyDisplayTTFLight.ttf") format("truetype");
+  /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: "SynergyDisplay";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/SynergyDisplayRegular.woff") format("woff"), url("../fonts/SynergyDisplayTTFRegular.ttf") format("truetype");
+  /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: "SynergyDisplay";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/SynergyDisplayBold.woff") format("woff"), url("../fonts/SynergyDisplayTTFBold.ttf") format("truetype");
+  /* Safari, Android, iOS */
+}

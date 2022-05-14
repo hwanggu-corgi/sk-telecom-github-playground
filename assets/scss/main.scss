@@ -1,7 +1,9 @@
 @import "support/functions";
 @import "variables_project";
 @import "variables";
+@import "fonts";
 @import "support/mixins";
+@import "card_list";
 
 @import "../vendor/bootstrap/scss/bootstrap";
 
@@ -10,13 +12,10 @@
 @import "../vendor/Font-Awesome/scss/brands.scss";
 
 @import "support/utilities";
-@import "card_list";
 @import "colors";
-@import "content-areas";
 @import "boxes";
 @import "blog";
 @import "code";
-@import "footer";
 @import "nav";
 @import "sidebar-tree";
 @import "sidebar-toc";
