@@ -15,12 +15,12 @@
 
 ![navigation-after](https://user-images.githubusercontent.com/72232928/168512826-b037dacd-6761-4d31-bb38-cc7ec78e69ad.png)
 
-[다른 브라우져들 스크린샷으로 보기](https://links.lambdatest.com/6T77QVOAFLAR2LPEUMVUVO4ZLKJOX796GDPVH09G2K3JCAXIYV455MDBCY4LDO0T)
+[다른 브라우져들 스크린샷으로 보기](https://links.lambdatest.com/9DQNCV31P0KNIHMYL1P8UQ88Y6FSOSDOLMO8R3PFHQVEM4AFNSOABVCDILOID2WB)
 
 -------------
 
-그리고 관리자님, 제 부족으로 지난 개선안에서 못한 scss 파일안에 있는 bracket들을 tighten해서 올립니다.
+그리고 관리자님, 제 부족으로 지난 개선안에서 못한 scss 파일안에 있는 bracket들을 tighten해서 함께 올립니다.
 
-관리자님, 제 issue를 봐주셔서 고맙습니다.
+관리자님, 시간내어 제 issue를 봐주셔서 고맙습니다.
 
 감사합니다.
