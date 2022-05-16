@@ -5,12 +5,17 @@
 -------------
 **수정 전**
 
-![image](https://user-images.githubusercontent.com/72232928/168510089-c072d5e3-6363-4271-830f-3f1c117ddea8.png)
+![navigation-bar-before](https://user-images.githubusercontent.com/72232928/168511601-8ce00789-0644-44e2-bdfc-4eacceb40670.png)
 
+[다른 브라우져들 스크린샷으로 보기](https://links.lambdatest.com/6T77QVOAFLAR2LPEUMVUVO4ZLKJOX796GDPVH09G2K3JCAXIYV455MDBCY4LDO0T)
 
 -------------
 **수정 후**
 
+
+![navigation-after](https://user-images.githubusercontent.com/72232928/168512826-b037dacd-6761-4d31-bb38-cc7ec78e69ad.png)
+
+[다른 브라우져들 스크린샷으로 보기](https://links.lambdatest.com/6T77QVOAFLAR2LPEUMVUVO4ZLKJOX796GDPVH09G2K3JCAXIYV455MDBCY4LDO0T)
 
 -------------
 
