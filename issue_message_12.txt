@@ -1,19 +1,21 @@
-안녕하세요 관리자님,
+안녕하세요 @haksungjang님,
 
 푸른 나뭇잎들이 가득한 요즘 좋은 하루를 보내시고 계십니까?
 
-오늘은 작지만 웹사이트를 보다 깔끔하게 보일 수 있는 logo 관련 수정안을 올립니다.
+오늘은 웹사이트를 보다 깔끔하게 보일 수 있는 logo 관련 수정안을 올립니다.
 
-sktelecom.github.io header logo의 left position이 footer logo의 left position하고 맞지 않아 수정해서 logo들이 같은 position에 있게 했습니다.
+sktelecom.github.io header logo의 left position이 footer logo의 left position 하고 맞지 않아 수정해서 logo들이 같은 position에 있게 했습니다.
 
 ![logo-수정 전](https://user-images.githubusercontent.com/72232928/169441356-ca363dc3-6d38-4227-bded-22ae62fbcad6.jpg)
 
 ![logo-수정 후](https://user-images.githubusercontent.com/72232928/169441360-42cee277-4388-4d56-9f71-b1d20fdc0933.jpg)
 
-이것은 다른 브라우져 버젼들의 변경 전 사진 링크 입니다.
+[이것은](https://links.lambdatest.com/XYNFOH1P1WU4VUSSYW42XGAJB8YSCJ86KBN22E4ERXPKJQLWIF5S2RB6S5HNDPUS) 다른 브라우져 버전들의 변경 전 사진 링크입니다.
 
-그리고 이것은 다른 브라우져 버젼들의 변경 후 사진 링크 입니다.
+그리고 [이것은](https://links.lambdatest.com/W1C7W99UQW4OEGMDEFH3521FF02W25KXPYLNUNKZH439QTRTHARU4I5ARIJAEBSB) 다른 브라우져 버전들의 변경 후 사진 링크입니다.
 
-관리자님, 제 메세지를 읽어주시고 봐주셔서 고맙습니다.
+링크 안에 몇 개의 스크린샷들은 부분만 보입니다. 이것을 해결하기 위해 lambda test team에게 bug issue를 만들어 보냈습니다.
+
+관리자님, 제 메시지를 읽어주시고 봐주셔서 고맙습니다.
 
 감사합니다.
