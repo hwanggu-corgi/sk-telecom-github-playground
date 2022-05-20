@@ -6,6 +6,9 @@
 
 sktelecom.github.io header logo의 left position이 footer logo의 left position하고 맞지 않아 수정해서 logo들이 같은 position에 있게 했습니다.
 
+![logo-수정 전](https://user-images.githubusercontent.com/72232928/169441356-ca363dc3-6d38-4227-bded-22ae62fbcad6.jpg)
+
+![logo-수정 후](https://user-images.githubusercontent.com/72232928/169441360-42cee277-4388-4d56-9f71-b1d20fdc0933.jpg)
 
 이것은 다른 브라우져 버젼들의 변경 전 사진 링크 입니다.
 
