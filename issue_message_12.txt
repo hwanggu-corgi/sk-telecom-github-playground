@@ -1,10 +1,13 @@
 안녕하세요 관리자님,
 
-푸른 나뭇잎들이 가득한 요즘 좋은 하루를 보내고 계시고 있습니까?
+푸른 나뭇잎들이 가득한 요즘 좋은 하루를 보내시고 계십니까?
 
-오늘은 작은 수정안을 올립니다.
+오늘은 logo 관련 수정안을 올립니다.
 
 sktelecom.github.io header logo의 left position이 footer logo의 left position하고 맞지 않아 수정해서 logo들이 같은 position에 있게 했습니다.
+
+
+
 
 관리자님, 이것은 변경후 사진 링크 입니다.
 
