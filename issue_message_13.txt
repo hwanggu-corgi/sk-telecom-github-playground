@@ -1,12 +1,18 @@
 안녕하세요 관리자님,
 
-pull request를 하는데 merge error가 있어 이에 관한 개선안을 올립니다.
+pull request를 하는데 build github pages / build (pull_request) 부분에서 error가 나타나 이에 관한 개선안을 올립니다.
 
-에러의 원인은 hugo가 v0.99로 업데이트 하면서 ______________ 때문에 postcss가 install 되어 있지 않다고 complain했기 때문입니다.
+![image](https://user-images.githubusercontent.com/72232928/169663734-709f8937-ce98-4eb3-bdda-67b8ec1f93e1.png)
 
-지난 pull request 때는 hugo v0.98를 사용해서 이런 애러가 나지 않았었습니다.
+에러의 원인은 hugo가 v0.99로 업데이트 하면서 ______________ 때문에 postcss가 install 되어 있는지 확인하기 때문입니다.
+
+
+
+지난 pull request에서 애러가 나오지 않았던 이유는 hugo v0.98를 사용했기 때문입니다.
 
 postcss-cli missing 문제를 해결하기위해 이 soultion을 참고해서 업데이트를 했습니다.
+
+그 결과, build github pages / build (pull_request)에서 더 이상 conflict이 일어나지 않습니다.
 
 관리자님, 부디 좋은 하루 보내세요.
 
