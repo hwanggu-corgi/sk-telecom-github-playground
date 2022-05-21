@@ -2,13 +2,15 @@
 
 pull request를 하는데 merge error가 있어 이에 관한 개선안을 올립니다.
 
-v0.99 부터 ________가 deprecated 되어있다고 나와 있습니다.
+원인을 알아본 결과 hugo가 postcss-cli에서
 
-확인 차 POSTCSS를 delete 헀더니, 성공적으로 pull request를 해낼 수 있었습니다.
+이 이유는 v0.99으로 업데이트 하면서 ________가 deprecated 되어있다고 나와 있습니다.
 
+지난 pull request 때 까지만해도 hugo v0.98를 사용했었습니다.
 
+확인 차 POSTCSS를 delete 헀더니, 성공적으로 "pull request를 할 수 있습니다" 메세지를 볼 수 있었습니다.
 
-이 문제를 개선하고자 이 issue의 solution을 참고 했습니다.
+관리자님, 이
 
 관리자님, 부디 좋은 하루 보내세요.
 
