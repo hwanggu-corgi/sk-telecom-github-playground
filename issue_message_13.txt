@@ -8,7 +8,6 @@ pull request를 하는데 build github pages / build (pull_request) 부분에서
 
 
 
-
 지난 pull request에서 애러가 나오지 않았던 이유는 hugo v0.98를 사용했기 때문입니다.
 
 postcss-cli missing 문제를 해결하기위해 이 soultion을 참고해서 업데이트를 했습니다.
