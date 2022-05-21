@@ -1,8 +1,15 @@
 안녕하세요 관리자님,
 
+pull request를 하는데 merge error가 있어 이에 관한 개선안을 올립니다.
+
+v0.99 부터 ________가 deprecated 되어있다고 나와 있습니다.
+
+확인 차 POSTCSS를 delete 헀더니, 성공적으로 pull request를 해낼 수 있었습니다.
 
 
 
-부디 좋은 하루 보내세요.
+이 문제를 개선하고자 이 issue의 solution을 참고 했습니다.
+
+관리자님, 부디 좋은 하루 보내세요.
 
 감사합니다.
