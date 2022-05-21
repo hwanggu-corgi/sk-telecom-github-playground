@@ -14,10 +14,11 @@ hugo가 v0.99에서 `hugo --minify`에서 나오는 애러를 더 이상 ignore 
 
 ![cause-2](https://user-images.githubusercontent.com/72232928/169671047-0c2b7001-8907-4f40-8652-2a9e0848715f.png)
 
-postcss-cli missing 문제를 해결하기위해 이 solution을 참고해서 업데이트를 했습니다.
+postcss-cli missing 문제를 해결하기위해 [이 solution](https://github.com/sktelecom/sktelecom.github.io/issues/54)을 참고해서 업데이트를 했습니다.
 
-그 결과, build github pages / build (pull_request)에서 더 이상 conflict이 일어나지 않고 있습니다.
+그 결과, build github pages / build (pull_request)에서 더 이상 conflict이 일어나지 않고 있습니다 ([링크]()).
 
 관리자님, 부디 좋은 하루 보내세요.
 
 감사합니다.
+
