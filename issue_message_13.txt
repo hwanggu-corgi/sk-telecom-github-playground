@@ -4,13 +4,19 @@ pull request를 하는데 build github pages / build (pull_request) 부분에서
 
 ![image](https://user-images.githubusercontent.com/72232928/169663734-709f8937-ce98-4eb3-bdda-67b8ec1f93e1.png)
 
-에러의 원인은 hugo가 v0.99로 업데이트 하면서 `hugo --minify`를 할때 나오는 애러를 확실하게 표시하기 위해 애러 관련 파일들을 rebuild 하기 때문입니다.
+이 에러의 원인은 hugo v0.99 업데이트에 있습니다.
 
-지난 pull request에서는 hugo v0.98를 사용했기 때문에 애러가 나오지 않았습니다.
+![cause-1](https://user-images.githubusercontent.com/72232928/169670851-853b8b62-5a9d-4535-819c-a454a3dffd28.png)
 
-postcss-cli missing 문제를 해결하기위해 이 soultion을 참고해서 업데이트를 했습니다.
+hugo가 v0.99에서 `hugo --minify`에서 나오는 애러를 더 이상 ignore 하지 않기 때문입니다 ([링크](https://github.com/gohugoio/hugo/issues/9884#issue-1233699003)).
 
-그 결과, build github pages / build (pull_request)에서 더 이상 conflict이 일어나지 않습니다.
+지난 pull request에서는 hugo v0.98를 사용했기 때문에 문제가 나와도 애러가 나오지 않았습니다.
+
+![cause-2](https://user-images.githubusercontent.com/72232928/169671047-0c2b7001-8907-4f40-8652-2a9e0848715f.png)
+
+postcss-cli missing 문제를 해결하기위해 이 solution을 참고해서 업데이트를 했습니다.
+
+그 결과, build github pages / build (pull_request)에서 더 이상 conflict이 일어나지 않고 있습니다.
 
 관리자님, 부디 좋은 하루 보내세요.
 
