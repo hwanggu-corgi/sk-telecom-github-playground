@@ -1,0 +1,19 @@
+안녕하세요 관리자님,
+
+sktelecom.github.io의 보다 나은 웹사이트를 위해 sidebar layout 개선 관련 issue를 올립니다.
+
+Blog page 오른쪽에 있는 sidebar에 margin이 있어 보다 좁아 보입니다.
+
+![enhancement-problem-before](https://user-images.githubusercontent.com/72232928/170400596-954abc1d-8d85-431a-b372-4667d5bfff2b.png)
+
+그리하여 이 부분을 다음과 같이 정리했습니다.
+
+![enhancement-problem-after](https://user-images.githubusercontent.com/72232928/170400599-a277877d-7f6f-4c14-ae68-d9b7bb56fa9e.png)
+
+[이 웹사이트](https://hyungmogu.github.io/sktelecom-hugo-enhance-side-bar-20220525/blog/2022/20220403_innersource/)로 가시면 결과물을 보실 수 있습니다.
+
+관리자님, 만약 이 부분에 대해서 추가적으로 수정해야 할 곳이 있으면 꼭 말씀해 주세요. 수정하겠습니다.
+
+관리자님, 부디 좋은 하루 보내세요.
+
+감사합니다.
