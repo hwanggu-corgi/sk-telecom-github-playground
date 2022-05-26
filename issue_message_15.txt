@@ -12,8 +12,8 @@ Blog page 오른쪽에 있는 sidebar에 margin이 있어 보다 좁아 보입�
 
 [이 웹사이트](https://hyungmogu.github.io/sktelecom-hugo-enhance-side-bar-20220525/blog/2022/20220403_innersource/)로 가시면 결과물을 보실 수 있습니다.
 
+관리자님, 만약 이 부분에 대해서 추가적으로 수정해야 할 곳이 있으면 꼭 말씀해 주세요. 수정하겠습니다.
+
 관리자님, 부디 좋은 하루 보내세요.
 
 감사합니다.
-
-
