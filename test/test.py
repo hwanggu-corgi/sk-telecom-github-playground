@@ -21,6 +21,7 @@ class TestHugo(unittest.TestCase):
     super().tearDown()
 
 
+
   def test_start_command_should_show_web_server_is_starting (self) -> None:
     expected = True
     result = self.timeExpOut.find( "web server is available at //localhost:") != -1
