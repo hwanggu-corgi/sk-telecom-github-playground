@@ -17,7 +17,7 @@ class TestHugo(unittest.TestCase):
     # Run docker container and setup macOS
 
     try:
-      hugoOutput = subprocess.check_output(["sh", os.path.join(self.dirPath, self.executable)])
+      hugoOutput = subprocess.run(["sh", os.path.join(self.dirPath, self.executable)],)
       print(hugoOutput)
     except subprocess.CalledProcessError as e:
       result = False
