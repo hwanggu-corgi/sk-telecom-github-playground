@@ -15,9 +15,6 @@ class TestHugo(unittest.TestCase):
     try:
       subprocess.run(["sh", os.path.join(self.dirPath, self.executable)], timeout=10, capture_output=True, text=True)
     except subprocess.TimeoutExpired as timeErr:
-      print("-----timeErr output-----")
-      print(timeErr.output)
-      print("-----timeErr stderr-----")
       if timeErr.stderr is not None:
         result = False
 
@@ -25,19 +22,16 @@ class TestHugo(unittest.TestCase):
 
   def test_start_command_should_show_web_server_is_starting (self):
     expected = True
-    result = True
+    result = False
 
     try:
       subprocess.run(["sh", os.path.join(self.dirPath, self.executable)], timeout=10, capture_output=True, text=True)
     except subprocess.TimeoutExpired as timeErr:
-      print("-----timeErr output-----")
-      print(timeErr.output)
-      print("-----timeErr stderr-----")
-      if timeErr.stderr is not None:
-        result = False
+      print(timeErr.output.lower())
+      if timeErr.output is not None and timeErr.output.lower().find("Web Server is available at //localhost:"):
+        result = True
 
     self.assertEqual(result, expected)
-    pass
 
 if __name__ == '__main__':
     unittest.main()
