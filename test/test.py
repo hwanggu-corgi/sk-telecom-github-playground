@@ -13,11 +13,10 @@ class TestHugo(unittest.TestCase):
     result = True
 
     try:
-      output = subprocess.run(["sh", os.path.join(self.dirPath, self.executable)], timeout=10, check=True)
-      print(output)
-    except subprocess.CalledProcessError:
-      result = False
-    except subprocess.TimeoutExpired:
+      proc = subprocess.run(["sh", os.path.join(self.dirPath, self.executable)], timeout=10, capture_output=True, text=True)
+      print(proc.output)
+      print(proc.stderr)
+    except subprocess.TimeoutExpired as timeErr:
 
 
     self.assertEqual(result, expected)
