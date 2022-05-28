@@ -13,15 +13,30 @@ class TestHugo(unittest.TestCase):
     result = True
 
     try:
-      proc = subprocess.run(["sh", os.path.join(self.dirPath, self.executable)], timeout=10, capture_output=True, text=True)
-      print(proc.output)
-      print(proc.stderr)
+      subprocess.run(["sh", os.path.join(self.dirPath, self.executable)], timeout=10, capture_output=True, text=True)
     except subprocess.TimeoutExpired as timeErr:
-
+      print("-----timeErr output-----")
+      print(timeErr.output)
+      print("-----timeErr stderr-----")
+      if timeErr.stderr is not None:
+        result = False
 
     self.assertEqual(result, expected)
 
   def test_start_command_should_show_web_server_is_starting (self):
+    expected = True
+    result = True
+
+    try:
+      subprocess.run(["sh", os.path.join(self.dirPath, self.executable)], timeout=10, capture_output=True, text=True)
+    except subprocess.TimeoutExpired as timeErr:
+      print("-----timeErr output-----")
+      print(timeErr.output)
+      print("-----timeErr stderr-----")
+      if timeErr.stderr is not None:
+        result = False
+
+    self.assertEqual(result, expected)
     pass
 
 if __name__ == '__main__':
