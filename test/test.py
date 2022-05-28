@@ -1,61 +1,28 @@
-import unittest
+import sys
+import os.path
 import subprocess
+import unittest
 
-class TestHugoUbuntu(unittest.TestCase):
-  def setup(self):
-    # Run docker container and setup Ubuntu (if not installed)
-    pass
+class TestHugo(unittest.TestCase):
+  def setUp(self):
+    self.dirPath = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+    self.executable = "start.sh"
 
-  def test_hugo_start_ubuntu(self):
-    # checks Ubuntu 20
-
-    pass
-
-  def test_hugo_start_windows(self):
-    # checks windows 11
-    pass
-
-class TestHugoWindows(unittest.TestCase):
-  def setup(self):
-
-    # Run docker container and setup Windows (if not installed)
-    pass
-
-  def test_hugo_start_windows(self):
+  def test_hugo_start(self):
     # checks mac Montesery
 
     expected = True
-    outcome = True
+    result = True
 
     # Run docker container and setup macOS
 
     try:
-      subprocess.check_output(...)
+      hugoOutput = subprocess.check_output(["sh", os.path.join(self.dirPath, self.executable)])
+      print(hugoOutput)
     except subprocess.CalledProcessError as e:
-      outcome = False
+      result = False
 
-    self.assertEqual(outcome, expected)
-
-class TestHugoMacOs(unittest.TestCase):
-  def setup(self):
-
-    # Run docker container and setup MacOs (if not installed)
-    pass
-
-  def test_hugo_start_macos(self):
-    # checks mac Montesery
-
-    expected = True
-    outcome = True
-
-    # Run docker container and setup macOS
-
-    try:
-      subprocess.check_output(...)
-    except subprocess.CalledProcessError as e:
-      outcome = False
-
-    self.assertEqual(outcome, expected)
+    self.assertEqual(result, expected)
 
 if __name__ == '__main__':
     unittest.main()
