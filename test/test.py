@@ -7,31 +7,21 @@ class TestHugo(unittest.TestCase):
   def setUp(self):
     self.dirPath = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
     self.executable = "start.sh"
-
-  def test_start_command_should_not_return_error(self):
-    expected = True
-    result = True
+    self.timeExpOut = self.timeExpErr = None
 
     try:
-      subprocess.run(["sh", os.path.join(self.dirPath, self.executable)], timeout=10, capture_output=True, text=True)
+      self.proc = subprocess.run(["sh", os.path.join(self.dirPath, self.executable)], timeout=10, capture_output=True, text=True)
     except subprocess.TimeoutExpired as timeErr:
-      if timeErr.stderr is not None:
-        result = False
+      print("------stdout------")
+      self.timeExpOut = timeErr.stdout.lower() if timeErr.stdout is not None else timeErr.stdout
+      print("------stderr------")
+      self.timeExpErr = timeErr.stderr.lower() if timeErr.stderr is not None else timeErr.stderr
 
-    self.assertEqual(result, expected)
 
   def test_start_command_should_show_web_server_is_starting (self):
-    expected = True
-    result = False
+    expected = "web Server is available at //localhost:"
 
-    try:
-      subprocess.run(["sh", os.path.join(self.dirPath, self.executable)], timeout=10, capture_output=True, text=True)
-    except subprocess.TimeoutExpired as timeErr:
-      print(timeErr.output.lower())
-      if timeErr.output is not None and timeErr.output.lower().find("Web Server is available at //localhost:"):
-        result = True
-
-    self.assertEqual(result, expected)
+    self.assertIn(expected, self.timeExpOut)
 
 if __name__ == '__main__':
     unittest.main()
