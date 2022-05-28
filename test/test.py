@@ -1,10 +1,41 @@
 import unittest
 import subprocess
 
-class TestStringMethods(unittest.TestCase):
-  def test_hugo_start(self):
+class TestHugoUbuntu(unittest.TestCase):
+  def setup(self):
+    pass
+
+  def test_hugo_start_ubuntu(self):
+    # checks Ubuntu 20
+
+    # Run docker container and setup Ubuntu
+
+    #
+    pass
+
+  def test_hugo_start_windows(self):
+    # checks windows 11
+    pass
+
+class TestHugoWindows(unittest.TestCase):
+  def setup(self):
+    pass
+
+  def test_hugo_start_windows(self):
+    # checks windows 11
+    pass
+
+class TestHugoMacOs(unittest.TestCase):
+  def setup(self):
+    pass
+
+  def test_hugo_start_macos(self):
+    # checks mac Montesery
+
     expected = True
     outcome = True
+
+    # Run docker container and setup macOS
 
     try:
       subprocess.check_output(...)
