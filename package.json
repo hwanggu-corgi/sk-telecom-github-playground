@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "python test/test.py"
+    "test": "python3 test/test.py"
   },
   "author": "",
   "license": "ISC",
