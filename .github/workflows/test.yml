@@ -194,6 +194,7 @@
           run: npm install
 
         - name: Test shell
+          shell: bash
           run: npm run test
 
     # This workflow contains a single job called "build"
@@ -221,30 +222,5 @@
           run: npm install
 
         - name: Test shell
-          run: npm run test
-
-    test-windows-2016:
-      # The type of runner that the job will run on
-      runs-on: windows-2016
-      steps:
-        # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-        - uses: actions/checkout@v2
-          with:
-            submodules: true  # Fetch Hugo themes (true OR recursive)
-            fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-        - uses: actions/setup-node@v2
-          with:
-            node-version: '16'
-
-        # Runs a single command using the runners shell
-        - name: Setup Hugo
-          uses: peaceiris/actions-hugo@v2
-          with:
-            hugo-version: 'latest'
-            extended: true
-
-        - name: Build package
-          run: npm install
-
-        - name: Test shell
+          shell: bash
           run: npm run test

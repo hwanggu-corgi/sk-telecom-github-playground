@@ -17,6 +17,7 @@ class TestHugo(unittest.TestCase):
   def tearDown(self) -> None:
     super().tearDown()
 
+    # Reference:
     p = subprocess.Popen(['ps', '-A'], stdout=subprocess.PIPE)
     out, err = p.communicate()
     for line in out.splitlines():
@@ -31,7 +32,7 @@ class TestHugo(unittest.TestCase):
       result = True
     else:
       result = False
-
+      print(self.timeExpErr)
     self.assertEqual(expected, result)
 
 

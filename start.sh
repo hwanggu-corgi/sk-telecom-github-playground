@@ -1,3 +1,5 @@
+#!/bin/bash
+
 if [[ "$OSTYPE" == "darwin"* ]]; then
   sudo launchctl limit maxfiles 65535 200000;
   ulimit -n 65535;
