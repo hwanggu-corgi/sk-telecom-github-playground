@@ -1,4 +1,3 @@
-import sys
 import os, os.path
 import subprocess, signal
 import unittest
@@ -23,7 +22,6 @@ class TestHugo(unittest.TestCase):
     for line in out.splitlines():
       if 'hugo server' in line.decode():
         pid = int(line.split(None, 1)[0])
-        print(pid)
         os.kill(pid, signal.SIGKILL)
 
   def test_start_command_should_show_web_server_is_starting (self) -> None:
@@ -33,7 +31,7 @@ class TestHugo(unittest.TestCase):
       result = False
     else:
       result = self.timeExpOut.find( "web server is available at //localhost:") != -1
-    print(self.timeExpErr)
+
     self.assertEqual(expected, result)
 
 if __name__ == '__main__':
