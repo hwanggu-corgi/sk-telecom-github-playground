@@ -77,6 +77,13 @@
           with:
             node-version: '16'
 
+        # Update to latest python version (https://stackoverflow.com/questions/50338959/subprocess-run-isnt-timing-out-even-though-timeout-is-specified)
+        - uses: actions/checkout@v3
+        - name: Set up Python
+          uses: actions/setup-python@v3
+          with:
+            python-version: '3.x'
+
         # Runs a single command using the runners shell
         - name: Setup Hugo
           uses: peaceiris/actions-hugo@v2
