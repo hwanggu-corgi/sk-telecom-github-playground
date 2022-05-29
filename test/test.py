@@ -4,12 +4,12 @@ import unittest
 
 class TestHugo(unittest.TestCase):
   def setUp(self) -> None:
-    self.dirPath = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
-    self.executable = "start.sh"
-    self.timeExpOut = self.timeExpErr = None
+    dirPath = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+    executable = "start.sh"
+    timeout = 10
 
     try:
-      self.proc = subprocess.run(["sh", os.path.join(self.dirPath, self.executable)], timeout=10, capture_output=True, text=True)
+      self.proc = subprocess.run(["sh", os.path.join(dirPath, executable)], timeout=timeout, capture_output=True, text=True)
     except subprocess.TimeoutExpired as timeErr:
       self.timeExpOut = timeErr.stdout.decode().lower() if timeErr.stdout is not None else timeErr.stdout
       self.timeExpErr = timeErr.stderr.decode().lower() if timeErr.stderr is not None else timeErr.stderr
@@ -23,6 +23,17 @@ class TestHugo(unittest.TestCase):
       if 'hugo server' in line.decode():
         pid = int(line.split(None, 1)[0])
         os.kill(pid, signal.SIGKILL)
+
+  def test_start_command_should_not_return_error (self) -> None:
+    expected = True
+
+    if self.timeExpErr is None:
+      result = True
+    else:
+      result = False
+
+    self.assertEqual(expected, result)
+
 
   def test_start_command_should_show_web_server_is_starting (self) -> None:
     expected = True

@@ -1,0 +1,31 @@
+version: 2.1
+
+orbs:
+  win: circleci/windows@1.0.0
+
+jobs:
+  build-windows:
+    executor:
+      name: win/vs2019
+      shell: bash.exe
+    steps:
+      - checkout
+      - run: echo 'Do something'
+  build-macos:
+    macos:
+       xcode: 11.0.0
+    steps:
+      - checkout
+      - run: echo 'Do something'
+  build-linux:
+    docker:
+      - image: fpco/stack-build:lts
+    steps:
+      - checkout
+      - run: echo 'Do something'
+workflows:
+  build-and-deploy:
+    jobs:
+    - build-windows
+    - build-macos
+    - build-linux
