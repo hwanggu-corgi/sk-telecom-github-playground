@@ -9,7 +9,7 @@ class TestHugo(unittest.TestCase):
     timeout = 10
 
     try:
-      self.proc = subprocess.run(["sh", os.path.join(dirPath, executable)], timeout=timeout, capture_output=True, text=True)
+      self.proc = subprocess.run(["sh", os.path.join(dirPath, executable)], timeout=timeout, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     except subprocess.TimeoutExpired as timeErr:
       self.timeExpOut = timeErr.stdout.decode().lower() if timeErr.stdout is not None else timeErr.stdout
       self.timeExpErr = timeErr.stderr.decode().lower() if timeErr.stderr is not None else timeErr.stderr

@@ -1,8 +1,6 @@
 #!/bin/sh
 
-$(which sh);
-
-if [ "$OSTYPE" == "darwin"* ]; then
+if [ "$OSTYPE" = "darwin"* ]; then
   sudo launchctl limit maxfiles 65535 200000;
   ulimit -n 65535;
   sudo sysctl -w kern.maxfiles=100000;
