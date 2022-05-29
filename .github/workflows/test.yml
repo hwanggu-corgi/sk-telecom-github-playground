@@ -211,7 +211,7 @@
 
         - name: Test shell
           run: npm run test
-        # This workflow contains a single job called "build"
+
     test-windows-2202:
       # The type of runner that the job will run on
       runs-on: windows-2022
