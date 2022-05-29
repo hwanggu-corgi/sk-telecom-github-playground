@@ -211,3 +211,37 @@
 
         - name: Test shell
           run: npm run test
+
+    test-windows-2202:
+      # The type of runner that the job will run on
+      runs-on: windows-2022
+      steps:
+        # Update to latest python3 version (https://stackoverflow.com/questions/50338959/subprocess-run-isnt-timing-out-even-though-timeout-is-specified)
+        - uses: actions/checkout@v3
+        - name: Set up Python
+          uses: actions/setup-python@v3
+          with:
+            python-version: '3.x'
+
+        # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+        - uses: actions/checkout@v2
+          with:
+            submodules: true  # Fetch Hugo themes (true OR recursive)
+            fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+        - uses: actions/setup-node@v2
+          with:
+            node-version: '16'
+
+        # Runs a single command using the runners shell
+        - name: Setup Hugo
+          uses: peaceiris/actions-hugo@v2
+          with:
+            hugo-version: 'latest'
+            extended: true
+
+        - name: Build package
+          run: npm install
+
+        - name: Test shell
+          shell: bash
+          run: npm run test

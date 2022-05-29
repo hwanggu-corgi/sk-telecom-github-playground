@@ -17,7 +17,7 @@ class TestHugo(unittest.TestCase):
   def tearDown(self) -> None:
     super().tearDown()
 
-    # Reference:
+    # Reference: https://stackoverflow.com/questions/48763362/python-subprocess-kill-with-timeout#answer-48763628
     p = subprocess.Popen(['ps', '-A'], stdout=subprocess.PIPE)
     out, err = p.communicate()
     for line in out.splitlines():
