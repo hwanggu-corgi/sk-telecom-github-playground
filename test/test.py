@@ -11,13 +11,13 @@ class TestHugo(unittest.TestCase):
     timeout = 10
 
     # This solution because microsoft server hangs when running test: https://stackoverflow.com/questions/48763362/python-subprocess-kill-with-timeout#answer-48763628
+    # Resource warning expected
     self.proc = subprocess.Popen(["sh", os.path.join(dirPath, executable)], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     for _ in range(timeout):
       if self.proc.poll() is not None:
         break
       time.sleep(1)
     else:
-      # the for loop ended without break: timeout
       parent = psutil.Process(self.proc.pid)
       for child in parent.children(recursive=True):
         os.kill(child.pid, signal.SIGTERM)
