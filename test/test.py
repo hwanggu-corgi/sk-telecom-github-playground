@@ -20,8 +20,8 @@ class TestHugo(unittest.TestCase):
       # the for loop ended without break: timeout
       parent = psutil.Process(self.proc.pid)
       for child in parent.children(recursive=True):
-        os.kill(child.pid, signal.SIGKILL)
-      os.kill(parent.pid, signal.SIGKILL)
+        os.kill(child.pid, signal.SIGTERM)
+      os.kill(parent.pid, signal.SIGTERM)
 
     self.timeExpOut = "".join([x.decode() for x in self.proc.stdout]).strip().lower()
     self.timeExpErr = "".join([x.decode() for x in self.proc.stderr]).strip().lower()
