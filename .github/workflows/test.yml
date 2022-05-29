@@ -32,6 +32,9 @@
           with:
             node-version: '16'
 
+        - name: Install psutil
+          run: pip3 install psutil
+
         # Runs a single command using the runners shell
         - name: Setup Hugo
           uses: peaceiris/actions-hugo@v2
@@ -66,6 +69,9 @@
           with:
             node-version: '16'
 
+        - name: Install psutil
+          run: pip3 install psutil
+
         # Runs a single command using the runners shell
         - name: Setup Hugo
           uses: peaceiris/actions-hugo@v2
@@ -98,6 +104,9 @@
         - uses: actions/setup-node@v2
           with:
             node-version: '16'
+
+        - name: Install psutil
+          run: pip3 install psutil
 
         # Runs a single command using the runners shell
         - name: Setup Hugo
@@ -133,6 +142,9 @@
           with:
             node-version: '16'
 
+        - name: Install psutil
+          run: pip3 install psutil
+
         # Runs a single command using the runners shell
         - name: Setup Hugo
           uses: peaceiris/actions-hugo@v2
@@ -165,6 +177,9 @@
         - uses: actions/setup-node@v2
           with:
             node-version: '16'
+
+        - name: Install psutil
+          run: pip3 install psutil
 
         # Runs a single command using the runners shell
         - name: Setup Hugo
@@ -199,6 +214,9 @@
           with:
             node-version: '16'
 
+        - name: Install psutil
+          run: pip3 install psutil
+
         # Runs a single command using the runners shell
         - name: Setup Hugo
           uses: peaceiris/actions-hugo@v2
@@ -231,6 +249,9 @@
         - uses: actions/setup-node@v2
           with:
             node-version: '16'
+
+        - name: Install psutil
+          run: pip3 install psutil
 
         # Runs a single command using the runners shell
         - name: Setup Hugo
