@@ -26,6 +26,12 @@ class TestHugo(unittest.TestCase):
     self.timeExpOut = "".join([x.decode() for x in self.proc.stdout]).strip().lower()
     self.timeExpErr = "".join([x.decode() for x in self.proc.stderr]).strip().lower()
 
+    print("--------------Out----------------")
+    print(self.timeExpOut)
+    print("--------------Err----------------")
+    print(self.timeExpErr)
+
+
   def test_start_command_should_not_return_error (self) -> None:
     expected = True
 
@@ -36,6 +42,10 @@ class TestHugo(unittest.TestCase):
 
     self.assertEqual(expected, result)
 
+  def test_start_command_should_not_include_any_errors_in_output (self) -> None:
+    expected = False
+    result = self.timeExpOut.find( "error:") != -1
+    self.assertEqual(expected, result)
 
   def test_start_command_should_show_web_server_is_starting (self) -> None:
     expected = True
